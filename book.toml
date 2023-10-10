@@ -1,0 +1,6 @@
+[book]
+authors = ["weird-bytecode"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Decisive Engine Documentation"
