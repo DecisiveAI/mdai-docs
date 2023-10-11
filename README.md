@@ -1,6 +1,6 @@
 # DecisiveAI Engine Documentation
 
-Welcome to the docs! This repo is used to build [the decisive engine docs site](#).
+Welcome to the docs! This repo is used to build [the decisive engine docs site](#). More to come in our first beta release!
 
 ## Editing/Development
 
