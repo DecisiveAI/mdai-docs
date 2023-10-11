@@ -1,4 +1,8 @@
-# DecisiveAI Engine Documentation
+<h1 style="display: flex; justify-content: center;">
+  <img src="src/images/logo-128.svg" alt="MyDecisive logo">
+</h1>
+
+# MyDecisive Engine Documentation
 
 Welcome to the docs! This repo is used to build [the decisive engine docs site](https://decisiveai.github.io/mydecisive-docs/). More to come in our first beta release!
 
