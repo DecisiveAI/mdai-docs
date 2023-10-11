@@ -1,6 +1,4 @@
-<h1 align="center">
-  <img src="src/images/logo-128.svg" alt="MyDecisive logo">
-</h1>
+<img src="src/images/logo-128.svg" alt="MyDecisive logo">
 
 # MyDecisive Engine Documentation
 
