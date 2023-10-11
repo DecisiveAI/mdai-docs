@@ -1,4 +1,4 @@
-<img src="/images/logo-128.svg" alt="MyDecisive logo" class="left" />
+<img src="images/logo-128.svg" alt="MyDecisive logo" class="left" />
 
 # MyDecisive Engine Documentation
 
