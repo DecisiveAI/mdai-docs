@@ -1,3 +1,5 @@
+<img src="images/Engineer-white.svg" alt="MyDecisive logo" class="left" /><br />
+
 # Installation
 
 ## Installation Options
@@ -6,7 +8,7 @@ There are multiple installation options to install and run the MyDecisive Engine
 
 ### Automatic install via the MyDecisive CLI
 
-Coming soon!
+🐙 Coming soon!
 
 ### Manual install to Kubernetes
 
