@@ -1,3 +1,5 @@
+<img src="../images/Engineer-white.svg" alt="MyDecisive logo" class="left" /><br />
+
 # Deploy the MyDecisive Engine Helm chart
 
 You may deploy [the MyDecisive Engine Helm Chart](#) directly to an existing Kubernetes cluster

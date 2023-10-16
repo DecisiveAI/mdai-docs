@@ -1,3 +1,5 @@
+<img src="../images/Engineer-white.svg" alt="MyDecisive logo" class="left" /><br />
+
 # Deploy a new EKS cluster with AWS CDK
 
 You may use [the MyDecisive Engine AWS CDK app](#) to provision a new AWS EKS cluster running the MyDecisive Engine.

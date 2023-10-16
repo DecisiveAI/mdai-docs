@@ -1,4 +1,4 @@
-<img src="images/Engineer-white.svg" alt="MyDecisive logo" class="left" /><br />
+<img src="./images/Engineer-white.svg" alt="MyDecisive logo" class="left" /><br />
 
 # Installation
 
