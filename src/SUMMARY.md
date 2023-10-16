@@ -1,11 +1,11 @@
 # Summary
 
-[Introduction](./Introduction.md)
+[Introduction](./intro.md)
 
 # Usage Guide
 
-- [Installation](./Installation.md)
+- [Installation](./install/install.md)
   - [To an existing k8s cluster](./install/k8s-helm.md)
   - [To a new AWS EKS cluster](./install/k8s-cdk.md)
-- [Configuration](./Configuration.md)
-- [Troubleshooting](./Troubleshooting.md)
+- [Configuration](./Operation/config.md)
+- [Troubleshooting](./Operation/troubleshooting.md)
