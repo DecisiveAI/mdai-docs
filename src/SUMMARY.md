@@ -1,20 +1,11 @@
 # Summary
 
-[Introduction](./Introduction.md)
+[Introduction](./intro.md)
 
 # Usage Guide
 
-- [Getting Started](./GettingStarted.md)
-- [Installation](./Installation.md)
-- [Configuration](./Configuration.md)
-  - [Common Use Cases](./CommonUseCases.md)
-- [OpenTelemetry](./OpenTelemetry/README.md)
-  - [Receivers](./OpenTelemetry/Receivers.md)
-  - [Processors](./OpenTelemetry/Processors.md)
-  - [Exporters](./OpenTelemetry/Exporters.md)
-
-# Operation
-
-- [Troubleshooting](./Troubleshooting.md)
-- [Uninstallation](./Uninstallation.md)
-- [Known Issues](./KnownIssues.md)
+- [Installation](./install/install.md)
+  - [To an existing k8s cluster](./install/k8s-helm.md)
+  - [To a new AWS EKS cluster](./install/k8s-cdk.md)
+- [Configuration](./Operation/config.md)
+- [Troubleshooting](./Operation/troubleshooting.md)
