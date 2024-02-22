@@ -1,7 +1,8 @@
-# Getting Started
+# MyDecisive Engine
 
-## Prerequisites
+## Getting Started with the MyDecisive Engine
 
+### Prerequisites
 The Decisive Engine requires the following components to be present to be able to operate:
 
 1. A Kubernetes (k8s) cluster that you have administrative access to
