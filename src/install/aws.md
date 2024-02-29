@@ -115,6 +115,27 @@ There is a 1:1 ratio for each load balancer endpoint to CNAME Record.
 3. **console-ui CNAME** - maps the MDAI Engine© Console within your engine instance to your custom-domain. You'll be able to access the endpoint <cname>.<your-domain>.<domain-suffix> *e.g., https://mydecisive-console.example.com/*
 
 
+## Disable the MDAI Engine©
+
+## Enable the MDAI Engine©
+
 ## Generate and Collect telemetry
+
+**What kind of user are you?**
+1. I don't have any
+
+### Option 1 - Use test data
+
+1. Setup a Cronjob
+2. Apply to cluster
+3. See telemetry coming through
+4. Delete the job after you're done
+
+*It is critical that you delete the cronjob, otherwise engine costs will increase as throughput and processing power are resource intense.*
+
+
+### Option 2 - Use real data
+
+## Visualize
 
 ## Next steps
