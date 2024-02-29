@@ -1,19 +1,17 @@
-# Installation
+# Install the MDAI Engine©
 
-## The MyDecisive.ai Engine
-Introduction to the software/tool/library.
+There are currently two methods for installing the engine:
+1. Locally
+2. In the cloud (AWS)
 
-## Why use it
-Explanation of why it's useful.
-Overview of features.
-System requirements.
-Installation Steps
-Download/Clone: Instructions for obtaining the software (e.g., downloading from a website or cloning from a Git repository).
+## Locally
 
-Installation Dependencies: List of any dependencies required for installation (e.g., software packages, libraries).
+**Try the magic locally before you install in the cloud.**
 
-Installation Process: Step-by-step guide for installing the software, including any configuration or setup steps.
+Checkout our [Quick Start Guide](./quick-start.md) to try locally before going to the Cloud.
 
-Verification: Instructions for verifying the installation was successful (e.g., running a command to check the version number).
+## AWS
 
-Troubleshooting: Common issues and troubleshooting steps.
+**Ready to take control of your o11y costs?**
+
+Install an MDAI Engine in [AWS](./aws.md).

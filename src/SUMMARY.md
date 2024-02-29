@@ -6,8 +6,9 @@
   - [Expectations](./intro/expectations.md)
 
 - [Installation]()
-  - [Quick Start](./install/quick-start.md)
   - [Installing the MDAI Engine©](./install/installation.md)
+  - [Quick Start](./install/quick-start.md)
+  - [MDAI Engine© in AWS](./install/aws.md)
 
 <!--
 # Usage Guide
@@ -37,28 +38,6 @@
 - Basic configuration steps
 
 -----------------------------------------------------------------------
-
-## Architecture Overview
-- Overview of the system architecture with EKS, OpenTelemetry, and Prometheus
-- High-level components and their interactions
-- Data flow diagrams illustrating telemetry collection and monitoring processes
-
-## Deployment Guide
-- Step-by-step instructions for deploying EKS clusters locally or on-premises
-- Configuration steps for deploying OpenTelemetry components (collectors, exporters) on EKS
-- Configuration steps for deploying Prometheus for self-monitoring
-
-## Integration and Instrumentation
-- Guidance on instrumenting applications with OpenTelemetry SDKs for data collection
-- Configuration options for integrating OpenTelemetry with Prometheus for monitoring
-
-## Usage Guide
-- Instructions for testing and validating telemetry data collection
-- Instructions for accessing and querying metrics data using Prometheus
-
-## Feedback and Testing
-- Guidelines for providing feedback, bug reports, and feature requests
-- Instructions for participating in beta testing and providing test results
 
 ## Contributing
 - Guidelines for contributing code, documentation, or bug fixes
