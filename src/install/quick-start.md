@@ -44,10 +44,10 @@ You are going to learn to do the following in less than five minutes:
    > ```
 2. Setup and configure a local instance of the MDAI Engine™
 
-> ````@bash
-> make local-deploy
-> ```kubectl-config
-> ````
+   > ````@bash
+   > make local-deploy
+   > ```kubectl-config
+   > ````
 
 3. Ensure your cluster is up and running.
 
@@ -65,7 +65,7 @@ You are going to learn to do the following in less than five minutes:
    > kubectl port-forward <POD_NAME> <PORT>:<PORT>
    > ```
 
-5. View the MDAI Console at [http://localhost:5173](localhost:5173)
+5. View the MDAI Console at [http://localhost:5173](localhost:5173) 🐙🎉
 
 ![A bright and shiny MDAI Engine™ Console](../media/console-new-and-shiny.png)
 
@@ -87,7 +87,7 @@ You are going to learn to do the following in less than five minutes:
 ## Validate data flow
 
 1. View the [local MDAI console](localhost:5173)
-2. As telemetry flows through the engine, you will see counts increase in the console, color-coded by telemetry type.
+2. As telemetry flows through the engine, you will see counts increase in the console, color-coded by telemetry type. 🐙🎉
 
 ![The MDAI Engine™ Console showing data flows](../media/console-data-flow.png)
 
