@@ -1,5 +1,6 @@
-
 # Introduction to the MDAI Engine™
+
+<!-- toc -->
 
 ## What the MyDecisive.ai (MDAI) Engine™ is...
 
@@ -20,7 +21,6 @@ The MDAI Engine™ includes self-monitoring capabilities to maintain pipeline he
 **A broker of Telemetry data from source to destination**
 
 The MDAI Engine™ <TODO FILL OUT>
-
 
 ## What the MDAI Engine™ is not...
 
@@ -48,21 +48,25 @@ The MDAI Engine™ is a toolkit that is configured and managed in your infrastru
 
 The MDAI Engine™ will grow beyond AWS in the future.
 
-
 ## Why use the MDAI Engine™...
+
 Using the MDAI Engine™ can provide you the insights you need to take back control and manage costs associated with data transmission from the source of your telemetry to your chosen observability vendor(s).
 
 ## How to use our docs...
-* Usage
-* Installation
-* Contributing
+
+- Usage
+- Installation
+- Contributing
 
 ## Who we want to help...
-* DevOps Managers
-* DevOps Engineers
+
+- DevOps Managers
+- DevOps Engineers
 
 # Pre-Alpha Caveats
+
 > **Warning:** This codebase is experimental and in active development. Proceed with caution and use at your own risk. Please review our expansive list of [expectations](./intro/Expectations.md) for the limitations of this release.
 
 # License
+
 MyDecisive Engine ™ 2024 by DecisiveAI, Inc. is licensed under CC BY-NC-SA 4.0

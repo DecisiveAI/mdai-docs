@@ -1,12 +1,14 @@
 # Cloud Install - AWS
 
+<!-- toc -->
+
 ## Setup the MDAI Engine™ in AWS
 
 You are going to learn to do the following in less than five minutes:
-* Set up and run a cloud instance of MDAI Engine™
-* Send telemetry to the MDAI Engine™
-* Access the MDAI Engine Console™ to verify data flowing through the MDAI Engine™.
 
+- Set up and run a cloud instance of MDAI Engine™
+- Send telemetry to the MDAI Engine™
+- Access the MDAI Engine Console™ to verify data flowing through the MDAI Engine™.
 
 ## Prerequisites
 
@@ -14,27 +16,33 @@ You are going to learn to do the following in less than five minutes:
 
 Make sure that your developer environment has the following. This page assumes that you’re using bash. Adapt configuration and commands as necessary for your preferred shell.
 
-* Install [Go](https://go.dev/dl/) (1.20 or higher) from source or use homebrew  `brew install go`
-* [GOBIN environment variable](https://pkg.go.dev/cmd/go#hdr-Environment_variables) is set; if unset, initialize it appropriately, for example:
+- Install [Go](https://go.dev/dl/) (1.20 or higher) from source or use homebrew `brew install go`
+- [GOBIN environment variable](https://pkg.go.dev/cmd/go#hdr-Environment_variables) is set; if unset, initialize it appropriately, for example:
+
 ```
 export GOBIN=${GOBIN:-$(go env GOPATH)/bin}
 ```
-* Install [npm](https://nodejs.org/en/download) from source or use homebrew  `brew install npm`
-* Install [aws-cdk](https://docs.aws.amazon.com/cdk/v2/guide/cli.html) from source or use homebrew  `brew install aws-cdk`. AWS CDK (requires Node.js ≥ 14.15.0)
+
+- Install [npm](https://nodejs.org/en/download) from source or use homebrew `brew install npm`
+- Install [aws-cdk](https://docs.aws.amazon.com/cdk/v2/guide/cli.html) from source or use homebrew `brew install aws-cdk`. AWS CDK (requires Node.js ≥ 14.15.0)
 <!-- * Install [docker](https://www.docker.com/get-started/)-->
 
 ### AWS SSO
 
-* Install [AWS SSO](https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html)
-* Login via the CLI
+- Install [AWS SSO](https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html)
+- Login via the CLI
+
 ```@bash
 aws configure sso
 ```
-* After configuration is complete, make sure you choose the correct AWS account you want to deploy your engine to.
-![Choose correct account](../media/aws-account-selection.png)
+
+- After configuration is complete, make sure you choose the correct AWS account you want to deploy your engine to.
+  ![Choose correct account](../media/aws-account-selection.png)
 
 ### AWS CDK
+
 Follow the steps in the [AWS CDK Install Guide](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install). Don't forget to [Bootstrap](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_bootstrap) your environment!
+
 ```@bash
 # Install CDK
 npm install -g aws-cdk
@@ -55,10 +63,12 @@ cdk bootstrap aws://<your_aws_account>/us-east-1 --profile <your_aws_profile>
 ## Installing the MDAI™ Engine in AWS
 
 ### Update the environment configuration file
+
 TODO: update this info it's shit
 Update the vaules/aws.
 
 ### Update the Otel configuration file
+
 TODO: Add context
 Option 1: don't change
 Option 2: BYO
@@ -70,25 +80,29 @@ Option 2: BYO
 
 make config
 ```
-*Optional: Check .env file to update region, if needed*
+
+_Optional: Check .env file to update region, if needed_
 
 ### Deploy the MDAI™ Engine
 
 ```@bash
 make install
 ```
-*Note: Detailed output stored into cdk-output.json*
 
+_Note: Detailed output stored into cdk-output.json_
 
 Ensure your cluster is up and running.
+
 ```@bash
 kubectl get pods
 ```
-*Note: the pod that starts with `mydecisive-engine-ui-*`*
+
+_Note: the pod that starts with `mydecisive-engine-ui-_`\*
 
 ### Enable access to Engine via DNS Mappings to Load Balancer Endpoints
 
 There are three entry points to the engine:
+
 1. **gRPC Load Balancer Endpoint** - enables gRPC telemetry to be sent to the engine.
 2. **http Load Balancer Endpoint** - enables http telemetry to be sent to the engine
 3. **console-ui Load Balancer Endpoint** - serves the MDAI Console for monitoring your engine instance
@@ -96,22 +110,25 @@ There are three entry points to the engine:
 In order to enable access allowed external access to the engine, you need to do the following:
 
 **Identify the Load Balancer DNS names**
-1. In the AWS Console, navigate to your [EC2 Load Balancers endpoints](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#LoadBalancers) *Note: link above take you to region: us-east-1, you will need to change if you've deployed your engine in a different region*
+
+1. In the AWS Console, navigate to your [EC2 Load Balancers endpoints](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#LoadBalancers) _Note: link above take you to region: us-east-1, you will need to change if you've deployed your engine in a different region_
 2. Locate the three load balancers required to run an MDAI Engine™, there should be a gRPC, http, and console-ui load balancer. Make note of each of the load balancer's DNS names. ![load balancers](../media/load-balancers.png)
 
 **Generate Certificates for secure connections to your MDAI Engine™ Instance**
 Follow the instructions in the [AWS ACM Certificate Request Guide](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html#request-public-console) to verify your domain and acquire a certificate for secure connections to your MDAI Engine™ instance.
 
 **Certificate Strategy**
-*Option 1: Default setup*
+_Option 1: Default setup_
+
 1. **gRPC certificate** - enables a secure connection to the gRPC endpoint of your engine instance
 2. **non-gRPC cert** - enables a secure connection to the non-gRPC endpoint of your engine instance
 3. **console-ui certificate** - enables a secure connection to the engine console within your engine instance
 
-*Option 2: Wildcard setup*
+_Option 2: Wildcard setup_
 
 This will allow you to use a single certificate for all your endpoints.
->Note: AWS doesn't provide free wildcard certificates.
+
+> Note: AWS doesn't provide free wildcard certificates.
 
 **Update the DNS Mapping**
 
@@ -120,21 +137,23 @@ This will allow you to use a single certificate for all your endpoints.
 
 **DNS CNAME mappings**
 There is a 1:1 ratio for each load balancer endpoint to CNAME Record.
+
 1. **gRPC CNAME** - maps the the gRPC endpoint(s) of your engine instance to your custom-domain. We recommend using `grpc-#` for your CNAME record.
 2. **non-gRPC CNAME** - maps the the non-gRPC endpoint(s) of your engine instance to your custom-domain. We recommend using `non-grpc-#` for your CNAME record.
-3. **console-ui CNAME** - maps the MDAI Engine™ Console within your engine instance to your custom-domain. You'll be able to access the endpoint <cname>.<your-domain>.<domain-suffix> *e.g., https://mydecisive-console.example.com/*
-
+3. **console-ui CNAME** - maps the MDAI Engine™ Console within your engine instance to your custom-domain. You'll be able to access the endpoint <cname>.<your-domain>.<domain-suffix> _e.g., https://mydecisive-console.example.com/_
 
 ## Disable the MDAI Engine™
 
 ## Enable the MDAI Engine™
 
 ## Destroy the MDAI Engine™
+
 Tired of using the MDAI Engine™? 😭 We're sorry to see you go, but
 
 ## Generate and Collect telemetry
 
 **What kind of user are you?**
+
 1. I don't have any agents/collectors that I want to use at this time to send telemetry. Use Option 1!
 2. I have sources of telemetry I'd love to send to my MDAI Engine™! Use Option 2!
 
@@ -145,19 +164,19 @@ Tired of using the MDAI Engine™? 😭 We're sorry to see you go, but
 3. See telemetry coming through
 4. Delete the job after you're done
 
-*It is critical that you delete the cronjob, otherwise engine costs will increase as throughput and processing power are resource intense.*
+_It is critical that you delete the cronjob, otherwise engine costs will increase as throughput and processing power are resource intense._
 
->Note: This is a great option if you're not ready to commit to the costs associated with ingress/egress. It's all local to the cluster you have just deployed, so there will not be additional charges, minus the compute required to generate and process the telemetry.
-
+> Note: This is a great option if you're not ready to commit to the costs associated with ingress/egress. It's all local to the cluster you have just deployed, so there will not be additional charges, minus the compute required to generate and process the telemetry.
 
 ### Option 2 - Use real data
+
 1. Find the source of data (collector/agent) you'd like to point at your MDAI Engine™ instance
 2. Use your CNAME (from your host provider) or DNS (from AWS LB)
 3. Configure your agent/collector to point to the CNAME or DNS
 4. SEE RESULTS! Go to Visualization step for more details.
 
 ## Visualize
-Go to your AWS lb link
 
+Go to your AWS lb link
 
 ## Next steps
