@@ -1,14 +1,17 @@
-# MyDecisive (MDAI) Engine©
+# MyDecisive (MDAI) Engine™
 
 - [Introduction]()
   - [Overview](./intro/overview.md)
-  - [The MDAI Engine©](./intro/intro.md)
+  - [The MDAI Engine™](./intro/intro.md)
   - [Expectations](./intro/expectations.md)
 
 - [Installation]()
-  - [Installing the MDAI Engine©](./install/installation.md)
-  - [Quick Start](./install/quick-start.md)
-  - [MDAI Engine© in AWS](./install/aws.md)
+  - [Installing the MDAI Engine™](./install/installation.md)
+  - [Local]()
+    - [Quick Start](./install/quick-start.md)
+  - [AWS]()
+    - [MDAI Engine™ in AWS](./install/aws.md)
+    - [Managing Ingress in AWS](./install/ingress.md)
 
 <!--
 # Usage Guide

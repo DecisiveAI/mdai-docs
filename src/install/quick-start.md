@@ -1,11 +1,11 @@
 # Quick Start Guide
 
-## Setup the MDAI Engine© locally
+## Setup the MDAI Engine™ locally
 
 You are going to learn to do the following in less than five minutes:
-* Set up and run a local instance of MDAI Engine©
-* Send telemetry to the MDAI Engine©
-* Access MDAI Engine Console© to verify data flowing through the MDAI Engine©.
+* Set up and run a local instance of MDAI Engine™
+* Send telemetry to the MDAI Engine™
+* Access MDAI Engine Console™ to verify data flowing through the MDAI Engine™.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ You are going to learn to do the following in less than five minutes:
 ><!-- Check that your cluster is up and running -->
 >kind get clusters
 >```
-2. Setup and configure a local instance of the MDAI Engine©
+2. Setup and configure a local instance of the MDAI Engine™
 
 >```@bash
 >make local-deploy

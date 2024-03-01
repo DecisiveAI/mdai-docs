@@ -1,3 +1,3 @@
-## Integration and Instrumentation
-- Guidance on instrumenting applications with OpenTelemetry SDKs for data collection
-- Configuration options for integrating OpenTelemetry with Prometheus for monitoring
+## Usage Guide
+- Instructions for testing and validating telemetry data collection
+- Instructions for accessing and querying metrics data using Prometheus
