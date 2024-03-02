@@ -43,8 +43,8 @@ You would then need to update your OTel configure to reflect the changes to rece
 Navigate to your `values/params-values-otel.yaml` file:
 ```yaml
   collectorEndpoints:
-    otlp: otlp.grpc.endpoint.collector.domain
-    jaeger: jaeger.grpc.endpoint.collector.domain
+    otlp: otlp.grpc.endpoint.collector.your-domain.io
+    jaeger: jaeger.grpc.endpoint.collector.your-domain.io
 ```
 
 ### non-gRPC
@@ -111,9 +111,9 @@ For secure connectivity, it’s highly recommended (and for SSL endpoints - mand
 >This Load balancer can be referred to by the DNS name, provided by AWS, however it’s ***highly recommended*** (and to enable SSL endpoint - mandated) to create a CNAME DNS record in your domain, pointing to the Load Balancer DNS name.
 
 #### Example
-**LB DNS name**: `mydecisive-engine-ui-2054373533.us-east-1.elb.amazonaws.com`
+**LB DNS name**: `mydecisive-engine-ui-12345678910.us-east-1.elb.amazonaws.com`
 
-
+**Required CNAME records in domain `your-domain.io`:**
 | CNAME       | AWS DNS NAME    | Access URL  |
 | ----------- | --------------- |------------ |
 | `mydecisive-console` | `mydecisive-engine-ui-12345678910.us-east-1.elb.amazonaws.com` | `mydecisive-console.your-domain.io` |
