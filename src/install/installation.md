@@ -1,8 +1,8 @@
 # Install the MDAI Engine™
 
 There are currently two methods for installing the engine:
-1. Locally
-2. In the cloud (AWS)
+
+<!-- toc -->
 
 ## Locally
 

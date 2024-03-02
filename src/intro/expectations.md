@@ -1,4 +1,5 @@
 ## Expectations
+
 > **Warning:** This is a pre-Alpha release. This codebase is experimental and in active development. Proceed with caution and use at your own risk.
 
 1. **Limited Functionality**: The pre-alpha release will have limited functionality compared to the final product. Users should expect only basic features and capabilities to be available.

@@ -4,3 +4,7 @@ language = "en"
 multilingual = false
 src = "src"
 title = "MyDecisive Engine Documentation"
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
