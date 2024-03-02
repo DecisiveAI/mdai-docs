@@ -2,6 +2,7 @@
 
 - [Introduction]()
   - [Overview](./intro/overview.md)
+  - [Architecture](./intro/architecture.md)
   - [The MDAI Engine™](./intro/intro.md)
   - [Expectations](./intro/expectations.md)
 

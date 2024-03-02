@@ -142,13 +142,35 @@ There is a 1:1 ratio for each load balancer endpoint to CNAME Record.
 2. **non-gRPC CNAME** - maps the the non-gRPC endpoint(s) of your engine instance to your custom-domain. We recommend using `non-grpc-#` for your CNAME record.
 3. **console-ui CNAME** - maps the MDAI Engine™ Console within your engine instance to your custom-domain. You'll be able to access the endpoint <cname>.<your-domain>.<domain-suffix> _e.g., https://mydecisive-console.example.com/_
 
-## Disable the MDAI Engine™
+## Disable Engine
 
-## Enable the MDAI Engine™
+- Set replica count to `0` in `values/params-values-otel.yaml`:
+
+```yaml
+spec:
+  # 2 replicas recommended
+  replicas: 0
+```
+
+- `make config`
+- `make install`
+
+## Enable Engine
+
+- Set replica count to `2` in `values/params-values-otel.yaml`:
+
+```yaml
+spec:
+  # 2 replicas recommended
+  replicas: 2
+```
+
+- `make config`
+- `make install`
 
 ## Destroy the MDAI Engine™
 
-Tired of using the MDAI Engine™? 😭 We're sorry to see you go, but
+Tired of using the MDAI Engine™? 😭 We're sorry to see you go, but we understand. If you have feedback for us, please fill out
 
 ## Generate and Collect telemetry
 
