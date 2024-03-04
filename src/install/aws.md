@@ -120,12 +120,12 @@ or AWS Console -> Cloud Formation
 Detailed output stored into `cdk-output.json`.
 
 ### Verify the MDAI™ Engine
-Ensure your cluster is up and running.  
+Ensure your cluster is up and running.
 List all namespaces:
 ```shell
 kubectl get ns
 ```
-Expected output  
+Expected output
 ![img_5.png](img_5.png)
 ```shell
 kubectl get pods
@@ -209,8 +209,8 @@ Delete listed dependencies by following steps below or through AWS Console.
 
 **What kind of user are you?**
 
-1. I don't have any agents/collectors that I want to use at this time to send telemetry. Use Option 1!
-2. I have sources of telemetry I'd love to send to my MDAI Engine™! Use Option 2!
+1. I don't have any agents/collectors that I want to use at this time to send telemetry. **Use Option 1!**
+2. I have sources of telemetry I'd love to send to my MDAI Engine™! **Use Option 2!**
 
 ### Option 1 - Use test data
 
@@ -228,7 +228,7 @@ _It is critical that you delete the cronjob, otherwise engine costs will increas
 1. Find the source of data (collector/agent) you'd like to point at your MDAI Engine™ instance
 2. Use your CNAME (from your host provider) or DNS (from AWS LB)
 3. Configure your agent/collector to point to the CNAME or DNS
-4. SEE RESULTS! Go to Visualization step for more details.
+4. SEE RESULTS! Go to Validate step for more details.
 
 ## Validate data flow
 
