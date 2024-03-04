@@ -223,7 +223,7 @@ Delete listed dependencies by following steps below or through AWS Console.
         aws elbv2 describe-load-balancers \
         --region <your_region>  \
         --profile <your_profile> \
-        --query "LoadBalancers[?contains(LoadBalancerName,'mydecisive-engine-ui')].{ARN:LoadBalancerArn}" \
+        --query "LoadBalancers[?contains(LoadBalancerName,'mdai-console')].{ARN:LoadBalancerArn}" \
         --output text
         ```
     - Use the ARN from the command above to delete pending load balancer:
