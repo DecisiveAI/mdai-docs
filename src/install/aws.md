@@ -118,8 +118,13 @@ or AWS Console -> Cloud Formation
 - The installation process will add a new context to your `kubeconfig`. You can switch context by running `kubectl config use-context <desired_context>`
 Detailed output stored into `cdk-output.json`.
 ### Verify the MDAI™ Engine
-Ensure your cluster is up and running.
-
+Ensure your cluster is up and running.  
+List all namespaces:
+```shell
+kubectl get ns
+```
+Expected output  
+![img_5.png](img_5.png)
 ```shell
 kubectl get pods
 ```
