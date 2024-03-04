@@ -238,6 +238,7 @@ Delete listed dependencies by following steps below or through AWS Console.
         for sg_id in $(aws ec2 describe-security-groups --region <your_region> --filters Name=vpc-id,Values='<your_vpc_id>' --query 'SecurityGroups[?GroupName!=`default`].[GroupId]' --output text); do
             aws ec2 delete-security-group --group-id $sg_id --region <your_region>
             echo "Deleted security group $sg_id"
+        done
         ```
 - Run the destroy process again.
 
