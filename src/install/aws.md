@@ -4,11 +4,11 @@
 
 ## Setup the MDAI Engine™ in AWS
 
-You are going to learn to do the following in less than five minutes:
+You are going to learn to do the following:
 
-- Set up and run a cloud instance of MDAI Engine™
-- Send telemetry to the MDAI Engine™
-- Access the MDAI Engine Console™ to verify data flowing through the MDAI Engine™.
+* Send telemetry to the MDAI Engine™
+* Access the MDAI Engine Console™ to verify data flowing through the MDAI Engine™
+* Set up and run a cloud instance of MDAI Engine™
 
 ## Prerequisites
 
@@ -48,14 +48,15 @@ npm install -g aws-cdk
 You can find more information in the [AWS CDK Install Guide](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install).
 
 ## Installing the MDAI™ Engine in AWS
-### Configure the MDAI™ Engine
 
-```shell
-make config
-```
+Please pull down the [MDAI InkOps™](https://github.com/DecisiveAI/mdai-inkops) toolkit. The InkOps toolkit will enable you to configure and deploy the MDAI Engine™ infrastructure in AWS.
+
+`git clone git@github.com:DecisiveAI/mdai-inkops.git`
 
 ### Update the environment configuration file
-Review and update the configuration file `.env`
+
+Navigate to the `values/aws.env` file and start inputting the environment configuration that's relevant to your AWS account.
+
 ```
 # region where the engine going to be installed
 AWS_REGION=
@@ -73,22 +74,44 @@ MDAI_CLUSTER_CAPACITY=10
 MDAI_UI_ACM_ARN=
 ```
 
-### Update the Otel configuration file
 
-We provided the default configuration for the Open Telemetry collector at `templates/otel-tmpl.yaml`.  
-Review and update for your needs.  
-Find more information [OTEL Collector](https://opentelemetry.io/docs/collector/)
+### Update the OTel configuration file
+
+Ready to start collecting date via an OTel Collector? We have a few options...
+
+
+#### Option 1 - Use our boilerplate
+
+We provided the default configuration for the Open Telemetry collector at `templates/otel-tmpl.yaml`. Using our boilerplate will accelerate your deployment. If you have modifications you need to make, just follow the update commands in Option 2 below.
+
+Find more information in the spec for the [OTEL Collector](https://opentelemetry.io/docs/collector/) to make the best decisions for your telemetry pipelines configuration.
+
+#### Option 2 - BYO Config
+
+Ready to commit to using your OTel configuration using using the MDAI Engine™? Simply update the configuration file (`values/otel-config.yaml`) with your config then apply it to the cluster.
+
+```bash
+### Apply changes to the cluster
+kubectl apply -f values/otel-config.yaml
+```
+
+### Configure the MDAI™ Engine
+
+```shell
+make config
+```
+
 
 ### Deploy the MDAI™ Engine
 
 ```shell
 make install
 ```
-- Install will check and bootstrap the CDK Toolkit if it's not present for the region.  
+- Install will check and bootstrap the CDK Toolkit if it's not present for the region.
 ![img.png](img.png)
 - CDK will output the detected changes and ask to accept or reject the changes. Review carefully before proceeding.
 ![img_1.png](img_1.png)
-- Follow the progress of the stack creation through the terminal 
+- Follow the progress of the stack creation through the terminal
 ![img_2.png](img_2.png)
 or AWS Console -> Cloud Formation
 ![img_3.png](img_3.png)
@@ -116,7 +139,7 @@ In order to enable access allowed external access to the engine, you need to do 
 **Identify the Load Balancer DNS names**
 
 1. In the AWS Console, navigate to your [EC2 Load Balancers endpoints](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#LoadBalancers) _Note: link above take you to region: us-east-1, you will need to change if you've deployed your engine in a different region_
-2. Locate the three load balancers required to run an MDAI Engine™, there should be a gRPC, http, and console-ui load balancer. Make note of each of the load balancer's DNS names. ![load balancers](../media/load-balancers.png)
+2. Locate the three load balancers required to run an MDAI Engine™, there should be a gRPC, http, and console-ui load balancer. Make note of each of the load balancer's DNS names. ![![load balancers](../media/load-balancers.png)](../media/load-balancers.png)
 
 **Generate Certificates for secure connections to your MDAI Engine™ Instance**
 Follow the instructions in the [AWS ACM Certificate Request Guide](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html#request-public-console) to verify your domain and acquire a certificate for secure connections to your MDAI Engine™ instance.
@@ -196,7 +219,7 @@ Delete listed dependencies by following steps below or through AWS Console.
         --region <your_region>  \
         --profile <your_profile> \
         --query "LoadBalancers[?contains(LoadBalancerName,'mydecisive-engine-ui')].{ARN:LoadBalancerArn}" \
-        --output text 
+        --output text
         ```
     - Use the ARN from the command above to delete pending load balancer:
         ```shell
@@ -222,7 +245,7 @@ Delete listed dependencies by following steps below or through AWS Console.
 
 ### Option 1 - Use test data
 
-1. Setup a Cronjob
+1. Setup a Cronjob (or use on from the )
 2. Apply to cluster
 3. See telemetry coming through
 4. Delete the job after you're done
@@ -238,8 +261,15 @@ _It is critical that you delete the cronjob, otherwise engine costs will increas
 3. Configure your agent/collector to point to the CNAME or DNS
 4. SEE RESULTS! Go to Visualization step for more details.
 
-## Visualize
+## Validate data flow
 
-Go to your AWS lb link
+1. Go to your AWS lb link
+2. View the [MDAI Console™](localhost:5173) in AWS.
+3. As telemetry flows through the engine, you will see counts increase in the console, color-coded by telemetry type. 🐙🎉
+
+![The MDAI Engine™ Console showing data flows](../media/console-data-flow.png)
+
+> Note: Data flowing to `debug` exporters are not counted towards data flow totals in the right sidebar
+
 
 ## Next steps
