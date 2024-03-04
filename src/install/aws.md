@@ -74,26 +74,36 @@ MDAI_CLUSTER_CAPACITY=10
 MDAI_UI_ACM_ARN=
 ```
 
-
 ### Update the OTel configuration file
 
 Ready to start collecting date via an OTel Collector? We have a few options...
 
+#### Update Collector Configuration
+We provided the default configuration for the Open Telemetry collector at `values/otelcol-config.yaml`. 
 
-#### Option 1 - Use our boilerplate
-
-We provided the default configuration for the Open Telemetry collector at `templates/otel-tmpl.yaml`. Using our boilerplate will accelerate your deployment. If you have modifications you need to make, just follow the update commands in Option 2 below.
-
+Open and edit `values/params-values-otel.yaml` by following the comments in the file:
+```
+metadata:
+  name: test-collector
+  namespace: default
+  annotations:
+    # MUST BE SPECIFIED!
+    # add certificate arn for non-grpc endpoint 
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:<your_region>:<certificate_details>
+```
+```
+spec:
+  ingress:
+    annotations:
+      # MUST BE SPECIFIED!
+      # add certificate arn (or multiple certificates arn, coma separated) for the grpc endpoints
+      alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:168005146325:certificate/ac21c0a8-9772-43f0-ac16-4d4b9f7bab3d
+```
+Using our boilerplate will accelerate your deployment. If you have modifications you need to make, just follow the update commands in Option 2 below.  
 Find more information in the spec for the [OTEL Collector](https://opentelemetry.io/docs/collector/) to make the best decisions for your telemetry pipelines configuration.
 
 #### Option 2 - BYO Config
-
-Ready to commit to using your OTel configuration using using the MDAI Engine™? Simply update the configuration file (`values/otel-config.yaml`) with your config then apply it to the cluster.
-
-```bash
-### Apply changes to the cluster
-kubectl apply -f values/otel-config.yaml
-```
+Ready to commit to using your OTel configuration using the MDAI Engine™? Simply update the configuration file (`values/otel-config.yaml`).
 
 ### Configure the MDAI™ Engine
 
