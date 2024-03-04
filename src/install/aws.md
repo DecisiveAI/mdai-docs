@@ -24,7 +24,7 @@ export GOBIN=${GOBIN:-$(go env GOPATH)/bin}
 ```
 
 - Install [npm](https://nodejs.org/en/download) from source or use homebrew `brew install npm`
-- Install [aws-cdk](https://docs.aws.amazon.com/cdk/v2/guide/cli.html) from source or use homebrew `brew install aws-cdk`. AWS CDK (requires Node.js ≥ 14.15.0)
+- Install [AWS CDK Toolkit](https://docs.aws.amazon.com/cdk/v2/guide/cli.html) from source or use homebrew `brew install aws-cdk`. AWS CDK (requires Node.js ≥ 14.15.0)
 <!-- * Install [docker](https://www.docker.com/get-started/)-->
 
 ### AWS SSO
@@ -32,7 +32,7 @@ export GOBIN=${GOBIN:-$(go env GOPATH)/bin}
 - Install [AWS SSO](https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html)
 - Login via the CLI
 
-```@bash
+```shell
 aws configure sso
 ```
 
@@ -41,63 +41,67 @@ aws configure sso
 
 ### AWS CDK
 
-Follow the steps in the [AWS CDK Install Guide](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install). Don't forget to [Bootstrap](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_bootstrap) your environment!
-
-```@bash
-# Install CDK
+Install AWS CDK CLI
+```shell
 npm install -g aws-cdk
-
-# Get your AWS account
-aws sts get-caller-identity --profile <your_aws_profile>
-
-# Check if you have already Bootstrap'ed your environment
-aws cloudformation describe-stacks \
-		--stack-name CDKToolkit \
-		--region ${AWS_REGION} || \
-		CDK_NEW_BOOTSTRAP=1 $(CDK) bootstrap
-
-# Bootstrap your environment
-cdk bootstrap aws://<your_aws_account>/us-east-1 --profile <your_aws_profile>
 ```
+You can find more information in the [AWS CDK Install Guide](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install).
 
 ## Installing the MDAI™ Engine in AWS
-
-### Update the environment configuration file
-
-TODO: update this info it's shit
-Update the vaules/aws.
-
-### Update the Otel configuration file
-
-TODO: Add context
-Option 1: don't change
-Option 2: BYO
-
 ### Configure the MDAI™ Engine
 
-```@bash
-# Configure engine
-
+```shell
 make config
 ```
 
-_Optional: Check .env file to update region, if needed_
+### Update the environment configuration file
+Review and update the configuration file `.env`
+```
+# region where the engine going to be installed
+AWS_REGION=
+# AWS account to be used
+AWS_ACCOUNT=
+# AWS profile to be used
+AWS_PROFILE=
+# Class and size of the EC2 used for EKS k8s cluster
+# this is the minimum required configuration, adjust to your needs
+MDAI_EC2_INSTANCE_CLASS=t2
+MDAI_EC2_INSTANCE_SIZE=micro
+# Number of cluster EC2 nodes
+MDAI_CLUSTER_CAPACITY=10
+# Amazon Resource Name (ARN) of the certificate to be used for the Engine UI endpoint
+MDAI_UI_ACM_ARN=
+```
+
+### Update the Otel configuration file
+
+We provided the default configuration for the Open Telemetry collector at `templates/otel-tmpl.yaml`.  
+Review and update for your needs.  
+Find more information [OTEL Collector](https://opentelemetry.io/docs/collector/)
 
 ### Deploy the MDAI™ Engine
 
-```@bash
+```shell
 make install
 ```
-
-_Note: Detailed output stored into cdk-output.json_
-
+- Install will check and bootstrap the CDK Toolkit if it's not present for the region.  
+![img.png](img.png)
+- CDK will output the detected changes and ask to accept or reject the changes. Review carefully before proceeding.
+![img_1.png](img_1.png)
+- Follow the progress of the stack creation through the terminal 
+![img_2.png](img_2.png)
+or AWS Console -> Cloud Formation
+![img_3.png](img_3.png)
+- The installation process will add a new context to your `kubeconfig`. You can switch context by running `kubectl config use-context <desired_context>`
+Detailed output stored into `cdk-output.json`.
+### Verify the MDAI™ Engine
 Ensure your cluster is up and running.
 
-```@bash
+```shell
 kubectl get pods
 ```
-
-_Note: the pod that starts with `mydecisive-engine-ui-_`\*
+Your output for default configuration should be similar to
+![img_4.png](img_4.png)
 
 ### Enable access to Engine via DNS Mappings to Load Balancer Endpoints
 
@@ -170,7 +174,44 @@ spec:
 
 ## Destroy the MDAI Engine™
 
-Tired of using the MDAI Engine™? 😭 We're sorry to see you go, but we understand. If you have feedback for us, please fill out
+Tired of using the MDAI Engine™? 😭 We're sorry to see you go, but we understand. If you have feedback for us, please fill out.
+
+Follow the steps below to destroy the AWS Stack.
+Due to AWS CDK limitations several additional steps required to fully remove all MDAI Engine™ resources from AWS.
+
+- Delete the Open Telemetry Collector
+  ```shell
+  kubectl delete otelcol/<your_collector_name>
+  ```
+- Destroy MDAI Engine™ stack
+  ```shell
+  cdk destroy --profile <your_aws_profile>
+  ```
+- The destroy process will run for a while and may return an error due some resources having dependencies.
+Delete listed dependencies by following steps below or through AWS Console.
+
+    - Run the command bellow to check if UI load balancer has to be deleted:
+        ```shell
+        aws elbv2 describe-load-balancers \
+        --region <your_region>  \
+        --profile <your_profile> \
+        --query "LoadBalancers[?contains(LoadBalancerName,'mydecisive-engine-ui')].{ARN:LoadBalancerArn}" \
+        --output text 
+        ```
+    - Use the ARN from the command above to delete pending load balancer:
+        ```shell
+        aws elbv2 delete-load-balancer \
+        --load-balancer-arn <your_load_balancer_arn> \
+        --region <your_region> \
+        --profile <your_profile>
+        ```
+    - Delete security groups if the destroy failed to delete the VPC. Use the VPC ID from the cdk error output:
+        ```bash
+        for sg_id in $(aws ec2 describe-security-groups --region <your_region> --filters Name=vpc-id,Values='<your_vpc_id>' --query 'SecurityGroups[?GroupName!=`default`].[GroupId]' --output text); do
+            aws ec2 delete-security-group --group-id $sg_id --region <your_region>
+            echo "Deleted security group $sg_id"
+        ```
+- Run the destroy process again.
 
 ## Generate and Collect telemetry
 
