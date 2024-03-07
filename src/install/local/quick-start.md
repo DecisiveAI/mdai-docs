@@ -1,5 +1,7 @@
 # 🛑 🛑 🛑 WIP: THESE DOCS ARE STILL IN TEST 🛑 🛑 🛑
 
+>*NOTE: These docs are for MDAI Engine™ installation on your local machine. We are updating documentation frequently. Thank you for your patience*
+
 # Quick Start Guide
 
 <!-- toc -->
