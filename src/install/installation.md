@@ -14,4 +14,4 @@ Checkout our [Quick Start Guide](./quick-start.md) to try locally before going t
 
 **Ready to take control of your o11y costs?**
 
-Install an MDAI Engine in [AWS](./aws.md).
+Install an MDAI Engine in [AWS](./aws/start.md).
