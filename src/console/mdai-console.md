@@ -19,6 +19,7 @@ C.Sidebar: On the right, a sidebar summarizes your data totals and data reductio
 <img src="../media/console-data-flow.png" alt="The MDAI Engine Console showing data flows" style="width: 600px" />
 </div>
 
+<br>
 
 The initial view (A) of the diagram shows how your different data types (Metrics, Logs, and Traces) flow from receivers to exporters, allowing you to see the overall data volumes flowing through the system.
 
@@ -29,6 +30,7 @@ Hovering over any component highlights the specific data path(s), helping you ze
 <img src="../media/console-data-flow.png" alt="The MDAI Engine Console showing data flows" style="width: 600px" />
 </div>
 
+<br>
 
 ## Pipeline View
 
@@ -36,11 +38,17 @@ Hovering over any component highlights the specific data path(s), helping you ze
 <img src="../media/console-pipelines.png" alt="The MDAI Engine Console showing pipeline configuration" style="width: 600px" />
 </div>
 
+<br>
+
 Clicking on any component in the Sankey diagram will filter and switch the view to a pipeline view. This shows all data types interacting with that component and highlights its configuration in the textual configuration view, allowing you to see the composition of your pipeline.
+
+<br>
 
 <div style="text-align: center">
 <img src="../media/console-viz-mode.png" alt="The MDAI Engine Console with pipelines mode switch highlighted" style="width: 600px" />
 </div>
+
+<br>
 
 As you view the console to understand your data flows, you can switch between Pipeline and Data flow view at any time to see the appropriate elevation.
 
@@ -49,6 +57,8 @@ As you view the console to understand your data flows, you can switch between Pi
 <div style="text-align: center">
 <img src="../media/console-filters.png" alt="The MDAI Engine Console showing content filter options" style="width: 600px" />
 </div>
+
+<br>
 
 The filters (B) at the top-right of the console allow you to constrain the data flow and pipeline views to specific components or data types. These filters can be combined, and options are automatically refined based on your selections.
 
