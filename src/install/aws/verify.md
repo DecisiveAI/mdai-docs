@@ -1,17 +1,51 @@
-### Verify the MDAI™ Engine
+# ✅⚖️ Trust but verify ⚖️✅
+
+## Verify the MDAI Engine via kubectl
 Ensure your cluster is up and running.
-List all namespaces:
+
+### Verify namespaces
+
+List out all namespaces
+
 ```shell
 kubectl get ns
 ```
-Expected output
-![![img_5.png](../media/img_5.png)](../media/img_3.png)
+
+**Expected output**
+
+[![Verify namespaces](/media/verify-get-ns.png)](/media/verify-get-ns.png)
+
+### Verify pods
+
+List out all pods in the default namespace
+
 ```shell
 kubectl get pods
 ```
+
+**Expected output**
+
 Your output for default configuration should be similar to
-![![img_4.png](../media/img_4.png)](../media/img_4.png)
 
-### Configure Ingress for your MDAI Engine™
+[![Verify pods](/media/verify-get-pods.png)](/media/verify-get-pods.png)
 
-To securely setup ingress and external access to your MDAI Engine™, checkout our [Ingress](./ingress.md) documentation.
+## Verify the Console is up and running
+
+### Step 1: Navigate to your AWS EC2 Load Balancer in the AWS Console
+
+>*Note: Replace `AWS_REGION` with the region you deployed to.*
+
+`https://AWS_REGION.console.aws.amazon.com/ec2/home?region=AWS_REGION#LoadBalancers`
+
+### Step 2: Find the LB where the name is `mdai-console`
+
+[![LB List](/media/lb-list.png)](/media/lb-list.png)
+
+
+### Step 3: Copy DNS Name from `mdai-console` LB
+
+[![LB DNS Name](/media/load-balancers.png)](/media/load-balancers.png)
+
+### Step 4: Navigate to the URL and view the console and telemetry flowing
+
+[![Console Data Flow](/media/console-data-flow.png)](/media/console-data-flow.png)

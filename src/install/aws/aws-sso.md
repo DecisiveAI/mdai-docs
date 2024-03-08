@@ -8,7 +8,10 @@ In order to deploy the engine, you'll be using the AWS CLI.
 aws configure sso
 ```
 
-#### Choose the right AWS Account
+#### Choose the right AWS Account and AWS Role
 
-After configuration is complete, make sure you choose the correct AWS account you want to use to deploy your engine with.
+<div class="warning">
+  After configuration is complete, make sure you choose the correct AWS Role you want to use to deploy your engine with.
+</div>
+
 ![![Choose correct account](/media/aws-account-selection.png)](/media/aws-account-selection.png)

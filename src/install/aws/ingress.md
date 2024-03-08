@@ -4,7 +4,7 @@
 
 ## DNS
 
-To expose the OpenTelemetry Collector within the MDAI Engine™ to the public, we've simplified the provisioning of two Load Balancers
+To expose the OpenTelemetry Collector within the MDAI Engine to the public, we've simplified the provisioning of two Load Balancers
 
 1. AWS Application Load Balancer `mdai-grpc-endpoint`
 2. AWS Network Load Balancer `mdai-non-grpc-endpoint`

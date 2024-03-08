@@ -9,10 +9,10 @@ In order to enable access allowed external access to the engine, you need to do 
 **Identify the Load Balancer DNS names**
 
 1. In the AWS Console, navigate to your [EC2 Load Balancers endpoints](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#LoadBalancers) _Note: link above take you to region: us-east-1, you will need to change if you've deployed your engine in a different region_
-2. Locate the three load balancers required to run an MDAI Engine™, there should be a gRPC, http, and console-ui load balancer. Make note of each of the load balancer's DNS names. ![![load balancers](../media/load-balancers.png)](../media/load-balancers.png)
+2. Locate the three load balancers required to run an MDAI Engine, there should be a gRPC, http, and console-ui load balancer. Make note of each of the load balancer's DNS names. ![![load balancers](../media/load-balancers.png)](../media/load-balancers.png)
 
-**Generate Certificates for secure connections to your MDAI Engine™ Instance**
-Follow the instructions in the [AWS ACM Certificate Request Guide](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html#request-public-console) to verify your domain and acquire a certificate for secure connections to your MDAI Engine™ instance.
+**Generate Certificates for secure connections to your MDAI Engine Instance**
+Follow the instructions in the [AWS ACM Certificate Request Guide](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html#request-public-console) to verify your domain and acquire a certificate for secure connections to your MDAI Engine instance.
 
 **Certificate Strategy**
 _Option 1: Default setup_
@@ -37,4 +37,4 @@ There is a 1:1 ratio for each load balancer endpoint to CNAME Record.
 
 1. **gRPC CNAME** - maps the the gRPC endpoint(s) of your engine instance to your custom-domain. We recommend using `grpc-#` for your CNAME record.
 2. **non-gRPC CNAME** - maps the the non-gRPC endpoint(s) of your engine instance to your custom-domain. We recommend using `non-grpc-#` for your CNAME record.
-3. **console-ui CNAME** - maps the MDAI Engine™ Console within your engine instance to your custom-domain. You'll be able to access the endpoint <cname>.<your-domain>.<domain-suffix> _e.g., https://mydecisive-console.example.com/_
+3. **console-ui CNAME** - maps the MDAI Engine Console within your engine instance to your custom-domain. You'll be able to access the endpoint <cname>.<your-domain>.<domain-suffix> _e.g., https://mydecisive-console.example.com/_

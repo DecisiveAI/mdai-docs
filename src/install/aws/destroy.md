@@ -1,16 +1,16 @@
 
-## Destroy the MDAI Engine™
+## Destroy the MDAI Engine
 
-Tired of using the MDAI Engine™? 😭 We're sorry to see you go, but we understand. If you have feedback for us, please fill out.
+Tired of using the MDAI Engine? 😭 We're sorry to see you go, but we understand. If you have feedback for us, please fill out.
 
 Follow the steps below to destroy the AWS Stack.
-Due to AWS CDK limitations several additional steps required to fully remove all MDAI Engine™ resources from AWS.
+Due to AWS CDK limitations several additional steps required to fully remove all MDAI Engine resources from AWS.
 
 - Delete the Open Telemetry Collector
   ```shell
   kubectl delete otelcol/<your_collector_name>
   ```
-- Destroy MDAI Engine™ stack
+- Destroy MDAI Engine stack
   ```shell
   cdk destroy --profile <your_aws_profile>
   ```

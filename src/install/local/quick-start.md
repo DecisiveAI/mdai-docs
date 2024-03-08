@@ -1,18 +1,18 @@
 # 🛑 🛑 🛑 WIP: THESE DOCS ARE STILL IN TEST 🛑 🛑 🛑
 
->*NOTE: These docs are for MDAI Engine™ installation on your local machine. We are updating documentation frequently. Thank you for your patience*
+>*NOTE: These docs are for MDAI Engine installation on your local machine. We are updating documentation frequently. Thank you for your patience*
 
 # Quick Start Guide
 
 <!-- toc -->
 
-## Setup the MDAI Engine™ locally
+## Setup the MDAI Engine locally
 
 You are going to learn to do the following in less than five minutes:
 
-- Set up and run a local instance of MDAI Engine™
-- Send telemetry to the MDAI Engine™
-- Access MDAI Engine Console™ to verify data flowing through the MDAI Engine™.
+- Set up and run a local instance of MDAI Engine
+- Send telemetry to the MDAI Engine
+- Access MDAI Engine Console to verify data flowing through the MDAI Engine.
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ You are going to learn to do the following in less than five minutes:
    > <!-- Check that your cluster is up and running -->
    > kind get clusters
    > ```
-2. Setup and configure a local instance of the MDAI Engine™
+2. Setup and configure a local instance of the MDAI Engine
 
    > ````@bash
    > make local-deploy
@@ -71,7 +71,7 @@ You are going to learn to do the following in less than five minutes:
 
 5. View the MDAI Console at [http://localhost:5173](localhost:5173) 🐙🎉
 
-![A bright and shiny MDAI Engine™ Console](../media/console-new-and-shiny.png)
+![A bright and shiny MDAI Engine Console](../media/console-new-and-shiny.png)
 
 ## Generate and Collect telemetry
 
@@ -93,7 +93,7 @@ You are going to learn to do the following in less than five minutes:
 1. View the [local MDAI console](localhost:5173)
 2. As telemetry flows through the engine, you will see counts increase in the console, color-coded by telemetry type. 🐙🎉
 
-![The MDAI Engine™ Console showing data flows](../media/console-data-flow.png)
+![The MDAI Engine Console showing data flows](../media/console-data-flow.png)
 
 > Note: Data flowing to `debug` exporters are not counted towards data flow totals in the right sidebar
 

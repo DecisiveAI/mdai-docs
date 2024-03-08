@@ -1,23 +1,24 @@
-# MyDecisive (MDAI) Engine™
+# MyDecisive (MDAI) Engine
 
 - [Introduction]()
 
   - [Overview](./intro/overview.md)
   - [Architecture](./intro/architecture.md)
-  - [The MDAI Engine™](./intro/intro.md)
+  - [The MDAI Engine](./intro/intro.md)
   - [Expectations](./intro/expectations.md)
 
 - [Installation]()
 
-  - [Installing the MDAI Engine™](./install/installation.md)
+  - [Installing the MDAI Engine](./install/installation.md)
   - [Local]()
     - [Quick Start](./install/local/quick-start.md)
   - [AWS]()
-    - [Create an MDAI Engine in AWS™](./install/aws/start.md)
+    - [Create an MDAI Engine in AWS](./install/aws/start.md)
     - [Prerequisites](./install/aws/prerequisites.md)
     - [AWS SSO](./install/aws/aws-sso.md)
     - [Configure](./install/aws/configure.md)
     - [Deploy](./install/aws/deploy.md)
+    - [Ingress](./install/aws/ingress.md)
     - [Managing Ingress in AWS](./install/aws/ingress.md)
     - [Verify](./install/aws/verify.md)
   - [Life Cycle Management]()
@@ -29,7 +30,7 @@
     - [Destroy](./install/aws/destroy.md)
 
 - [Usage]()
-  - [Using the MDAI Engine™ Console](./console/mdai-console.md)
+  - [Using the MDAI Engine Console](./console/mdai-console.md)
 
 <!--
 # Usage Guide

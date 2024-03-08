@@ -1,14 +1,16 @@
 <!-- toc -->
 
-## Installing the MDAI™ Engine in AWS
+## Installing the MDAI Engine in AWS
 
-The MDAI InkOps™ Toolkit will enable you to configure and deploy the MDAI Engine™ infrastructure in AWS.
+The MDAI InkOps Toolkit will enable you to configure and deploy the MDAI Engine infrastructure in AWS.
 
 🏁 Let's begin! 🏁
 
 ---
 
-### Clone the MDAI InkOps™ Toolkit
+### Clone the MDAI InkOps Toolkit
+
+Visit our GitHub repo to access our [MDAI InkOps Toolkit](https://github.com/DecisiveAI/mdai-inkops)
 
 `git clone git@github.com:DecisiveAI/mdai-inkops.git`
 
@@ -44,7 +46,7 @@ MDAI_EC2_INSTANCE_SIZE=micro
 MDAI_CLUSTER_CAPACITY=10
 
 # Amazon Resource Name (ARN) of the certificate to be used for the Engine UI endpoint
-MDAI_UI_ACM_ARN=
+MDAI_UI_HOSTNAME=
 ```
 
 <div class="warning">
@@ -52,7 +54,7 @@ MDAI_UI_ACM_ARN=
     <b>Note</b>
     <p>
       <em>There are some pre-configured values. Please do not change these as we haven't tested configurations outside of these values and cannot guarantee functional engine behavior</em><br/><br/>
-      The most important value to ensure correctness, are the `AWS_REGION` and `MDAI_UI_ACM_ARN`. <br/><br/>
+      The most important values to ensure correctness, are the `AWS_REGION` and `MDAI_UI_ACM_ARN`. <br/><br/>
       <code>AWS_REGION</code> - guarantees your engine gets installed in your preferred region if it differs from your default region as configured in your AWS SSO settings. <br/><br/>
       <code>MDAI_UI_ACM_ARN</code> - guarantees your domain has a SSL Certificate auto-generated, then auto-discoverd during install.<br/><br/>
     </p>
@@ -72,10 +74,10 @@ Find more information in the spec for the [OTEL Collector](https://opentelemetry
 
 
 #### Option 2 - BYO Config
-Ready to commit to using your OTel configuration using the MDAI Engine™? Simply update the configuration file (`values/otel-config.yaml`).
+Ready to commit to using your OTel configuration using the MDAI Engine? Simply update the configuration file (`values/otel-config.yaml`).
 
 
-### Configure the MDAI™ Engine
+### Apply configuration to the MDAI Engine
 
 After you've configured your engine, you can run the `config` command to automate the update to configuration files.
 
