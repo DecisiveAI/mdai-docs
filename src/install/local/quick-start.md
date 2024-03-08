@@ -35,6 +35,14 @@ Here are installation steps:
 make -f ./make/Makefile-local-recipies create-mdai
 ```
 ### Automated uninstall
+Make sure your k8s context is set to `kind-mdai-local` cluster:
+```bash
+kubectl config get-contexts
+```
+Switch the context if needed:
+```bash
+kubectl cluster-info --context kind-mdai-local
+```
 Run automated de-installation script
 ```bash
  make -f ./make/Makefile-local-recipies delete-mdai
