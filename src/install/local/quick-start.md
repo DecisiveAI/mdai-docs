@@ -25,7 +25,8 @@ Our automated installation process is setting up all the required dependencies l
 - Go
 - Helm
 
-Once installed your k8s context will be switched automatically to new cluster.  
+>_Note: Once the Engine installed your k8s context will be switched automatically to new cluster._   
+
 Here are installation steps:
 
 1. Pull down the latest from the [MDAI infrastructure installation repo](https://github.com/DecisiveAI/mdai-inkops)
