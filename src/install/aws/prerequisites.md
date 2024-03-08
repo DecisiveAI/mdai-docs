@@ -23,7 +23,7 @@ export GOBIN=${GOBIN:-$(go env GOPATH)/bin}
 ----
 
 <p style="text-align: center;">
-  <a href="./prerequisites.md">Back to Prerequisites</a>
+  <a href="./start.md">Back to Getting Started</a>
 </p>
 <p style="text-align: center;">
   <a href="./aws-sso.md">Next Step: Configure AWS SSO >></a>
