@@ -2,7 +2,9 @@
 
 ### System Requirements
 
-Make sure that your developer environment has the following. This page assumes that you’re using bash. Adapt configuration and commands as necessary for your preferred shell.
+Ensure your development environment has access to all of the following software and settings.
+
+**Note:** *This page assumes you’re using bash, but you can modify these configurations and commands as needed for your preferred command line interface.*
 
 - Install [Go](https://go.dev/dl/) (1.20 or higher) from source or use homebrew `brew install go`
 - [GOBIN environment variable](https://pkg.go.dev/cmd/go#hdr-Environment_variables) is set; if unset, initialize it appropriately, for example:
@@ -15,3 +17,14 @@ export GOBIN=${GOBIN:-$(go env GOPATH)/bin}
 
 - Install [AWS CDK Toolkit](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install)
 - Install [AWS SSO](https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html)
+
+<br />
+
+----
+
+<p style="text-align: center;">
+  <a href="./prerequisites.md">Back to Prerequisites</a>
+</p>
+<p style="text-align: center;">
+  <a href="./aws-sso.md">Next Step: Configure AWS SSO >></a>
+</p>
