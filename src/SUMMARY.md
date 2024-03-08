@@ -27,7 +27,7 @@
     - [Destroy](./install/aws/destroy.md)
   - [Testing your Engine]()
     - [Generate Telemetry](./install/aws/generate-telemetry.md)
-    - [Destroy](./install/aws/destroy.md)
+
 
 - [Usage]()
   - [Using the MDAI Engine Console](./console/mdai-console.md)
