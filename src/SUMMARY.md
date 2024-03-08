@@ -19,7 +19,6 @@
     - [Configure](./install/aws/configure.md)
     - [Deploy](./install/aws/deploy.md)
     - [Ingress](./install/aws/ingress.md)
-    - [Managing Ingress in AWS](./install/aws/ingress.md)
     - [Verify](./install/aws/verify.md)
   - [Life Cycle Management]()
     - [Disable](./install/aws/disable.md)
@@ -27,7 +26,6 @@
     - [Destroy](./install/aws/destroy.md)
   - [Testing your Engine]()
     - [Generate Telemetry](./install/aws/generate-telemetry.md)
-    - [Destroy](./install/aws/destroy.md)
 
 - [Usage]()
   - [Using the MDAI Engine Console](./console/mdai-console.md)
