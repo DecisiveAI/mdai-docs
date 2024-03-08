@@ -19,6 +19,7 @@ C.Sidebar: On the right, a sidebar summarizes your data totals and data reductio
 <img src="../media/console-data-flow.png" alt="The MDAI Engine Console showing data flows" style="width: 600px" />
 </div>
 
+
 The initial view (A) of the diagram shows how your different data types (Metrics, Logs, and Traces) flow from receivers to exporters, allowing you to see the overall data volumes flowing through the system.
 
 Hovering over any component highlights the specific data path(s), helping you zero in on a specific issue.
@@ -27,6 +28,7 @@ Hovering over any component highlights the specific data path(s), helping you ze
 <div style="text-align: center">
 <img src="../media/console-data-flow.png" alt="The MDAI Engine Console showing data flows" style="width: 600px" />
 </div>
+
 
 ## Pipeline View
 
@@ -63,10 +65,9 @@ The More Filters menu allows you to filter your view by receiver, processor, dat
 
 The console sidebar (C) displays:
 
-A count of receivers, pipelines, and exporters running on your collectors
+- A count of receivers, pipelines, and exporters running on your collectors
+- The total volume of data flowing through them in the last hour
 
-The total volume of data flowing through them in the last hour
-
-It updates with other changes on the page, allowing you to optimize your pipelines for maximum cost efficiency.
+The sidebar updates with other changes on the page, allowing you to optimize your pipelines for maximum cost efficiency.
 
 > Note: Traffic flowing to debug exporters is not counted in data flow totals.
