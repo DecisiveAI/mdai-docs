@@ -1,4 +1,4 @@
-# 🛑 🛑 🛑 WIP: THESE DOCS ARE STILL IN TEST 🛑 🛑 🛑
+# 🪄 Create an MDAI Engine instance locally 🪄
 
 >*NOTE: These docs are for MDAI Engine installation on your local machine. We are updating documentation frequently. Thank you for your patience*
 
@@ -16,21 +16,41 @@ You are going to learn to do the following in less than five minutes:
 
 ## Prerequisites
 
-### Automated pre-req installations
+### Automated installation
+Our automated installation process is setting up all the required dependencies like
+- Docker
+- Kind cluster
+- Npm
+- Aws CDK
+- Go
+- Helm
 
-1. Pull down the latest from the [MDAI infrastructure installation repo](https://github.com/DecisiveAI/decisive-engine-aws-cdk)
-2. Run automated installation script
-   > ```@bash
-   > make install-local-dependencies
-   > ```
+Once installed your k8s context will be switched automatically to new cluster.  
+Here are installation steps:
+
+1. Pull down the latest from the [MDAI infrastructure installation repo](https://github.com/DecisiveAI/mdai-inkops)
+2. Install [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for local cluster management using docker containers
+3. Run automated installation script
+```bash
+make -f ./make/Makefile-local-recipies create-mdai
+```
+### Automated uninstall
+Run automated de-installation script
+```bash
+ make -f ./make/Makefile-local-recipies delete-mdai
+```
+If you want to remove all helm artifacts installed (you don't use it your other local setup), run the following
+```bash
+ make -f ./make/Makefile-local-recipies delete-mdai-all
+```
 
 ### Manual pre-req installations
 
 - Install [Go](https://go.dev/dl/) (1.20 or higher).
 - [GOBIN environment variable](https://pkg.go.dev/cmd/go#hdr-Environment_variables) is set; if unset, initialize it appropriately, for example:
-  > ```@bash
-  > export GOBIN=${GOBIN:-$(go env GOPATH)/bin}
-  > ```
+ ```bash
+ export GOBIN=${GOBIN:-$(go env GOPATH)/bin}
+ ```
 - Install [npm](https://nodejs.org/en/download)
 - Install [aws-cdk](https://docs.aws.amazon.com/cdk/v2/guide/cli.html)
 - Install [docker](https://www.docker.com/get-started/)
@@ -50,7 +70,7 @@ You are going to learn to do the following in less than five minutes:
 
    > ````@bash
    > make local-deploy
-   > ```kubectl-config
+   > kubectl-config
    > ````
 
 3. Ensure your cluster is up and running.
