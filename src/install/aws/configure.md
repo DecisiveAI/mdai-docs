@@ -1,8 +1,8 @@
 <!-- toc -->
 
-## Installing the MDAI Engine in AWS
+## Configuring Your MDAI Engine in AWS
 
-The MDAI InkOps Toolkit will enable you to configure and deploy the MDAI Engine infrastructure in AWS.
+The MDAI InkOps Toolkit will enable you to configure and deploy your MDAI Engine infrastructure in AWS.
 
 🏁 Let's begin! 🏁
 
@@ -15,7 +15,7 @@ Visit our GitHub repo to access our [MDAI InkOps Toolkit](https://github.com/Dec
 `git clone git@github.com:DecisiveAI/mdai-inkops.git`
 
 
-Open the project from your local directory, based on your preferred workflow (IDE or terminal)
+Open the project from your local directory, based on your preferred workflow (IDE or terminal).
 
 ```
 cd mdai-inkops
@@ -53,44 +53,53 @@ MDAI_UI_HOSTNAME=
   <p>
     <b>Note</b>
     <p>
-      <em>There are some pre-configured values. Please do not change these as we haven't tested configurations outside of these values and cannot guarantee functional engine behavior</em><br/><br/>
-      The most important values to ensure correctness, are the `AWS_REGION` and `MDAI_UI_ACM_ARN`. <br/><br/>
-      <code>AWS_REGION</code> - guarantees your engine gets installed in your preferred region if it differs from your default region as configured in your AWS SSO settings. <br/><br/>
-      <code>MDAI_UI_ACM_ARN</code> - guarantees your domain has a SSL Certificate auto-generated, then auto-discoverd during install.<br/><br/>
+      <em>The above code includes some pre-configured values. Please do not change these as we have not yet tested configurations outside of these values and cannot guarantee functional engine behavior.</em><br/><br/>
+      The most important values for you to enter are `AWS_REGION` and `MDAI_UI_ACM_ARN`. <br/><br/>
+      <code>AWS_REGION</code> - This setting guarantees the engine will be installed in your desired region, if that region differs from the default region configured in your AWS SSO settings. <br/><br/>
+      <code>MDAI_UI_ACM_ARN</code> - This setting guarantees your domain will have a TLS (SSL) certificate auto-generated and auto-discovered during install.<br/><br/>
     </p>
 </div>
 
 ### Update the OTel configuration file
 
-Ready to start collecting date via an OTel Collector? We have a some options...
+Ready to start collecting some data via an OTel Collector? You've got a couple options...
 
 #### Option 1 - Update Collector Configuration
 
-We provided the default configuration for the Open Telemetry collector at `values/otelcol-config.yaml`.
-Using our boilerplate will accelerate your deployment. If you have modifications you need to make, just follow the update commands in Option 2 below.
+We have provided a default configuration for the Open Telemetry collector at `values/otelcol-config.yaml`.
+Using our boilerplate will accelerate your deployment, but if you need to make modifications, please follow the update commands in Option 2 below.
 
-You can either use the config as it, which can be updated later, or you can start making modifications right now.
-Find more information in the spec for the [OTEL Collector](https://opentelemetry.io/docs/collector/) to make the best decisions for your telemetry pipelines configuration.
+You can either use the config as is, then update it later, or you can start making modifications right now.
+Learn more about the specifications for the [OTEL Collector](https://opentelemetry.io/docs/collector/) to make the best decisions for your telemetry pipelines configuration.
 
 
-#### Option 2 - BYO Config
-Ready to commit to using your OTel configuration using the MDAI Engine? Simply update the configuration file (`values/otel-config.yaml`).
+#### Option 2 - Bring Your Own Configuration
+Want to use a custom OTel configuration file? Simply update the configuration file here: (`values/otel-config.yaml`).
 
 
 ### Apply configuration to the MDAI Engine
 
-After you've configured your engine, you can run the `config` command to automate the update to configuration files.
+After you've configured your engine, you can run the `config` command to automate the update to your configuration files.
 
-#### Step 1: Create an SSL certificate to apply to your custom domain
+#### Step 1: Create a TLS (SSL) certificate for your custom domain
 ```shell
 make cert
 ```
 
-#### Step 2. Run the configuration script to take your values and apply them to the deployment configuration.
+#### Step 2. Run the configuration script to take your values and apply them to the deployment configuration
 ```shell
 make config
 ```
 
----
+<br />
+
+----
 
 🚀 It's time! Let's deploy 🚀
+
+<p style="text-align: center;">
+  <a href="./aws-sso.md">Back to Configure AWS SSO</a>
+</p>
+<p style="text-align: center;">
+  <a href="./deploy.md">Next Step: Deploy Your MDAI Engine! >></a>
+</p>
