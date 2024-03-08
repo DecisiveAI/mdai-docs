@@ -4,54 +4,69 @@
 
 ## Introduction
 
-The console is a web application that lives within your MDAI Engine that gives you an at-a-glance display of all of the telemetry data that has flowed through your MDAI Engine for the last hour.
+The MyDecisive Engine console provides an at-a-glance display of all the telemetry data that has flowed through your MDAI Engine in the last hour. It is a web application accessible via HTTPS within the engine.
 
-## Data flow overview
+## Data Flow Overview
 
+The console offers three primary areas to help you understand how your data flows:
+Sankey Diagram: 
+A. The main section displays a Sankey diagram showing the data flow.
+B. Filters: Filters at the top allow you to customize what you see.
+C.Sidebar: On the right, a sidebar summarizes your data totals and data reduction.
+
+### Sankey Diagram
 <div style="text-align: center">
 <img src="../media/console-data-flow.png" alt="The MDAI Engine Console showing data flows" style="width: 600px" />
 </div>
 
-The data flow overview provides a glanceable display of relative volumes of data flowing from receivers to exporters, divided by data type. Data flows are displayed in terms of counts of each data type (e.g., log messages) as reported by the OpenTelemetry collectors inside your engine.
+The initial view (A) of the diagram shows how your different data types (Metrics, Logs, and Traces) flow from receivers to exporters, allowing you to see the overall data volumes flowing through the system.
 
-In this view, the widest lines indicate greater data flow relative to narrower lines representing less. Striped lines indicate data flow errors, such as messages refused by the collector due to capacity constraints or messages dropped due to issues with a connected systems.
+Hovering over any component highlights the specific data path(s), helping you zero in on a specific issue.
 
-### Filters
-
+<!--Screenshot of the hover view - make it exactly the same size and ratio as the initial screen-->
 <div style="text-align: center">
-<img src="../media/console-filters.png" alt="The MDAI Engine Console with filter controls highlighted" style="width: 600px" />
+<img src="../media/console-data-flow.png" alt="The MDAI Engine Console showing data flows" style="width: 600px" />
 </div>
 
-The filters located in the top-right of the console view allow you to constrain the data flow and pipelines view to specific components or data types. These filters can be combined to reduce your view to specific components you wish to see.
-
-#### Top Talkers and Top Listeners
-
-The Top Talkers filter will show only the top three receivers by data volume, and the Top Listeners filter will show only the top three receivers by data volume.
-
-#### More filters
-
-The More Filters menu will allow you to filter your view by receiver, processor, data type or exporter.
-
-## Pipelines overview
+## Pipeline View
 
 <div style="text-align: center">
 <img src="../media/console-pipelines.png" alt="The MDAI Engine Console showing pipeline configuration" style="width: 600px" />
 </div>
 
-The pipelines view offers a graphical and textual view of the pipeline configurations running on your engine's collectors. Clicking on any component of this view will filter the view to components and data types that interact with that component, and will highlight that component's configuration in the textual configuration view
+Clicking on any component in the Sankey diagram will filter and switch the view to a pipeline view. This shows all data types interacting with that component and highlights its configuration in the textual configuration view, allowing you to see the composition of your pipeline.
 
 <div style="text-align: center">
 <img src="../media/console-viz-mode.png" alt="The MDAI Engine Console with pipelines mode switch highlighted" style="width: 600px" />
 </div>
 
-The pipelines overview mode can be toggled via the highlighted control above, or by clicking any of the data types in the data flow view.
+As you view the console to understand your data flows, you can switch between Pipeline and Data flow view at any time to see the appropriate elevation.
 
-### Configuration view
+## Filters
 
-This panel displays the yaml pipeline configuration running on your engine's collectors.
+<div style="text-align: center">
+<img src="../media/console-filters.png" alt="The MDAI Engine Console showing content filter options" style="width: 600px" />
+</div>
 
-## Data reduction and total data flow summary sidebar
+The filters (B) at the top-right of the console allow you to constrain the data flow and pipeline views to specific components or data types. These filters can be combined, and options are automatically refined based on your selections.
 
-The console sidebar displays a count of receivers, pipelines and exporters running on your collectors, and the total volume of data flowing through them for the last hour.
+#### Top Talkers and Top Listeners
 
-> Note: Traffic flowing to `debug` exporters are not counted in data flow totals
+The Top Talkers filter shows the top three receivers by data volume, and the Top Listeners filter shows the top three exporters by data volume.
+
+#### More Filters
+
+The More Filters menu allows you to filter your view by receiver, processor, data type, or exporter.
+
+
+## Summary of Data Totals and Data Reduction
+
+The console sidebar (C) displays:
+
+A count of receivers, pipelines, and exporters running on your collectors
+
+The total volume of data flowing through them in the last hour
+
+It updates with other changes on the page, allowing you to optimize your pipelines for maximum cost efficiency.
+
+> Note: Traffic flowing to debug exporters is not counted in data flow totals.
