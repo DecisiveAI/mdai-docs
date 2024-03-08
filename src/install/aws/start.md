@@ -1,18 +1,20 @@
 # 🪄 Create an MDAI Engine instance in AWS 🪄
 
-Deploying an engine to AWS will allow you to
-1. ☁️ Manage your engine in the cloud.
-2. 🔐 Enable access to your engine via your AWS account settings, whether it's multiple users or just you.
-3. 🌎 Use DNS to connect your custom domain to all your engine entry-points.
-4. 💵 Visualize your engine and pipelines to start taking of your telemetry cost back into your own hands.
+Deploying an MDAI Engine to AWS will allow you to:
+1. ☁️ Manage your MDAI Engine in the cloud.
+2. 🔐 Enable access to your engine via your AWS account settings, whether it's for multiple users or just yourself.
+3. 🌎 Use DNS to connect your custom domain to any engine entry-points.
+4. 💵 Visualize your pipeline data flows, giving you instant insights into your telemetry cost drivers and the net impact of your defined data processors.
 
-## Setup the MDAI Engine in AWS
+Future versions of the MDAI Engine will be compatible with other cloud service providers.
 
-You are going to learn to do the following:
+## Getting Started
 
-1. Set up and run a AWS instance of an MDAI Engine
-2. Send telemetry to the MDAI Engine
-3. Access the MDAI Engine Console to verify data flowing through the MDAI Engine
+To begin visualizing your telemetry pipelines, you will need to complete the following three steps:
+
+1. Set up and run an AWS instance of the MDAI Engine.
+2. Send telemetry to the MDAI Engine.
+3. Access the MDAI Engine Console to verify data flowing through the MDAI Engine.
 
 <br />
 
