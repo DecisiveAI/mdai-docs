@@ -22,5 +22,5 @@ To begin visualizing your telemetry pipelines, you will need to complete the fol
 
 <p style="text-align: center;">
   <b>🏃 Let's get started! 🏃‍♀️</b>
-  <a href="./prerequisites.md">Next up - Prerequisites</a>
+  <a href="./prerequisites.md">Next Step: Prerequisites</a>
 </p>
