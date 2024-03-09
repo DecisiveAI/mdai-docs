@@ -1,6 +1,6 @@
-# Install the MDAI Engine
+# Supported Installation Methods
 
-There are currently two methods for installing the engine:
+There are currently two supported methods for installing an MDAI Engine:
 
 <!-- toc -->
 
