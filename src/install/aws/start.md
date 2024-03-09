@@ -1,4 +1,4 @@
-# 🪄 Create an MDAI Engine instance in AWS 🪄
+# 🪄 Introduction 🪄
 
 Deploying an MDAI Engine to AWS will allow you to:
 1. ☁️ Manage your MDAI Engine in the cloud.
