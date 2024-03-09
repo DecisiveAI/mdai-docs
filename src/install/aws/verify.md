@@ -57,5 +57,5 @@ Your output for default configuration should be similar to:
   <a href="./ingress.md">Back to Configure Ingress</a>
 </p>
 <p style="text-align: center;">
-  <a href="./generate-telemetry.md">Next Step: Generate Artificial Telemetry >></a>
+  <a href="./generate-telemetry.md">Next Step: Generate & Receive Telemetry >></a>
 </p>
