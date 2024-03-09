@@ -25,7 +25,7 @@
     - [Enable the Engine](./install/aws/enable.md)
     - [Destroy the Engine](./install/aws/destroy.md)
   - [Testing your Engine]()
-    - [Generate Artificial Telemetry](./install/aws/generate-telemetry.md)
+    - [Generate & Receive Telemetry](./install/aws/generate-telemetry.md)
 
 - [Usage]()
   - [Using the MDAI Engine Console](./console/mdai-console.md)
