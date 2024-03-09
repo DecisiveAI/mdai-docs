@@ -4,14 +4,16 @@ There are currently two methods for installing the engine:
 
 <!-- toc -->
 
-## Locally
+## Local Installation
 
-**Try the magic locally before you install in the cloud.**
+**Want to try the magic locally before you install an engine in the cloud?**
 
-Checkout our [Quick Start Guide](./quick-start.md) to try locally before going to the Cloud.
+Check out our [Quick Start Guide](./quick-start.md) to learn how to test the MyDecisive Engine in a local environment.
 
-## AWS
+## AWS Installation
 
-**Ready to take control of your o11y costs?**
+**Ready to visualize your observability pipelines and identify your top cost drivers?**
 
 Install an MDAI Engine in [AWS](./aws.md).
+
+Additional installation methods will be supported in the future.
