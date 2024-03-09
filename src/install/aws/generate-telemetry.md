@@ -1,9 +1,9 @@
-# Generate and Collect telemetry
+# Generate and Receive Telemetry
 
 ## What kind of user are you?
 
-1. I don't have any agents/collectors that I want to use at this time to send telemetry. **Use Option 1!**
-2. I have sources of telemetry I'd love to send to my MDAI Engine! **Use Option 2!**
+1. I don't have any existing agents/collectors that I can use to send telemetry right now. **Use Option 1!**
+2. I have existing sources of telemetry I'd love to point to my new engine! **Use Option 2!**
 
 ### Option 1 - Use test data
 
@@ -11,7 +11,7 @@ Using [TelemetryGen](https://example.com) is a great option if you're not ready 
 
 
 #### Step 1 - Create or use cronjobs
-You can create a [CronJob](https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/) (or use one from the `/jobs` directory)
+You can create a [CronJob](https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/) (or use one from the `/jobs` directory).
 
 #### Step 2 - Apply the cronjob to your cluster
 ```shell
@@ -30,26 +30,39 @@ kubectl get cronjob job-name
 kubectl get cronjob --watch
 ```
 
-1. Delete the job
+#### How to delete the cronjob once testing is complete
 
 ```shell
 # Delete job by name - replace job-name with your cronjob's name
 kubectl delete cronjob job-name
 ```
 <div class="warning">
-  <em>It is critical that you delete the cronjob, otherwise engine costs will increase as throughput and processing power are resource intense.</em>
+  <em>It is critical that you delete the cronjob once testing is complete, otherwise engine costs will continue to increase as the engine continues to processes all incoming telemetry data.</em>
 </div>
 
 ### Option 2 - Use real data
 
->Visit the [OTel Collector Docs site](https://opentelemetry.io/docs/collector/configuration/) to learn more about configuring your collector based on your data sources and destinations.
+>Visit the [OTel Collector Docs site](https://opentelemetry.io/docs/collector/configuration/) to learn more about configuring your collector based on your specific data sources and destinations.
 
 A general workflow is as follows:
 
-1. Determine which sources of data (collector/agent) you'd like to point at your MDAI Engine instance
-2. Use your CNAME (from your host provider) or DNS (from AWS LB) as mentioned in our [Ingress documentation](./ingress.md)
-3. Configure your agent/collector to point to the CNAME or DNS as mentioned in our [Ingress documentation](./ingress.md)
+1. Determine which sources of data (collector/agent) you'd like to point at your MDAI Engine instance.
+2. Use your CNAME (from your host provider) or DNS (from AWS LB) as mentioned in our [Ingress documentation](./ingress.md).
+3. Configure your agent/collector to point to the CNAME or DNS as mentioned in our [Ingress documentation](./ingress.md).
 4. SEE RESULTS! [Verify data flow](./verify.md)
 
+🎉 That's it! Your MDAI Engine is now ready to use! 🎉
 
+<br />
 
+----
+
+<p style="text-align: center;">
+  <a href="./verify.md">Back to Verify Installation</a>
+</p>
+<p style="text-align: center;">
+  <a href="./disable.md">Optional Next Step: Disable the Engine >></a>
+</p>
+<p style="text-align: center;">
+  <a href="./destroy.md">Optional Next Step: Destroy the Engine >></a>
+</p>
