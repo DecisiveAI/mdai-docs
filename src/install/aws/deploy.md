@@ -57,3 +57,14 @@ https://AWS_REGION.console.aws.amazon.com/cloudformation/designer/home?region=AW
 **Want to see how the MDAI Engine runs locally?**
 
 🛠️ Build a local version while you're waiting! [QuickStart](../local/quick-start.md)
+
+<br />
+
+----
+
+<p style="text-align: center;">
+  <a href="./configure.md">Back to Configure Your Engine</a>
+</p>
+<p style="text-align: center;">
+  <a href="./ingress.md">Next Step: Configure Ingress >></a>
+</p>
