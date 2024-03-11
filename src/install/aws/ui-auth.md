@@ -23,5 +23,5 @@ This domain name will become a part of the auth redirecting URL.
 
 #### User(s) creation
 The only manual step required is a user(s) creation.
-Via AWS/Cognito gui find `mdai-user-pool` and on the tab `Users` press `Add User` button.
-You will be asked for a user email (username) and password. It's a one time password, and must be reset upon first log in.
+Please follow the [Amazon Cognito User Pool documentation](https://docs.aws.amazon.com/cognito/latest/developerguide/managing-users.html) steps
+to create users(s) in `mdai-user-pool`.
