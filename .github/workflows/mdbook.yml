@@ -30,7 +30,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MDBOOK_VERSION: 0.4.21
-      MDBOOK_OUTPUT__HTML_GOOGLE_ANALYTICS: ${{ secrets.MDBOOK_GOOGLE_ANALYTICS }}
     steps:
       - uses: actions/checkout@v3
       - name: Install mdBook
