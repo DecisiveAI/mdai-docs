@@ -1,6 +1,14 @@
 [book]
-authors = ["weird-bytecode"]
+authors = ["DecisiveAI, Inc."]
 language = "en"
 multilingual = false
 src = "src"
 title = "MyDecisive Engine Documentation"
+
+[output.html.fold]
+enable = true
+level = 2
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
