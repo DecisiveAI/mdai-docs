@@ -14,7 +14,7 @@ aws configure sso
   After configuration is complete, make sure you choose the correct AWS Role you want to use to deploy your engine. If you are unsure of which role to use, please contact your AWS system adminstrator.
 </div>
 
-![![Choose correct account](/media/aws-account-selection.png)](/media/aws-account-selection.png)
+![![Choose correct account](../../media/aws-account-selection.png)](../../media/aws-account-selection.png)
 
 <br />
 

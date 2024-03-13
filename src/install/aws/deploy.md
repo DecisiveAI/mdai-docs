@@ -19,15 +19,15 @@ make install
 
 ### The install workflow
 1. The install will check and bootstrap the CDK Toolkit if it's not present for your configured region.
-![[bootstrap.png](../media/bootstrap.png)](/media/bootstrap.png)
+![[bootstrap.png](../../media/bootstrap.png)](../../media/bootstrap.png)
 
 2. The CDK will output the detected changes and ask you to accept or reject the changes. Review all output carefully before proceeding!
-![![stack-details.png](/media/stack-details.png)](/media/stack-details.png)
+![![stack-details.png](../../media/stack-details.png)](../../media/stack-details.png)
 
 3. Follow the progress of the stack deployment process through the terminal interface.
-[![stack-details.png](/media/stack-details.png)](/media/stack-details.png)
+[![stack-details.png](../../media/stack-details.png)](../../media/stack-details.png)
 *or AWS Console -> Cloud Formation*
-[![CFN Status](/media/cfn-status.png)](/media/cfn-status.png)
+[![CFN Status](../../media/cfn-status.png)](../../media/cfn-status.png)
 
 4.  The installation process will add a new context to your `kubeconfig`. You can switch context by running: `kubectl config use-context <desired_context>`
 Detailed output will be stored into `cdk-output.json`.
@@ -36,7 +36,7 @@ Detailed output will be stored into `cdk-output.json`.
 
 1. 🍿 Grab some popcorn! 🍿 Average install time is ~20-30 minutes.
 
-2. 👀 Don't want to monitor your terminal? Check out the your stack's provisioning status in the AWS Console.
+2. 👀 Don't want to monitor your terminal? Check out your stack's provisioning status in the AWS Console.
 ```
 <!-- Change AWS_REGION to the region you deployed to -->
 https://AWS_REGION.console.aws.amazon.com/cloudformation/home?region=AWS_REGION#/stacks?filteringText=&filteringStatus=active&viewNested=true
@@ -46,7 +46,7 @@ https://AWS_REGION.console.aws.amazon.com/cloudformation/home?region=AWS_REGION#
 
 To find your stack ARN:
 
-[![CFN Stack ARN](/media/cfn-stack-arn.png)](/media/cfn-stack-arn.png)
+[![CFN Stack ARN](../../media/cfn-stack-arn.png)](../../media/cfn-stack-arn.png)
 
 ```
 <!-- Change AWS_REGION to the region you deployed to -->

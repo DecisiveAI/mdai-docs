@@ -98,9 +98,9 @@ If you want to remove all helm artifacts installed (you don't use it your other 
    > kubectl port-forward <POD_NAME> <PORT>:<PORT>
    > ```
 
-5. View the MDAI Console at [http://localhost:5173](localhost:5173) 🐙🎉
+5. View the MDAI Console at [http://localhost:5173](http://localhost:5173) 🐙🎉
 
-![A bright and shiny MDAI Engine Console](../media/console-new-and-shiny.png)
+![A bright and shiny MDAI Engine Console](../../media/console-new-and-shiny.png)
 
 ## Generate and Collect telemetry
 
@@ -119,10 +119,10 @@ If you want to remove all helm artifacts installed (you don't use it your other 
 
 ## Validate data flow
 
-1. View the [local MDAI console](localhost:5173)
+1. View the [local MDAI console](http://localhost:5173)
 2. As telemetry flows through the engine, you will see counts increase in the console, color-coded by telemetry type. 🐙🎉
 
-![The MDAI Engine Console showing data flows](../media/console-data-flow.png)
+![The MDAI Engine Console showing data flows](../../media/console-data-flow.png)
 
 > Note: Data flowing to `debug` exporters are not counted towards data flow totals in the right sidebar
 

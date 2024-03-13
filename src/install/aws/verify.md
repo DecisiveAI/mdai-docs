@@ -13,7 +13,7 @@ kubectl get ns
 
 **Expected output**
 
-[![Verify namespaces](/media/verify-get-ns.png)](/media/verify-get-ns.png)
+[![Verify namespaces](../../media/verify-get-ns.png)](../../media/verify-get-ns.png)
 
 ### Verify pods
 
@@ -27,7 +27,7 @@ kubectl get pods
 
 Your output for default configuration should be similar to:
 
-[![Verify pods](/media/verify-get-pods.png)](/media/verify-get-pods.png)
+[![Verify pods](../../media/verify-get-pods.png)](../../media/verify-get-pods.png)
 
 ## Verify the Console is up and running
 
@@ -39,15 +39,15 @@ Your output for default configuration should be similar to:
 
 ### Step 2: Find the LB where the name is `mdai-console`
 
-[![LB List](/media/lb-list.png)](/media/lb-list.png)
+[![LB List](../../media/lb-list.png)](../../media/lb-list.png)
 
 ### Step 3: Copy DNS Name from `mdai-console` LB
 
-[![LB DNS Name](/media/load-balancers.png)](/media/load-balancers.png)
+[![LB DNS Name](../../media/load-balancers.png)](../../media/load-balancers.png)
 
 ### Step 4: Navigate to the URL and view the console
 
-[![Console Data Flow](/media/console-data-flow.png)](/media/console-data-flow.png)
+[![Console Data Flow](../../media/console-data-flow.png)](../../media/console-data-flow.png)
 
 <br />
 
