@@ -13,5 +13,5 @@ level = 2
 command = "mdbook-toc"
 renderer = ["html"]
 
-[output.html-google-analytics]
-optional = true
+[variables]
+gtag = "$MDBOOK_GOOGLE_ANALYTICS"
