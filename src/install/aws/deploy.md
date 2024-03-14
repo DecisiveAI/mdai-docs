@@ -77,5 +77,5 @@ https://AWS_REGION.console.aws.amazon.com/cloudformation/designer/home?region=AW
   <a href="./configure.md">Back to Configure Your Engine</a>
 </p>
 <p style="text-align: center;">
-  <a href="./ingress.md">Next Step: Configure Ingress >></a>
+  <a href="./verify.md">Next Step: Verify >></a>
 </p>
