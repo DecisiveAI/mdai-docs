@@ -1,14 +1,12 @@
-# MyDecisive (MDAI) Engine
+# Summary
+  [Overview](overview.md)
+# Introduction
 
-- [Introduction]()
-
-  - [Overview](./intro/overview.md)
   - [Architecture](./intro/architecture.md)
   - [The MDAI Engine](./intro/intro.md)
   - [Expectations](./intro/expectations.md)
 
-- [Installation]()
-
+# Installation
   - [Supported Methods for Installing an MDAI Engine](./install/installation.md)
   - [Local Install]()
     - [Quick Start](./install/local/quick-start.md)
@@ -24,6 +22,7 @@
     - [Deploy Your Engine](./install/aws/deploy.md)
     - [Verify Installation](./install/aws/verify.md)
     - [UI Auth](./install/aws/ui-auth.md)
+    - [Congratulation](./install/aws/congrats.md)
   - [Life Cycle Management]()
     - [Disable the Engine](./install/aws/disable.md)
     - [Enable the Engine](./install/aws/enable.md)
@@ -31,7 +30,7 @@
   - [Testing your Engine]()
     - [Generate & Receive Telemetry](./install/aws/generate-telemetry.md)
 
-- [Usage]()
+# Usage
   - [Using the MDAI Engine Console](./console/mdai-console.md)
 
 <!--
