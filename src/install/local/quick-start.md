@@ -125,5 +125,3 @@ If you want to remove all helm artifacts installed (you don't use it your other 
 ![The MDAI Engine Console showing data flows](../../media/console-data-flow.png)
 
 > Note: Data flowing to `debug` exporters are not counted towards data flow totals in the right sidebar
-
-## Next steps

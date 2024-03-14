@@ -20,5 +20,5 @@ Learn more about the specifications for the [OTEL Collector](https://opentelemet
 ### Option 2 - 🧳 Bring Your Own Configuration
 Want to use a custom or tried-and-true OTel configuration file that already works for you?
 
-Simply update the configuration file at `values/otel-config.yaml`).
+Simply update the configuration file at `values/otel-config.yaml`.
 
