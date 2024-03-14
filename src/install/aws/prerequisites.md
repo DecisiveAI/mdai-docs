@@ -18,6 +18,10 @@ export GOBIN=${GOBIN:-$(go env GOPATH)/bin}
 - Install [AWS CDK Toolkit](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install)
 - Install [AWS SSO](https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html)
 
+### User Requirements
+
+We never desire to exclude anyone from using our solutions. Instead we encourage and inspire you to obtain an intermediate knowledge of AWS (or a ton of grit) before continuing with this install. Here's a great [AWS Training](https://aws.amazon.com/training/) resource!
+
 <br />
 
 ----

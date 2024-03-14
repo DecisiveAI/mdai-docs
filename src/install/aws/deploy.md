@@ -1,9 +1,13 @@
 ## Deploying to AWS
 
+*🎶 Time for more [theme music](https://www.youtube.com/watch?v=ioE_O7Lm0I4) 🎶*
+
 **💪 Congratulations! You're about to provision an MDAI Engine! 💪**
 
+
 <div class="warning">
-  IMPORTANT! After deployment, the engine will be active and running in AWS. The current version of the engine was designed to be as cost-effective as possible, however you should still carefully monitor your spend and manage your engine capacity accordingly. If the engine is not actively being used for testing or managing telemetry pipelines, you may wish to shut it down to minimize your spend.
+  IMPORTANT! After deployment, the engine will be active and running in AWS. The current version of the engine was designed to be as cost-effective as possible, however you should still carefully monitor your spend and manage your engine capacity accordingly. If the engine is not actively being used for testing or managing telemetry pipelines, you may wish to shut it down to minimize your spend.<br /><br />
+  <em>We hope to have benchmarks soon for cost and performance of our engines.</em>
 </div>
 
 ### Deploy the MDAI Engine
@@ -13,11 +17,12 @@ make install
 ```
 <div class="warning">
   <b><em>Don't walk away just yet!</em></b>
-  <p>There's one more manual verification step required before CloudFormation will deploy all necessary infrastructure.</p>
+  <p>There's one more manual verification step required before CloudFormation will deploy all necessary infrastructure to get your engine up and running as soon as possible.</p>
 </div>
 
 
 ### The install workflow
+
 1. The install will check and bootstrap the CDK Toolkit if it's not present for your configured region.
 ![[bootstrap.png](../../media/bootstrap.png)](../../media/bootstrap.png)
 
@@ -54,11 +59,17 @@ To find your stack ARN:
 https://AWS_REGION.console.aws.amazon.com/cloudformation/designer/home?region=AWS_REGION&stackId=<STACK_ARN>#
 ```
 
-**Want to see how the MDAI Engine runs locally?**
+----
 
-🛠️ Build a local version while you're waiting! [QuickStart](../local/quick-start.md)
-
-<br />
+<center>
+  <h3>Want to see how the MDAI Engine runs locally?</h3>
+  <p>
+    🛠️ Build a local version while you're waiting!
+    <a href="../local/quick-start.md">
+      QuickStart
+    </a>
+  </p>
+</center>
 
 ----
 

@@ -24,5 +24,5 @@ aws configure sso
   <a href="./prerequisites.md">Back to Prerequisites</a>
 </p>
 <p style="text-align: center;">
-  <a href="./aws-sso.md">Next Step: Configure Your MDAI Engine >></a>
+  <a href="./configure.md">Next Step: Configure Your MDAI Engine >></a>
 </p>

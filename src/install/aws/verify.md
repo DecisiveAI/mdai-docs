@@ -54,8 +54,8 @@ Your output for default configuration should be similar to:
 ----
 
 <p style="text-align: center;">
-  <a href="./ingress.md">Back to Configure Ingress</a>
+  <a href="./deploy.md">Back to Deploy</a>
 </p>
 <p style="text-align: center;">
-  <a href="./generate-telemetry.md">Next Step: Generate & Receive Telemetry >></a>
+  <a href="./ui-auth.md">Next Step: UI Auth >></a>
 </p>
