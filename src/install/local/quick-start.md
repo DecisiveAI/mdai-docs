@@ -33,7 +33,7 @@ Here are installation steps:
 2. Install [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for local cluster management using docker containers
 3. Run automated installation script
 ```bash
-make -f ./make/Makefile-local-recipies create-mdai
+make -f ./make/Makefile-local-recipes create-mdai
 ```
 ### Automated uninstall
 Make sure your k8s context is set to `kind-mdai-local` cluster:
@@ -46,11 +46,11 @@ kubectl cluster-info --context kind-mdai-local
 ```
 Run automated de-installation script
 ```bash
- make -f ./make/Makefile-local-recipies delete-mdai
+ make -f ./make/Makefile-local-recipes delete-mdai
 ```
 If you want to remove all helm artifacts installed (you don't use it your other local setup), run the following
 ```bash
- make -f ./make/Makefile-local-recipies delete-mdai-all
+ make -f ./make/Makefile-local-recipes delete-mdai-all
 ```
 
 ### Manual pre-req installations
