@@ -16,7 +16,17 @@ You are going to learn to do the following in less than five minutes:
 
 ## Prerequisites
 
+<div class="warning">
+  <b>System Dependencies</b>
+  <ul>
+    <li>These docs assume that you have <a href="https://brew.sh/" target="_blank">homebrew</a> installed.</li>
+    <li>If you're using MacOS, you'll also need <a href="https://mac.install.guide/commandlinetools/" target="_blank">XCode Commandline Tools</a> installed.</li>
+    <li>You will also need to have <a href="https://kubernetes.io/releases/download/" target="_blank">Kubernetes</a> installed.</li>
+  </ul>
+</div>
+
 ### Automated installation
+
 Our automated installation process is setting up all the required dependencies like
 - Docker
 - Kind cluster
@@ -25,7 +35,7 @@ Our automated installation process is setting up all the required dependencies l
 - Go
 - Helm
 
->_Note: Once the Engine installed your k8s context will be switched automatically to new cluster._   
+>_Note: Once the Engine installed your k8s context will be switched automatically to new cluster._
 
 Here are installation steps:
 
@@ -35,20 +45,34 @@ Here are installation steps:
 ```bash
 make -f ./make/Makefile-local-recipes create-mdai
 ```
+
+<div class="warning">
+   <b>Other steps:</b>
+   While we install docker, you also need to ensure that the docker process is running. You can simply open the Docker app or start the Docker process to ensure the local runs flawlessly.
+</a>
+
 ### Automated uninstall
+
 Make sure your k8s context is set to `kind-mdai-local` cluster:
+
 ```bash
 kubectl config get-contexts
 ```
+
 Switch the context if needed:
+
 ```bash
 kubectl cluster-info --context kind-mdai-local
 ```
+
 Run automated de-installation script
+
 ```bash
  make -f ./make/Makefile-local-recipes delete-mdai
 ```
+
 If you want to remove all helm artifacts installed (you don't use it your other local setup), run the following
+
 ```bash
  make -f ./make/Makefile-local-recipes delete-mdai-all
 ```
