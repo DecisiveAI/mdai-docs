@@ -48,8 +48,16 @@ make -f ./make/Makefile-local-recipes create-mdai
 
 <div class="warning">
    <b>Other steps:</b>
-   While we install docker, you also need to ensure that the docker process is running. You can simply open the Docker app or start the Docker process to ensure the local runs flawlessly.
-</a>
+   Upon installation you encounter an error where Docker is the culprit, please ensure the docker daemon is running. If this doesn't fix the error, feel free to:
+   <ul>
+      <li>
+         Email us at <a href="mailto:support@mydecisive.ai">support@mydecisive.ai</a>
+      </li>
+      <li>
+         File an issue under the <a href="https://github.com/DecisiveAI/mdai-inkops">MDAI InkOps Project</a>
+      </li>
+   </ul>
+</div>
 
 ### Automated uninstall
 
