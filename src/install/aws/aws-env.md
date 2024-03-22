@@ -2,8 +2,12 @@
 
 Navigate to the `values/aws.env` file and start inputting the environment configuration that's relevant to your AWS account.
 
+<div class="warning">
+  Due to our engine's Load Balancer capabilities alongside security measures, we're only able to support full engine compatibility with a <a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/application/listener-authenticate-users.html#cognito-requirements" target="_blank" rel="noreferrer noopener">limited list</a> of AWS Regions.
+</div>
+
 ```
-# region where the engine going to be installed
+# region where the engine going to be installed.
 AWS_REGION=
 
 # AWS account to be used

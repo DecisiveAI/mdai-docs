@@ -2,9 +2,27 @@
 
 We knew it wouldn't be acceptable to leave your precious new resources unprotected and open to any user of the internet!
 
-*Enter Cognito*
+*...Enter Cognito...*
 
 We've added the ability to connect [Amazon Cognito](https://aws.amazon.com/cognito/) easily to your new Engine to limit access for undesired users.
+
+<div class="warning">
+  Cognito is not supported in all AWS Regions. If you run into issues
+  post-install, this is likely the reason. A typical error you would see looks like this:<br />
+  <code style="color: #d10707;">
+    Failed deploy model due to failed to create listener rule: ValidationError: Action type 'authenticate-cognito' must be one of 'redirect,fixed-response,forward,authenticate-oidc' status code: 400, request id: ########-####-####-####-############
+  </code><br /><br />
+  <b>The above error can be found in the AWS Console > EKS service.</b><br /><br />
+  You can access the ingress output manually:<br />
+  <code>
+    EKS > Clusters > [YOUR_CLUSTER] > Resources > Service and networking > Ingresses > ui-alb-ingress
+  </code><br /><br />
+  You can access the ingress output by hitting this link after updating the values in brackets:<br />
+  <code>
+    https://[AWS_REGION].console.aws.amazon.com/eks/home?region=[AWS_REGION]#/clusters/[YOUR_CLUSTER]/ingresses/ui-alb-ingress?namespace=default
+  </code><br />
+</div>
+
 Our installation includes the following resources upon creating an engine:
 
 1. [User pool](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html) `mdai-user-pool`

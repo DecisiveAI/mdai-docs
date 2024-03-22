@@ -16,16 +16,26 @@ You are going to learn to do the following in less than five minutes:
 
 ## Prerequisites
 
+<div class="warning">
+  <b>System Dependencies</b>
+  <ul>
+    <li>These docs assume that you have <a href="https://brew.sh/" target="_blank">homebrew</a> installed.</li>
+    <li>If you're using MacOS, you'll also need <a href="https://mac.install.guide/commandlinetools/" target="_blank">XCode Commandline Tools</a> installed.</li>
+    <li>You will also need to have <a href="https://kubernetes.io/releases/download/" target="_blank">Kubernetes</a> installed.</li>
+  </ul>
+</div>
+
 ### Automated installation
+
 Our automated installation process is setting up all the required dependencies like
 - Docker
 - Kind cluster
 - Npm
 - Aws CDK
 - Go
-- Helm
+- Helm (we support [Helm v3.13.0](https://github.com/helm/helm/releases/tag/v3.13.0) and later)
 
->_Note: Once the Engine installed your k8s context will be switched automatically to new cluster._   
+>_Note: Once the Engine installed your k8s context will be switched automatically to new cluster._
 
 Here are installation steps:
 
@@ -33,24 +43,46 @@ Here are installation steps:
 2. Install [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for local cluster management using docker containers
 3. Run automated installation script
 ```bash
-make -f ./make/Makefile-local-recipies create-mdai
+make -f ./make/Makefile-local-recipes create-mdai
 ```
+
+<div class="warning">
+   <b>Other steps:</b>
+   Upon installation you encounter an error where Docker is the culprit, please ensure the docker daemon is running. If this doesn't fix the error, feel free to:
+   <ul>
+      <li>
+         Email us at <a href="mailto:support@mydecisive.ai">support@mydecisive.ai</a>
+      </li>
+      <li>
+         File an issue under the <a href="https://github.com/DecisiveAI/mdai-inkops">MDAI InkOps Project</a>
+      </li>
+   </ul>
+</div>
+
 ### Automated uninstall
+
 Make sure your k8s context is set to `kind-mdai-local` cluster:
+
 ```bash
 kubectl config get-contexts
 ```
+
 Switch the context if needed:
+
 ```bash
 kubectl cluster-info --context kind-mdai-local
 ```
+
 Run automated de-installation script
+
 ```bash
- make -f ./make/Makefile-local-recipies delete-mdai
+ make -f ./make/Makefile-local-recipes delete-mdai
 ```
+
 If you want to remove all helm artifacts installed (you don't use it your other local setup), run the following
+
 ```bash
- make -f ./make/Makefile-local-recipies delete-mdai-all
+ make -f ./make/Makefile-local-recipes delete-mdai-all
 ```
 
 ### Manual pre-req installations

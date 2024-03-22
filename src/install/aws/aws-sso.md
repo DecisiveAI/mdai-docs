@@ -2,10 +2,13 @@
 
 To deploy an MDAI Engine, you'll need to use the AWS CLI.
 
+>**Note:** Our install steps use the recommended AWS CLI access method, AWS SSO. There are other [AWS CLI Access options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html) that you can use to interact with your AWS account.
+
 #### Login via the CLI
 
 ```shell
-aws configure sso
+# Assumes your machine is already configured access to AWS via `aws configure sso`.
+aws sso login --profile <AWS_PROFILE>
 ```
 
 #### Choose the right AWS Account and AWS Role
