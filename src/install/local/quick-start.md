@@ -33,7 +33,7 @@ Our automated installation process is setting up all the required dependencies l
 - Npm
 - Aws CDK
 - Go
-- Helm
+- Helm (we support [Helm v3.13.0](https://github.com/helm/helm/releases/tag/v3.13.0) and later)
 
 >_Note: Once the Engine installed your k8s context will be switched automatically to new cluster._
 

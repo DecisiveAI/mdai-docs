@@ -13,6 +13,8 @@ export GOBIN=${GOBIN:-$(go env GOPATH)/bin}
 ```
 - Install [node](https://nodejs.org/en/download).
 
+>**Note:** We do install Helm automatically, however, it's important to note that we support [Helm v3.13.0](https://github.com/helm/helm/releases/tag/v3.13.0) and later. If you have helm installed, but at an earlier version, we cannot guarantee our install process will work as expected.
+
 ### AWS Requirements
 
 - Install [AWS CDK Toolkit](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install)
