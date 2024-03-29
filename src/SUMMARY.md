@@ -1,5 +1,6 @@
 # Summary
   [Overview](overview.md)
+
 # Introduction
 
   - [Architecture](./intro/architecture.md)
@@ -9,7 +10,12 @@
 # Installation
   - [Supported Methods for Installing an MDAI Engine](./install/installation.md)
   - [Local Install]()
-    - [Quick Start](./install/local/quick-start.md)
+    - [Quick Start](./install/local/start.md)
+    - [Prerequisites](./install/local/prerequisites.md)
+    - [Installation](./install/local/install.md)
+      - [Semi-automated Install](./install/local/semiautomated-install.md)
+      - [Automated Install](./install/local/automated-install.md)
+    - [Destroy](./install/local/destroy.md)
   - [AWS Install]()
     - [Introduction](./install/aws/start.md)
     - [Prerequisites](./install/aws/prerequisites.md)
@@ -22,7 +28,7 @@
     - [Deploy Your Engine](./install/aws/deploy.md)
     - [Verify Installation](./install/aws/verify.md)
     - [UI Auth](./install/aws/ui-auth.md)
-    - [Congratulation](./install/aws/congrats.md)
+    - [Congratulations](./install/aws/congrats.md)
   - [Life Cycle Management]()
     - [Disable the Engine](./install/aws/disable.md)
     - [Enable the Engine](./install/aws/enable.md)
