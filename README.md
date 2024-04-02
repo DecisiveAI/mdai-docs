@@ -1,4 +1,4 @@
-<img src="src/media/logo_2.png" alt="MyDecisive logo">
+<img src="src/media/logo.png" alt="MyDecisive logo">
 
 ## ⚠️ **Pre-Alpha Disclaimer**
 This open-source project is currently under construction and is subject to frequent changes and updates. For more information about our pre-alpha release, see our [Pre-Alpha Disclaimer](./DISCLAIMER.md)
