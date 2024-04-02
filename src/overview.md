@@ -11,6 +11,11 @@ Read more about the tools that super power us!
 
 ... Or you can check out our [Architecture](./intro/architecture.md) to understand more about our infrastructure.
 
+## ⚠️ **Pre-Alpha Disclaimer**
+This open-source project is currently under construction and is subject to frequent changes and updates. For more information about our pre-alpha release, see our [Pre-Alpha Disclaimer](./DISCLAIMER.md)
+
+----
+
 <br />
 
 ----
