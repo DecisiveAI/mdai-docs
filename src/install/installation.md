@@ -1,3 +1,8 @@
+# ⚠️ **Pre-Alpha Disclaimer**
+This open-source project is currently under construction and is subject to frequent changes and updates. For more information about our pre-alpha release, see our [Pre-Alpha Disclaimer](./DISCLAIMER.md)
+
+----
+
 # Supported Installation Methods
 
 There are currently two supported methods for installing an MDAI Engine:
