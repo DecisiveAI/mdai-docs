@@ -1,4 +1,4 @@
-# DISCLAIMER
+# ⚠️ DISCLAIMER
 This pre-alpha release is an early version of our open source solution and is intended for testing and feedback purposes only. Please note that there are many changes and enhancements planned for future iterations, and the current version represents just the initial phase of development.
 
 ## Primary Functionality

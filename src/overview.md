@@ -16,7 +16,7 @@ Read more about the tools that super power us!
 
 ... Or you can check out our [Architecture](./intro/architecture.md) to understand more about our infrastructure.
 
-<br /> 
+<br />
 
 ----
 
