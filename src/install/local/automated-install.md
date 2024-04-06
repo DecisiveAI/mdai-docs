@@ -1,4 +1,5 @@
-## Automated installation
+# Automated installation
+----
 
 Our automated installation process is setting up all the required dependencies like
 - Docker
@@ -10,9 +11,10 @@ Our automated installation process is setting up all the required dependencies l
 
 Here are installation steps:
 
-1. Pull down the latest from the [MDAI infrastructure installation repo](https://github.com/DecisiveAI/mdai-inkops)
-2. Install [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for local cluster management using docker containers
-3. Run automated installation script
+- Git Clone to a local folder [MDAI infrastructure installation repo](https://github.com/DecisiveAI/mdai-inkops)
+- Install [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for local cluster management using docker containers
+   - if you have brew installed: `brew install kind`
+- Run automated installation script
 ```bash
 make -f ./make/Makefile-local-recipes create-mdai
 ```
@@ -36,8 +38,5 @@ make -f ./make/Makefile-local-recipes create-mdai
 
 ----
 
-<p style="text-align: center;">
-  <a href="./semiautomated-install.md">⏪ Back to Semi-Automated Install</a><br />
-  <a href="./automated-install.md">Next Step: Destroy ⏩</a><br />
-  <a href="./destroy.md">Skip Ahead to Local Destroy ⏭️</a>
-</p>
+<span class="left"><a href="./semiautomated-install.md">⏪ Back to Semi-Automated Install</a></span>
+<span class="right"><a href="./destroy.md">Next Step: Destroy ⏩</a></span>

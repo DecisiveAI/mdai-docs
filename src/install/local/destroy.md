@@ -1,5 +1,5 @@
-## Destroy MDAI Engine
-
+# Destroy MDAI Engine
+----
 Tired of using the MDAI Engine locally? 😭 We're sorry to see you go, but we understand.
 
 If you have feedback for us, please let us know why!

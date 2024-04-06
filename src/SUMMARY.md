@@ -11,7 +11,8 @@
 # Installation
   - [Supported Methods for Installing an MDAI Engine](./install/installation.md)
   - [Local Install]()
-    - [Quick Start](./install/local/start.md)
+    - [OLD Quick Start](./install/local/old-quick-start.md)
+    - [Quick Start](./install/local/quick-start.md)
     - [Prerequisites](./install/local/prerequisites.md)
     - [Installation](./install/local/install.md)
       - [Semi-automated Install](./install/local/semiautomated-install.md)

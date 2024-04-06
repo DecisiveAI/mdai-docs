@@ -1,29 +1,21 @@
-## Installation
+# Installation
+----
+### There are two options for installation:
 
-There are two options for installation.
-1. [Semi-automatic Install](./semiautomatic-install.md) - I want toinstall all system dependencies myself to be aware of and manage the MDAI requirements alongside my other software requirements.
-2. [Automated Install](./automated-install.md) - I want the fastest method for installation possible, so I can skip ahead to testing out the engine! I'm not worried about how the system dependencies impact my other development environments.
+- __Semi-automatic Install__ - I want to install all system dependencies myself to be aware of and manage the MDAI requirements alongside my other software requirements.
 
-**Choose your adventure...**
-<p>
-   <ul>
-      <li>
-         Option 1: <a href="./semiautomatic-install.md">Semi-Automatic Install ⏩</a>
-      </li>
-      <li>
-         Option 2: <a href="./automated-install.md">Automated Install ⏭️</a>
-      </li>
-   </ul>
+- __Automated Install__ - I want the fastest method for installation possible, so I can skip ahead to testing out the engine! I'm not worried about how the system dependencies impact my other development environments.
 
-</p>
+### Choose your adventure:
+
+Option 1: <a href="./semiautomatic-install.md">Semi-Automatic Install ⏩</a>
+
+Option 2: <a href="./automated-install.md">Automated Install ⏭️</a>
 
 
 <br />
 
 ----
 
-<p style="text-align: center;">
-  <a href="./prerequisites.md">⏪ Back to Prerequisites</a><br />
-  <a href="./semiautomated-install.md">Next Step: Semi-automatic Install ⏩</a><br />
-  <a href="./verify.md">Skip Ahead to Verify Engine ⏭️</a>
-</p>
+  <span class="left"><a href="./prerequisites.md">⏪ Back to Prerequisites</a></span>
+  <span class="right"><a href="./semiautomated-install.md">Next Step: Semi-automatic Install ⏩</a></span>
