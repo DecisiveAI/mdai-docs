@@ -37,8 +37,7 @@ make -f ./make/Makefile-local-recipes create-mdai
 ----
 
 <p style="text-align: center;">
-  <a href="./prerequisites.md">Back to Prerequisites</a>
-</p>
-<p style="text-align: center;">
-  <a href="./destroy.md">Next Step: Local Destroy >></a>
+  <a href="./semiautomated-install.md">⏪ Back to Semi-Automated Install</a><br />
+  <a href="./automated-install.md">Next Step: Destroy ⏩</a><br />
+  <a href="./destroy.md">Skip Ahead to Local Destroy ⏭️</a>
 </p>

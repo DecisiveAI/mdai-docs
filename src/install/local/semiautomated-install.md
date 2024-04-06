@@ -26,7 +26,7 @@ make -f ./make/Makefile-local-recipes create-mdai-semi-auto
 
 <p style="text-align: center;">
   <a href="./install.md">⏪ Back to Install</a><br />
-  <a href="./destroy.md">Next Step: Automated Install ⏩</a><br />
+  <a href="./automated-install.md">Next Step: Automated Install ⏩</a><br />
   <a href="./destroy.md">Skip Ahead to Local Destroy ⏭️</a>
 </p>
 
