@@ -25,7 +25,7 @@ Switch the context if needed:
 kubectl cluster-info --context kind-mdai-local
 ```
 
-### Destroy Cluster
+### Uninstall Cluster
 
 Run automated de-installation script
 
@@ -33,7 +33,7 @@ Run automated de-installation script
  make -f ./make/Makefile-local-recipes delete-mdai
 ```
 
-### Optional: Destroy all helm artifacts
+### Optional: Uninstall all helm artifacts
 
 If you want to remove all helm artifacts installed (you don't use it your other local setup), run the following
 

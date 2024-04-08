@@ -16,7 +16,7 @@
     - [Installation](./install/local/install.md)
       - [Semi-automated Install](./install/local/semiautomated-install.md)
       - [Automated Install](./install/local/automated-install.md)
-      - [Removal](./install/local/remove.md)
+      - [Uninstall](./install/local/uninstall.md)
     - [Setup](./install/local/setup.md)
     - [Generate and Collect Telemetry](./install/local/generate-collect.md)
     - [Validate Data Flow](./install/local/validate.md)
@@ -36,7 +36,7 @@
   - [Life Cycle Management]()
     - [Disable the Engine](./install/aws/disable.md)
     - [Enable the Engine](./install/aws/enable.md)
-    - [Destroy the Engine](./install/aws/destroy.md)
+    - [Uninstall the Engine](./install/aws/uninstall.md)
   - [Testing your Engine]()
     - [Generate & Receive Telemetry](./install/aws/generate-telemetry.md)
 

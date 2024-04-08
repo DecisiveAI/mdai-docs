@@ -8,7 +8,7 @@ As mentioned, the only manual step for this install method is to enable you to h
 - Install [Go](https://go.dev/dl/) (1.20 or higher).
 - [GOBIN environment variable](https://pkg.go.dev/cmd/go#hdr-Environment_variables) is set; if unset, initialize it appropriately, for example:
 
- ```bash
+ ```shell
  export GOBIN=${GOBIN:-$(go env GOPATH)/bin}
  ```
 
@@ -19,7 +19,7 @@ As mentioned, the only manual step for this install method is to enable you to h
 
 ## Install Commands
 
-```bash
+```shell
 make -f ./make/Makefile-local-recipes create-mdai-semi-auto
 ```
 

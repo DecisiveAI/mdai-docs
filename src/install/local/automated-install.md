@@ -15,7 +15,8 @@ Here are installation steps:
 - Install [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for local cluster management using docker containers
    - if you have brew installed: `brew install kind`
 - Run automated installation script
-```bash
+
+```shell
 make -f ./make/Makefile-local-recipes create-mdai
 ```
 
@@ -39,4 +40,4 @@ make -f ./make/Makefile-local-recipes create-mdai
 ----
 
 <span class="left"><a href="./semiautomated-install.md">⏪ Back to Semi-Automated Install</a></span>
-<span class="right"><a href="./remove.md">Next Step: Removal ⏩</a></span>
+<span class="right"><a href="./uninstall.md">Next Step: Uninstall ⏩</a></span>

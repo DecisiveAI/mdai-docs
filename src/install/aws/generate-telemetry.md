@@ -64,5 +64,5 @@ A general workflow is as follows:
   <a href="./disable.md">Optional Next Step: Disable the Engine >></a>
 </p>
 <p style="text-align: center;">
-  <a href="./destroy.md">Optional Next Step: Destroy the Engine >></a>
+  <a href="./uninstall.md">Optional Next Step: Uninstall the Engine >></a>
 </p>

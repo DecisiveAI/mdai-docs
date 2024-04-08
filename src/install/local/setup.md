@@ -38,6 +38,6 @@
 
 
 ----
-<span class="left"><a href="./remove.md">⏪ Back to Removal</a></span>
+<span class="left"><a href="./uninstall.md">⏪ Back to Uninstall</a></span>
 <span class="right"><a href="./generate-collect.md">Next Step: Generate Telemetry ⏩</a></span>
 

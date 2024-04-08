@@ -1,5 +1,5 @@
 
-# Destroy the MDAI Engine
+# Uninstall the MDAI Engine
 ----
 
 Tired of using the MDAI Engine? 😭 We're sorry to see you go, but we understand. If you have feedback for us, please fill out.
