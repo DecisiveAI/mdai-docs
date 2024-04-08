@@ -16,4 +16,4 @@
 
    ----
 <span class="left"><a href="./setup.md">⏪ Back to Setup</a></span>
-<span class="right"><a href="./validate.md">Validate Data Flow ⏩</a></span>
+<span class="right"><a href="./validate.md">Next Step: Validate Data Flow ⏩</a></span>

@@ -38,4 +38,4 @@ Let's add it to the `values/params-values-otel.yaml` file as the values for the 
 
 ----
 <span class="left"><a href="./otel-config.md">⏪ Back to: OTel Configuration</a></span>
-<span class="right"><a href="./apply-config.md">Applying configuration ⏩</a></span>
+<span class="right"><a href="./apply-config.md">Next Step: Applying configuration ⏩</a></span>

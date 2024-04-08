@@ -47,4 +47,4 @@ MDAI_UI_USER_POOL_DOMAIN=
 
 ----
 <span class="left"><a href="./repo.md">⏪ Back to: Check Us Out!</a></span>
-<span class="right"><a href="./otel-config.md">OTel config ⏩</a></span>
+<span class="right"><a href="./otel-config.md">Next Step: OTel config ⏩</a></span>

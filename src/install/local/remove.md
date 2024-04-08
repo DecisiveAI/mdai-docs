@@ -43,4 +43,4 @@ If you want to remove all helm artifacts installed (you don't use it your other 
 
 ----
 <span class="left"><a href="./automated-install.md">⏪ Back to Automated Install</a></span>
-<span class="right"><a href="./setup.md">Setup ⏩</a></span>
+<span class="right"><a href="./setup.md">Next Step: Setup ⏩</a></span>

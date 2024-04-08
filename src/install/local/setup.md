@@ -39,5 +39,5 @@
 
 ----
 <span class="left"><a href="./remove.md">⏪ Back to Removal</a></span>
-<span class="right"><a href="./generate-collect.md">Generate and Collect Telemetry ⏩</a></span>
+<span class="right"><a href="./generate-collect.md">Next Step: Generate Telemetry ⏩</a></span>
 

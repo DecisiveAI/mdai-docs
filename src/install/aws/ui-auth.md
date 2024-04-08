@@ -51,4 +51,4 @@ to create users(s) in `mdai-user-pool`.
 
 ----
 <span class="left"><a href="./verify.md">⏪ Back to: Verify Installation</a></span>
-<span class="right"><a href="./congrats.md">Congratulations! ⏩</a></span>
+<span class="right"><a href="./congrats.md">Next Step: Congratulations! ⏩</a></span>
