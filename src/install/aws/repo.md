@@ -3,7 +3,7 @@
 
 🎵 *[Here's some mood music](https://www.youtube.com/watch?v=wyx6JDQCslE)* 🎵
 
-### Clone the MDAI InkOps Toolkit
+## Clone the MDAI InkOps Toolkit
 
 Visit our GitHub repo to access our [MDAI InkOps Toolkit](https://github.com/DecisiveAI/mdai-inkops)
 

@@ -1,6 +1,6 @@
 # Prerequisites
 ----
-### System Dependencies
+## System Dependencies
 Currently, our documentation is tailored for users operating on Linux or Mac computers. Additionally, it assumes you have the following:
   - You have <a href="https://brew.sh/" target="_blank">🍺 homebrew</a> installed.
   - You’re using __bash__, but you can modify these configurations and commands as needed for your preferred command line interface.

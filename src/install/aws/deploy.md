@@ -11,7 +11,7 @@
   <em>We hope to have benchmarks soon for cost and performance of our engines.</em>
 </div>
 
-### Deploy the MDAI Engine
+## Deploy the MDAI Engine
 
 ```shell
 make install

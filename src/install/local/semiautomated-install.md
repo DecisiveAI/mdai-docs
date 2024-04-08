@@ -1,7 +1,7 @@
 # Semi-Automated installation
 ----
 
-### Additional Prerequisites
+## Additional Prerequisites
 
 As mentioned, the only manual step for this install method is to enable you to have full visibility and control of your system dependencies.
 
@@ -17,7 +17,7 @@ As mentioned, the only manual step for this install method is to enable you to h
 - Install [docker](https://www.docker.com/get-started/)
 - Install [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for local cluster management using docker containers
 
-### Install Commands
+## Install Commands
 
 ```bash
 make -f ./make/Makefile-local-recipes create-mdai-semi-auto

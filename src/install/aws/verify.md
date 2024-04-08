@@ -1,4 +1,4 @@
-# ✅⚖️ Trust But Verify ⚖️✅
+# Verify installation
 
 ----
 

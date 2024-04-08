@@ -29,7 +29,7 @@ Our installation includes the following resources upon creating an engine:
 1. [User pool](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html) `mdai-user-pool`
 2. [App client](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html) `mdai-app-client`
 
-### ⚙️ Pre-built configuration
+## ⚙️ Pre-built configuration
 
 The following environment variables need to be defined in `values/aws.env` during the pre-build configuration step:
 
@@ -42,7 +42,7 @@ This variable contains a prefix for [User pool domain](https://docs.aws.amazon.c
 is used with this installation, so this variable represents a prefix, for the domain.
 This domain name will become a part of the auth redirecting URL.
 
-### 🧍User(s) creation
+## 🧍User(s) creation
 
 The only manual step required is a user(s) creation.
 Please follow the [Amazon Cognito User Pool documentation](https://docs.aws.amazon.com/cognito/latest/developerguide/managing-users.html) steps
