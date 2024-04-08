@@ -36,3 +36,6 @@ Let's add it to the `values/params-values-otel.yaml` file as the values for the 
 * `service.beta.kubernetes.io/aws-load-balancer-ssl-cert`
 * `alb.ingress.kubernetes.io/certificate-arn`
 
+----
+<span class="left"><a href="./otel-config.md">⏪ Back to: OTel Configuration</a></span>
+<span class="right"><a href="./apply-config.md">Applying configuration ⏩</a></span>

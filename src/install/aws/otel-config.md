@@ -22,3 +22,6 @@ Want to use a custom or tried-and-true OTel configuration file that already work
 
 Simply update the configuration file at `values/otel-config.yaml`.
 
+----
+<span class="left"><a href="./aws-env.md">⏪ Back to: AWS Env Config</a></span>
+<span class="right"><a href="./adding-certs.md">Adding Certificates ⏩</a></span>

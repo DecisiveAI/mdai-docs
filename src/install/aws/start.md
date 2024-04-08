@@ -1,4 +1,5 @@
 # 🪄 Introduction 🪄
+----
 
 We hope that deploying an MDAI Engine to AWS will help you to:
 1. ☁️ Manage your MDAI Engine in the cloud.
@@ -25,5 +26,5 @@ To begin visualizing your telemetry pipelines using an MDAI Engine, you will nee
 <p style="text-align: center;">
   <em>Ready... Set... </em><br />
   <b>🏃 Let's get started! 🏃‍♀️</b><br /><br />
-  <a href="./prerequisites.md">Next Step: Prerequisites</a>
+  <a href="./prerequisites.md">Next Step: Prerequisites ⏩</a>
 </p>

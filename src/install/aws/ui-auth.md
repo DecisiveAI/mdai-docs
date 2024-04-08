@@ -1,4 +1,5 @@
-## 🔐 UI Authentication
+# 🔐 UI Authentication
+----
 
 We knew it wouldn't be acceptable to leave your precious new resources unprotected and open to any user of the internet!
 
@@ -46,3 +47,8 @@ This domain name will become a part of the auth redirecting URL.
 The only manual step required is a user(s) creation.
 Please follow the [Amazon Cognito User Pool documentation](https://docs.aws.amazon.com/cognito/latest/developerguide/managing-users.html) steps
 to create users(s) in `mdai-user-pool`.
+
+
+----
+<span class="left"><a href="./verify.md">⏪ Back to: Verify Installation</a></span>
+<span class="right"><a href="./congrats.md">Congratulations! ⏩</a></span>

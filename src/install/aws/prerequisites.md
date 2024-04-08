@@ -1,5 +1,5 @@
-## Prerequisites
-
+# AWS Install Prerequisites
+____
 ### System Requirements
 
 Ensure your development environment has access to all of the following software and settings.
@@ -27,10 +27,6 @@ We never desire to exclude anyone from using our solutions. Instead we encourage
 <br />
 
 ----
+<span class="left"><a href="./start.md">⏪ Back to: Getting Started</a></span>
+<span class="right"><a href="./aws-sso.md">Next Step: Configure AWS SSO ⏩</a></span>
 
-<p style="text-align: center;">
-  <a href="./start.md">Back to Getting Started</a>
-</p>
-<p style="text-align: center;">
-  <a href="./aws-sso.md">Next Step: Configure AWS SSO >></a>
-</p>

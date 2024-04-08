@@ -1,4 +1,5 @@
-## 🐙 Check us out!
+# 🐙 Check us out!
+----
 
 🎵 *[Here's some mood music](https://www.youtube.com/watch?v=wyx6JDQCslE)* 🎵
 
@@ -15,3 +16,9 @@ Navigate to the directory you just installed our toolkit.
 # go to directory for the mdai-inkops toolkit
 cd mdai-inkops
 ```
+
+----
+
+<span class="left"><a href="./aws-sso.md">⏪ Back to: Configuring AWS SSO</a></span>
+<span class="right"><a href="./aws-env.md">AWS Config ⏩</a></span>
+

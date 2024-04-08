@@ -1,4 +1,5 @@
-## Deploying to AWS
+# Deploying to AWS
+----
 
 *🎶 Time for more [theme music](https://www.youtube.com/watch?v=ioE_O7Lm0I4) 🎶*
 
@@ -73,10 +74,5 @@ https://AWS_REGION.console.aws.amazon.com/cloudformation/designer/home?region=AW
 </center>
 
 ----
-
-<p style="text-align: center;">
-  <a href="./configure.md">Back to Configure Your Engine</a>
-</p>
-<p style="text-align: center;">
-  <a href="./verify.md">Next Step: Verify >></a>
-</p>
+<span class="left"><a href="./apply-config.md">⏪ Back to: Configure Your Engine</a></span>
+<span class="right"><a href="./verify.md">Verify Installation ⏩</a></span>

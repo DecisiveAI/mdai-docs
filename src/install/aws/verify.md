@@ -1,5 +1,7 @@
 # ✅⚖️ Trust But Verify ⚖️✅
 
+----
+
 ## Verify the MDAI Engine via kubectl
 Ensure your cluster is up and running.
 
@@ -49,13 +51,7 @@ Your output for default configuration should be similar to:
 
 [![Console Data Flow](../../media/console-data-flow.png)](../../media/console-data-flow.png)
 
-<br />
 
 ----
-
-<p style="text-align: center;">
-  <a href="./deploy.md">Back to Deploy</a>
-</p>
-<p style="text-align: center;">
-  <a href="./ui-auth.md">Next Step: UI Auth >></a>
-</p>
+<span class="left"><a href="./deploy.md">⏪ Back to: Deploy</a></span>
+<span class="right"><a href="./ui-auth.md"> UI Auth ⏩</a></span>
