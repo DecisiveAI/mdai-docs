@@ -1,4 +1,4 @@
-# Destroy MDAI Engine
+# Remove MDAI Engine
 ----
 Tired of using the MDAI Engine locally? 😭 We're sorry to see you go, but we understand.
 
@@ -9,7 +9,7 @@ If you have feedback for us, please let us know why!
 
 
 ### Automated uninstall
-Follow the steps below to destroy your local MDAI Engine
+Follow the steps below to remove your local MDAI Engine
 
 #### Ensure you have the correct k8s context selected.
 
@@ -40,3 +40,7 @@ If you want to remove all helm artifacts installed (you don't use it your other 
 ```bash
  make -f ./make/Makefile-local-recipes delete-mdai-all
 ```
+
+----
+<span class="left"><a href="./automated-install.md">⏪ Back to Automated Install</a></span>
+<span class="right"><a href="./setup.md">Setup ⏩</a></span>

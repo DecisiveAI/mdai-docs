@@ -8,7 +8,7 @@
 
 ### Choose your adventure:
 
-Option 1: <a href="./semiautomatic-install.md">Semi-Automatic Install ⏩</a>
+Option 1: <a href="./semiautomated-install.md">Semi-Automatic Install ⏩</a>
 
 Option 2: <a href="./automated-install.md">Automated Install ⏭️</a>
 
