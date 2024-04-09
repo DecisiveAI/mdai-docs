@@ -15,13 +15,13 @@ Follow the steps below to remove your local MDAI Engine
 
 Make sure your k8s context is set to `kind-mdai-local` cluster:
 
-```bash
+```shell
 kubectl config get-contexts
 ```
 
 Switch the context if needed:
 
-```bash
+```shell
 kubectl cluster-info --context kind-mdai-local
 ```
 
@@ -29,7 +29,7 @@ kubectl cluster-info --context kind-mdai-local
 
 Run automated de-installation script
 
-```bash
+```shell
  make -f ./make/Makefile-local-recipes delete-mdai
 ```
 
@@ -37,7 +37,7 @@ Run automated de-installation script
 
 If you want to remove all helm artifacts installed (you don't use it your other local setup), run the following
 
-```bash
+```shell
  make -f ./make/Makefile-local-recipes delete-mdai-all
 ```
 

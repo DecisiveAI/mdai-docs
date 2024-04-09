@@ -42,7 +42,7 @@ Here are installation steps:
 1. Pull down the latest from the [MDAI infrastructure installation repo](https://github.com/DecisiveAI/mdai-inkops)
 2. Install [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for local cluster management using docker containers
 3. Run automated installation script
-```bash
+```shell
 make -f ./make/Makefile-local-recipes create-mdai
 ```
 
@@ -63,25 +63,25 @@ make -f ./make/Makefile-local-recipes create-mdai
 
 Make sure your k8s context is set to `kind-mdai-local` cluster:
 
-```bash
+```shell
 kubectl config get-contexts
 ```
 
 Switch the context if needed:
 
-```bash
+```shell
 kubectl cluster-info --context kind-mdai-local
 ```
 
 Run automated de-installation script
 
-```bash
+```shell
  make -f ./make/Makefile-local-recipes delete-mdai
 ```
 
 If you want to remove all helm artifacts installed (you don't use it your other local setup), run the following
 
-```bash
+```shell
  make -f ./make/Makefile-local-recipes delete-mdai-all
 ```
 
@@ -89,7 +89,7 @@ If you want to remove all helm artifacts installed (you don't use it your other 
 
 - Install [Go](https://go.dev/dl/) (1.20 or higher).
 - [GOBIN environment variable](https://pkg.go.dev/cmd/go#hdr-Environment_variables) is set; if unset, initialize it appropriately, for example:
- ```bash
+ ```shell
  export GOBIN=${GOBIN:-$(go env GOPATH)/bin}
  ```
 - Install [npm](https://nodejs.org/en/download)
@@ -100,7 +100,7 @@ If you want to remove all helm artifacts installed (you don't use it your other 
 ## Setup Environment
 
 1. Create a cluster where the Engine can be installed. For our example, we'll use kind.
-   > ```@bash
+   > ```@shell
    > <!--  Create cluster -->
    > kind create cluster --name mdai-local
    >
@@ -109,14 +109,14 @@ If you want to remove all helm artifacts installed (you don't use it your other 
    > ```
 2. Setup and configure a local instance of the MDAI Engine
 
-   > ````@bash
+   > ```shell
    > make local-deploy
    > kubectl-config
-   > ````
+   > ```
 
 3. Ensure your cluster is up and running.
 
-   > ```@bash
+   > ```@shell
    > kubectl get pods
    > ```
    >
@@ -137,11 +137,11 @@ If you want to remove all helm artifacts installed (you don't use it your other 
 ## Generate and Collect telemetry
 
 1. Install OpenTelemetry's [telemetrygen](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen) utility.
-   > ```@bash
+   > ```@shell
    > go install github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemetrygen@latest
    > ```
 2. Send Telemetry to the collector
-   > ```@bash
+   > ```@shell
    > $GOBIN/telemetrygen traces --otlp-insecure --traces 3
    > ```
 3. _Optional: Add a cronjob to schedule telemetry at a cadence_

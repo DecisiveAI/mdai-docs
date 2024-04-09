@@ -34,7 +34,7 @@ Delete listed dependencies by following steps below or through AWS Console.
         --profile <your_profile>
         ```
     - Delete security groups if the destroy failed to delete the VPC. Use the VPC ID from the cdk error output:
-        ```bash
+        ```shell
         for sg_id in $(aws ec2 describe-security-groups --region <your_region> --profile <your_profile> --filters Name=vpc-id,Values='<your_vpc_id>' --query 'SecurityGroups[?GroupName!=`default`].[GroupId]' --output text); do
             aws ec2 delete-security-group --group-id $sg_id --region <your_region> --profile <your_profile>
             echo "Deleted security group $sg_id"

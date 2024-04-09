@@ -1,7 +1,7 @@
 # Setup Environment
 ----
 1. Create a cluster where the Engine can be installed. For our example, we'll use kind.
-   > ```@bash
+   > ```@shell
    > <!--  Create cluster -->
    > kind create cluster --name mdai-local
    >
@@ -10,14 +10,14 @@
    > ```
 2. Setup and configure a local instance of the MDAI Engine
 
-   > ````@bash
+   > ```shell
    > make local-deploy
    > kubectl-config
-   > ````
+   > ```
 
 3. Ensure your cluster is up and running.
 
-   > ```@bash
+   > ```@shell
    > kubectl get pods
    > ```
    >
