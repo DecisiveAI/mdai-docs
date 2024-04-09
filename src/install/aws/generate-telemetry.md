@@ -15,7 +15,7 @@ You can create a [CronJob](https://kubernetes.io/docs/tasks/job/automated-tasks-
 
 #### Step 2 - Apply the cronjob to your cluster
 ```shell
-kubectl apply -f filename.yaml
+kubectl apply -f <cron_filename.yaml>
 ```
 
 #### Step 3 - Validate job is running
