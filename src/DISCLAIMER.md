@@ -14,3 +14,16 @@ The primary functionality of this pre-alpha release is an installer for cloud-ba
 We value your feedback and contributions to help us improve our open source solution. Please share your thoughts, suggestions, and bug reports with us via support@mydecisive.ai.
 
 Thank you for participating in our pre-alpha testing phase!
+
+<br />
+
+----
+
+<br />
+
+<span class="left">
+   <a href="./overview.md">⏪ Back to Overview</a>
+</span>
+<span class="right">
+   <a href="./install/installation.md">Next Step: Installation ⏩</a>
+</span>

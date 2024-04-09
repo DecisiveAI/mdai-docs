@@ -4,7 +4,7 @@
 
 # Introduction
 
-  - [Architecture](./intro/architecture.md)
+  - [Architecture](./intro/architecture/architecture.md)
   - [The MDAI Engine](./intro/intro.md)
   - [Expectations](./intro/expectations.md)
 
