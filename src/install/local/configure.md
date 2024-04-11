@@ -28,11 +28,11 @@ Simply update the configuration file at `values/otel-config.yaml`.
 After you've configured you OTel pipelines to your heart's desire, you can apply your changes by running
 
 ```shell
-# Update config file within the cluster directory, it will get applied to your cluster instance automatically via a k8s operator
+# Update config file within the cluster directory, it will get applied to your cluster instance automatically via a k8s operator.
 kubectl apply -f values/otel-config.yaml
 ```
 
 ----
-<span class="left"><a href="./uninstall.md">⏪ Back to Uninstall</a></span>
+<span class="left"><a href="./local/install.md">⏪ Back to Uninstall</a></span>
 <span class="right"><a href="./generate-collect.md">Next Step: Verify ⏩</a></span>
 

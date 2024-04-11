@@ -7,7 +7,7 @@ MDAI Engine lifecycle management involves post-creation operations to control th
 The common use cases for lifecycle management are highlighted below...
 1. [Disable Engine Ingress](./disable.md) - Disable ingress to validate that data flow has stopped.
 2. [Enable Engine Ingress](./enable.md) - Enable ingress to validate that data flow has been re-instantiated.
-3. [Uninstall Engine](./destroy.md) - Destroy all artifacts associated with the MDAI Engine.
+3. [Destroy Engine](./destroy.md) - Destroy all artifacts associated with the MDAI Engine.
 
 
 ## 🚨 Important considerations for Life Cycle Management 🚨

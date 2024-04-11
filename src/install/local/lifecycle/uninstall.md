@@ -1,4 +1,4 @@
-# Remove MDAI Engine
+# Uninstall the engine
 ----
 Tired of using the MDAI Engine locally? 😭 We're sorry to see you go, but we understand.
 
