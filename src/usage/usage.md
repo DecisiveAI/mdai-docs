@@ -8,6 +8,13 @@ Explanation of core concepts and terminology.
 
 ## Terminology
 
+<!-- Define:
+- Engine
+- Console
+- Telemetery
+- more...
+-->
+
 ## Use Cases
 
 ## Use cases and Boilerplate examples
