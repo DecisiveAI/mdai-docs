@@ -1,6 +1,12 @@
+# Compiled output.
 book
 dist
+
+# OS Droppings.
 .DS_Store
+
+
+# IDE Droppings.
 .vscode
 .idea/workspace.xml
 .idea/vcs.xml
