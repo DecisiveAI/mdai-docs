@@ -25,3 +25,7 @@ TODO: make a target for an automated flow
 
 1. Apply the configuration to disable ingress using `kubectl apply -f disable-ingress.yaml`.
 2. Verify that incoming traffic no longer reaches the cluster, confirming that data flow has stopped. -->
+
+----
+<span class="left"><a href="./overview.md">⏪ Back to: Lifecycle Management Overview</a></span>
+<span class="right"><a href="./enable-engine.md">Next Step:  Enable Engine ⏩</a></span>

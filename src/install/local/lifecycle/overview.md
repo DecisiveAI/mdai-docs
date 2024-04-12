@@ -16,3 +16,6 @@ The common use cases for lifecycle management are highlighted below...
 * Always review and test configurations before applying changes to avoid unintended consequences.
 * Use caution when destroying a cluster, as it will permanently delete all associated resources.
 
+----
+<span class="left"><a href="/install/local/validate.md">⏪ Back to: Validate</a></span>
+<span class="right"><a href="./disable-engine.md">Next Step: Disable the Engine ⏩</a></span>

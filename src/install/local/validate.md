@@ -8,4 +8,7 @@
 
 > Note: Data flowing to `debug` exporters are not counted towards data flow totals in the right sidebar
 
-<span class="left"><a href="./generate-collect.md">⏪ Back to Generate and Collect</a></span>
+----
+<span class="left"><a href="./generate-telemetry-local.md">⏪ Back to Generate & Collect Telemetry</a></span>
+<span class="right"><a href="./lifecycle/overview.md">Next Step: Life Cycle Management ⏩</a></span>
+

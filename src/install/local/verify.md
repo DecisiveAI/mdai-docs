@@ -1,4 +1,5 @@
 # Verify local MDAI Engine
+----
 
 ## Configure MDAI Console (UI) to use localhost
 
@@ -29,5 +30,5 @@ You should now be able to view the MDAI Console at your newly configured port, i
 
 ----
 <span class="left"><a href="./configure.md">⏪ Back to Configure</a></span>
-<span class="right"><a href="./generate-collect.md">Next Step: Generate Telemetry ⏩</a></span>
+<span class="right"><a href="./generate-telemetry-local.md">Next Step: Generate & Collect Telemetry ⏩</a></span>
 

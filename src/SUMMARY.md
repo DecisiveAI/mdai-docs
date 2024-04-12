@@ -18,7 +18,7 @@
       - [Automated Install](./install/local/automated-install.md)
     - [Configure](./install/local/configure.md)
     - [Verify](./install/local/verify.md)
-    - [Generate and Collect Telemetry](./generate-telemetry.md)
+    - [Generate and Collect Telemetry](./install/local/generate-telemetry-local.md)
     - [Validate Data Flow](./install/local/validate.md)
     - [Life Cycle Management](./install/local/lifecycle/overview.md)
       - [Disable the Engine](./install/local/lifecycle/disable-engine.md)
@@ -42,7 +42,7 @@
       - [Enable the Engine](./install/aws/lifecycle/enable-engine.md)
       - [Uninstall the Engine](./install/aws//lifecycle/destroy-engine.md)
   - [Testing your Engine]()
-    - [Generate & Receive Telemetry](./generate-telemetry.md)
+    - [Generate & Receive Telemetry](./install/aws/generate-telemetry-aws.md)
 
 # Usage
   - [Using the MDAI Engine Console](./console/mdai-console.md)

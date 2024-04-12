@@ -33,6 +33,6 @@ kubectl apply -f values/otel-config.yaml
 ```
 
 ----
-<span class="left"><a href="./local/install.md">⏪ Back to Uninstall</a></span>
-<span class="right"><a href="./generate-collect.md">Next Step: Verify ⏩</a></span>
+<span class="left"><a href="./install.md">⏪ Back to Install</a></span>
+<span class="right"><a href="./verify.md">Next Step: Verify ⏩</a></span>
 
