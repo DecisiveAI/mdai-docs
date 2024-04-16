@@ -1,7 +1,7 @@
 # 🐙 Check us out!
 ----
 
-🎵 *[Here's some mood music](https://www.youtube.com/watch?v=wyx6JDQCslE)* 🎵
+🎵 *[Here's some mood music](https://youtu.be/6iuGp9gUeNk?feature=shared&t=18)* 🎵
 
 ## Clone the MDAI InkOps Toolkit
 

@@ -6,7 +6,7 @@
 
   - [Architecture](./intro/architecture/architecture.md)
   - [The MDAI Engine](./intro/intro.md)
-  - [Expectations](./intro/expectations.md)
+  - [Pre-Alpha Expectations](./intro/expectations.md)
 
 # Installation
   - [Supported Methods for Installing an MDAI Engine](./install/installation.md)
@@ -18,12 +18,14 @@
       - [Automated Install](./install/local/automated-install.md)
     - [Configure](./install/local/configure.md)
     - [Verify](./install/local/verify.md)
-    - [Generate and Collect Telemetry](./install/local/generate-telemetry-local.md)
     - [Validate Data Flow](./install/local/validate.md)
     - [Life Cycle Management](./install/local/lifecycle/overview.md)
       - [Disable the Engine](./install/local/lifecycle/disable-engine.md)
       - [Enable the Engine](./install/local/lifecycle/enable-engine.md)
       - [Uninstall the Engine](./install/local/lifecycle/uninstall.md)
+    - [Testing your Engine]()
+      - [Generate and Collect Telemetry](./install/testing.md)
+    - [Congrats!](./install/congrats.md)
   - [AWS Install]()
     - [Introduction](./install/aws/start.md)
     - [Prerequisites](./install/aws/prerequisites.md)
@@ -36,13 +38,13 @@
     - [Deploy Your Engine](./install/aws/deploy.md)
     - [Verify Installation](./install/aws/verify.md)
     - [UI Auth](./install/aws/ui-auth.md)
-    - [Congratulations](./install/aws/congrats.md)
     - [Life Cycle Management]()
       - [Disable the Engine](./install/aws/lifecycle/disable-engine.md)
       - [Enable the Engine](./install/aws/lifecycle/enable-engine.md)
       - [Uninstall the Engine](./install/aws//lifecycle/destroy-engine.md)
-  - [Testing your Engine]()
-    - [Generate & Receive Telemetry](./install/aws/generate-telemetry-aws.md)
+    - [Testing your Engine]()
+      - [Generate and Collect Telemetry](./install/testing.md)
+    - [Congrats!](./install/congrats.md)
 
 # Usage
   - [Using the MDAI Engine Console](./console/mdai-console.md)

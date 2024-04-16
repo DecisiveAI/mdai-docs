@@ -1,4 +1,4 @@
-# Generate and Receive Telemetry - AWS
+# Generate and Receive Telemetry - Local
 ----
 
 ## What kind of user are you?
@@ -8,7 +8,7 @@
 
 ### Option 1 - Use test data
 
-Using [TelemetryGen](https://example.com) is a great option if you're not ready to commit to the costs associated with ingress/egress. It's all local to the cluster you have just deployed, so there will not be additional charges, minus the compute required to generate and process the telemetry.
+Using [TelemetryGen](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen) is a great option if you're not ready to commit to the costs associated with ingress/egress. It's all local to the cluster you have just deployed, so there will not be additional charges, minus the compute required to generate and process the telemetry.
 
 
 #### Step 1 - Create or use cronjobs
@@ -58,12 +58,16 @@ A general workflow is as follows:
 
 ----
 
-<p style="text-align: center;">
-  <a href="./verify.md">Back to Verify Installation</a>
-</p>
-<p style="text-align: center;">
-  <a href="./disable.md">Optional Next Step: Disable the Engine >></a>
-</p>
-<p style="text-align: center;">
-  <a href="./uninstall.md">Optional Next Step: Uninstall the Engine >></a>
-</p>
+<b>Coming from <em>local</em> install?...</b>
+
+<span class="left"><a href="./local/verify.md">⏪ Back to Verify Installation</a></span>
+<span class="right"><a href="./local/validate.md">Next Step: Validate ⏩</a></span>
+
+<br />
+<br />
+
+<b>Coming from <em>AWS</em> install?...</b>
+
+
+<span class="left"><a href="./aws/verify.md">⏪ Back to Verify Installation</a></span>
+<span class="right"><a href="./aws/validate.md">Next Step: Validate ⏩</a></span>

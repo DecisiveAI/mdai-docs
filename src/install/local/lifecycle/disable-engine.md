@@ -2,7 +2,7 @@
 
 You may need to temporarily halt incoming traffic to perform maintenance or troubleshoot issues without impacting data flow.
 
-## How to Disable
+## How to Disable...
 
 ### Manual
 
@@ -18,13 +18,17 @@ spec:
 <!-- this doesn't work - must fix -->
 `kubectl apply -f values/params-values-otel.yaml`
 
-<!--
-TODO: make a target for an automated flow
 
 ### Automated
 
+Check back soon, we're working on an automated flow for disabling your engine.
+
+<!--
+TODO: make a target for an automated flow
 1. Apply the configuration to disable ingress using `kubectl apply -f disable-ingress.yaml`.
 2. Verify that incoming traffic no longer reaches the cluster, confirming that data flow has stopped. -->
+
+<br />
 
 ----
 <span class="left"><a href="./overview.md">⏪ Back to: Lifecycle Management Overview</a></span>

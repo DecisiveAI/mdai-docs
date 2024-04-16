@@ -54,3 +54,11 @@ Delete listed dependencies by following steps below or through AWS Console.
 
 ### Data Persistence - Prometheus
 
+<div class="warning">
+  <p>
+    Currently, there is no data persistence for Prometheus. If you destroy your engine, you'll also be destroying your prometheus instance and all associated data. 🪦
+  </p>
+  <p>
+    Until MDAI is able to support a more robust persistence layer or snapshot capability, we recommend using a <a href="https://prometheus.io/docs/prometheus/latest/storage/#remote-storage-integrations" target="_blank">remote storage option</a> for your persistence needs.
+  </p>
+</div>

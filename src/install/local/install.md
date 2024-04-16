@@ -12,6 +12,15 @@ Option 1: <a href="./semiautomated-install.md">Semi-Automatic Install ⏩</a>
 
 Option 2: <a href="./automated-install.md">Automated Install ⏭️</a>
 
+### Check us out!
+
+First things first, you have to check out our [MDAI infrastructure installation repo](https://github.com/DecisiveAI/mdai-inkops).
+
+```shell
+git clone https://github.com/DecisiveAI/mdai-inkops.git
+```
+
+🎵 *[Here's some mood music](https://youtu.be/6iuGp9gUeNk?feature=shared&t=15)* 🎵
 
 <br />
 
