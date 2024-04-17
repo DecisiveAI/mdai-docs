@@ -1,4 +1,5 @@
-## 🔒 Securing your Engine with Certs!
+# 🔒 Securing your Engine with Certs!
+----
 
 *🙆‍♀️ Let's take a quick stretch break..*
 
@@ -10,9 +11,9 @@ Trust us, we're truly here to help ease the pain of configuration and security f
 
 *🙆🏽‍♂️ Okay.. one more stretch.. that's better.. back to it!*
 
-### Step 1: Assigning SSL Certificates for your custom domain
+## Step 1: Assigning SSL Certificates for your custom domain
 
-#### Option 1: 🚜 AutoGen a Cert
+### Option 1: 🚜 AutoGen a Cert
 
 Let us help! We created a simple command that not only autogenerates a cert, it also uploads your cert to your AWS account based on your `aws.env` values you updated earlier.
 
@@ -20,7 +21,7 @@ Let us help! We created a simple command that not only autogenerates a cert, it 
 make cert
 ```
 
-#### Option 2: 🤝 BYO Cert
+### Option 2: 🤝 BYO Cert
 
 [ACM Import Instructions](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate-api-cli.html)
 
@@ -28,7 +29,7 @@ Once you have access to your certificate in AWS ACM, it will be accessible via A
 
 *🚨 ‼️ **NOTE: Don't forget to copy that ARN from either step!** ‼️ 🚨*
 
-### Step 2. Adding your cert ARN to the right places
+## Step 2. Adding your cert ARN to the right places
 
 🪰 Remember that ARN we keep pestering you about? 🪰
 
@@ -36,3 +37,6 @@ Let's add it to the `values/params-values-otel.yaml` file as the values for the 
 * `service.beta.kubernetes.io/aws-load-balancer-ssl-cert`
 * `alb.ingress.kubernetes.io/certificate-arn`
 
+----
+<span class="left"><a href="./otel-config.md">⏪ Back to: OTel Configuration</a></span>
+<span class="right"><a href="./apply-config.md">Next Step: Applying configuration ⏩</a></span>

@@ -16,11 +16,11 @@ Read more about the tools that super power us!
 
 ... Or you can check out our [Architecture](./intro/architecture.md) to understand more about our infrastructure.
 
-<br /> 
+<br />
 
 ----
 
 <p style="text-align: center;">
-  <em>✈️ Want to jump ahead to install? Wait no more!</em><br />
-  <a href="./install/installation.md">Installation guide</a>
+  <em>Want to jump ahead to install? Wait no more!</em><br />
+  <a href="./install/installation.md">Installation guide ⏭️</a>
 </p>

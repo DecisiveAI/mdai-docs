@@ -1,7 +1,13 @@
+# Destroy MDAI Engine
 
-## Destroy the MDAI Engine
+----
 
 Tired of using the MDAI Engine? 😭 We're sorry to see you go, but we understand. If you have feedback for us, please fill out.
+
+When decommissioning a cluster or performing a clean-up operation, you need to delete all resources and configurations.
+
+## How to Destroy
+
 
 Follow the steps below to destroy the AWS Stack.
 Due to AWS CDK limitations several additional steps required to fully remove all MDAI Engine resources from AWS.
@@ -33,10 +39,32 @@ Delete listed dependencies by following steps below or through AWS Console.
         --profile <your_profile>
         ```
     - Delete security groups if the destroy failed to delete the VPC. Use the VPC ID from the cdk error output:
-        ```bash
+        ```shell
         for sg_id in $(aws ec2 describe-security-groups --region <your_region> --profile <your_profile> --filters Name=vpc-id,Values='<your_vpc_id>' --query 'SecurityGroups[?GroupName!=`default`].[GroupId]' --output text); do
             aws ec2 delete-security-group --group-id $sg_id --region <your_region> --profile <your_profile>
             echo "Deleted security group $sg_id"
         done
         ```
 - Run the destroy process again.
+
+
+1. Delete all artifacts associated with the cluster using `kubectl delete -f cluster-manifests/`.
+2. Confirm the deletion of pods, services, deployments, and other resources, effectively destroying the Kubernetes cluster.
+
+
+### Data Persistence - Prometheus
+
+<div class="warning">
+  <p>
+    Currently, there is no data persistence for Prometheus. If you destroy your engine, you'll also be destroying your prometheus instance and all associated data. 🪦
+  </p>
+  <p>
+    Until MDAI is able to support a more robust persistence layer or snapshot capability, we recommend using a <a href="https://prometheus.io/docs/prometheus/latest/storage/#remote-storage-integrations" target="_blank">remote storage option</a> for your persistence needs.
+  </p>
+</div>
+
+<br />
+
+----
+<span class="left"><a href="./disable-engine.md">⏪ Back to: Disable Engine </a></span>
+<span class="right"><a href="../../congrats.md">Next Step: Congrats  ⏩</a></span>

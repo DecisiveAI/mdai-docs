@@ -6,8 +6,8 @@ This open-source project is currently under construction and is subject to frequ
 # Supported Installation Methods
 
 There are currently two supported methods for installing an MDAI Engine:
-
-<!-- toc -->
+1. **Local** - on your machine
+2. **AWS** - in your AWS account
 
 ## Local Installation
 
@@ -22,3 +22,10 @@ Check out our [Quick Start Guide](./local/quick-start.md) to learn how to test t
 Install an MDAI Engine in [AWS](./aws/start.md).
 
 Additional installation methods will be supported in the future.
+
+
+----
+<span class="right"><a href="./local/quick-start.md">💻 Go to Local Install ⏭️</a></span>
+<br /><br />
+<span class="right"><a href="./aws/start.md">☁️ Go to AWS Install ⏭️</a></span>
+

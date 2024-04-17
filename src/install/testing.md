@@ -1,4 +1,5 @@
-# Generate and Receive Telemetry
+# Generate and Receive Telemetry - Local
+----
 
 ## What kind of user are you?
 
@@ -7,7 +8,7 @@
 
 ### Option 1 - Use test data
 
-Using [TelemetryGen](https://example.com) is a great option if you're not ready to commit to the costs associated with ingress/egress. It's all local to the cluster you have just deployed, so there will not be additional charges, minus the compute required to generate and process the telemetry.
+Using [TelemetryGen](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen) is a great option if you're not ready to commit to the costs associated with ingress/egress. It's all local to the cluster you have just deployed, so there will not be additional charges, minus the compute required to generate and process the telemetry.
 
 
 #### Step 1 - Create or use cronjobs
@@ -15,7 +16,7 @@ You can create a [CronJob](https://kubernetes.io/docs/tasks/job/automated-tasks-
 
 #### Step 2 - Apply the cronjob to your cluster
 ```shell
-kubectl apply -f filename.yaml
+kubectl apply -f <cron_filename.yaml>
 ```
 
 #### Step 3 - Validate job is running
@@ -57,12 +58,40 @@ A general workflow is as follows:
 
 ----
 
-<p style="text-align: center;">
-  <a href="./verify.md">Back to Verify Installation</a>
-</p>
-<p style="text-align: center;">
-  <a href="./disable.md">Optional Next Step: Disable the Engine >></a>
-</p>
-<p style="text-align: center;">
-  <a href="./destroy.md">Optional Next Step: Destroy the Engine >></a>
-</p>
+## Coming from Local Install?
+
+<span class="left" style="width: 50%">
+  <a href="./local/verify.md">⏪ Back to Verify Installation</a>
+</span>
+<span class="right" style="width: 50%">
+  <span>Want to validate telemetry data flowing through your pipelines?</span>
+  <br />
+  <a href="./local/validate.md">Next Step: Validate ⏩</a>
+  <br />
+  <br />
+  <span>Know how to validate data flow already?</span>
+  <a href="congrats.md">Next Step: Congrats! ⏩</a>
+</span>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+## Coming from AWS Install?
+
+<div>
+  <span class="left" style="width: 50%">
+    <a href="./aws/verify.md">⏪ Back to Verify Installation</a>
+  </span>
+  <span class="right" style="width: 50%">
+    <span>Want to validate telemetry data flowing through your pipelines?</span>
+    <br />
+    <a href="./aws/validate.md">Next Step: Validate ⏩</a>
+    <br />
+    <br />
+    <span>Know how to validate data flow already?</span>
+    <a href="congrats.md">Next Step: Congrats! ⏩</a>
+  </span>
+</div>

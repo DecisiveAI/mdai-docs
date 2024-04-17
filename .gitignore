@@ -1,6 +1,12 @@
+# Compiled output.
 book
 dist
+
+# OS Droppings.
 .DS_Store
+
+
+# IDE Droppings.
 .vscode
 .idea/workspace.xml
 .idea/vcs.xml
@@ -8,3 +14,4 @@ dist
 .idea/modules.xml
 .idea/shelf/Uncommitted_changes_before_rebase_\[Changes\]/shelved.patch
 .idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml
+*.code-workspace

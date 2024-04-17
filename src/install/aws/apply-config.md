@@ -1,4 +1,5 @@
-## 🔧 Apply configuration to the MDAI Engine
+# 🔧 Apply configuration to the MDAI Engine
+____
 
 We're now going to run a configuration script to all those configs you've worked so hard on and apply them to a deployment script.
 
@@ -21,11 +22,7 @@ make config
   </center>
 </div>
 
-----
 
-<p style="text-align: center;">
-  <a href="./adding-certs.md">Back to Adding Certs</a>
-</p>
-<p style="text-align: center;">
-  <a href="./deploy.md">Next Step: Deploy Your MDAI Engine! >></a>
-</p>
+----
+<span class="left"><a href="./adding-certs.md">⏪ Back to: Adding Certs</a></span>
+<span class="right"><a href="./deploy.md">Next Step: Deploy your MDAI engine! ⏩</a></span>

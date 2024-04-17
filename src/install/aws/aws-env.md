@@ -1,4 +1,5 @@
-## Let's update your AWS Environment Configs
+# Let's update your AWS Environment Configs
+----
 
 Navigate to the `values/aws.env` file and start inputting the environment configuration that's relevant to your AWS account.
 
@@ -42,3 +43,8 @@ MDAI_UI_USER_POOL_DOMAIN=
       <code>MDAI_UI_USER_POOL_DOMAIN</code> - This setting will create some auto configs/mappings to help put auth into your public facing urls -- namely the MDAI Console <br/><br/>
     </p>
 </div>
+
+
+----
+<span class="left"><a href="./repo.md">⏪ Back to: Check Us Out!</a></span>
+<span class="right"><a href="./otel-config.md">Next Step: OTel config ⏩</a></span>

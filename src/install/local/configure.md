@@ -1,4 +1,4 @@
-# ⏲️ Time for OpenTelemetry! 📈
+# ⏲️ Time to Configure OpenTelemetry! 📈
 
 Let's update your Engine's OTel configuration file.
 
@@ -11,8 +11,8 @@ We have provided a default configuration for a simplified version of the OpenTel
 *MOARRR CHOICES!*
 
 You can...
-1. Use the config as is and update at your will later
-2. you can start making modifications right now
+1. Use the config as is to accelerate through configuration
+2. Making modifications right now that better fit your pipeline needs
 
 Learn more about the specifications for the [OTEL Collector](https://opentelemetry.io/docs/collector/) to make the best decisions for your telemetry pipelines configuration needs.
 
@@ -22,6 +22,17 @@ Want to use a custom or tried-and-true OTel configuration file that already work
 
 Simply update the configuration file at `values/otel-config.yaml`.
 
+
+## Apply change
+
+After you've configured you OTel pipelines to your heart's desire, you can apply your changes by running
+
+```shell
+# Update config file within the cluster directory, it will get applied to your cluster instance automatically via a k8s operator.
+kubectl apply -f values/otel-config.yaml
+```
+
 ----
-<span class="left"><a href="./aws-env.md">⏪ Back to: AWS Env Config</a></span>
-<span class="right"><a href="./adding-certs.md">Next Step: Adding Certificates ⏩</a></span>
+<span class="left"><a href="./install.md">⏪ Back to Install</a></span>
+<span class="right"><a href="./verify.md">Next Step: Verify ⏩</a></span>
+
