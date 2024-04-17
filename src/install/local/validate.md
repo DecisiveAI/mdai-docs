@@ -11,4 +11,3 @@
 ----
 <span class="left"><a href="../testing.md">⏪ Back to Generate & Collect Telemetry</a></span>
 <span class="right"><a href="./lifecycle/overview.md">Next Step: Life Cycle Management ⏩</a></span>
-
