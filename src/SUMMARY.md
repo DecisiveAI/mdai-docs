@@ -37,6 +37,7 @@
     - [Apply Configs](./install/aws/apply-config.md)
     - [Deploy Your Engine](./install/aws/deploy.md)
     - [Verify Installation](./install/aws/verify.md)
+    - [Validate Installation](./install/aws/validate.md)
     - [UI Auth](./install/aws/ui-auth.md)
     - [Life Cycle Management]()
       - [Disable the Engine](./install/aws/lifecycle/disable-engine.md)

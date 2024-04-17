@@ -11,7 +11,6 @@ Our automated installation process is setting up all the required dependencies l
 
 Here are installation steps:
 
-- Git Clone to a local folder [MDAI infrastructure installation repo](https://github.com/DecisiveAI/mdai-inkops)
 - Install [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for local cluster management using docker containers
    - if you have brew installed: `brew install kind`
 - Run automated installation script
