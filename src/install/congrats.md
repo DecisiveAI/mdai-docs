@@ -14,5 +14,5 @@ Please give us your unfiltered thoughts!
 
 ----
 <span class="left"><a href="./installation.md">⏪ Back to: Installation</a></span>
-<span class="left"><a href="../console/mdai-console.md">Next up: MDAI Console Usage ⏭️</a></span>
+<span class="right"><a href="../console/mdai-console.md">Next up: MDAI Console Usage ⏭️</a></span>
 

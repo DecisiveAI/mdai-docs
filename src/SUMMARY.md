@@ -42,7 +42,7 @@
     - [Life Cycle Management]()
       - [Disable the Engine](./install/aws/lifecycle/disable-engine.md)
       - [Enable the Engine](./install/aws/lifecycle/enable-engine.md)
-      - [Uninstall the Engine](./install/aws//lifecycle/destroy-engine.md)
+      - [Uninstall the Engine](./install/aws/lifecycle/destroy-engine.md)
     - [Testing your Engine]()
       - [Generate and Collect Telemetry](./install/testing.md)
     - [Congrats!](./install/congrats.md)
