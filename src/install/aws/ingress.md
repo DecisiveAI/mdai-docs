@@ -109,7 +109,7 @@ metadata:
   name: test-collector
   namespace: default
   annotations:
-	service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:us-east-1:1234567890:certificate/th15-15-@n-@ut0g3n3r@ted-numb3r
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:us-east-1:1234567890:certificate/th15-15-@n-@ut0g3n3r@ted-numb3r
 ```
 
 ## Console
