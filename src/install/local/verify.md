@@ -7,7 +7,7 @@
 
 One of the pods installed will contain a web app. Let's list out all cluster pods to find what your pod's name is.
 
-_Note: the pod that starts with `mydecisive-engine-ui-<hash_id>`_
+_Note: the pod that starts with `mdai-console-<hash_id>`_
 
 ```shell
 kubectl get pods
@@ -16,7 +16,7 @@ kubectl get pods
 ### Enable port forwarding from cluster to localhost
 
 ```shell
-<!-- Example kubectl port-forward mydecisive-engine-ui-abcd123-xyz1 5173:5173 -->
+<!-- Example kubectl port-forward mdai-console-abcd123-xyz1 5173:5173 -->
 kubectl port-forward <POD_NAME> <PORT>:<PORT>
 ```
 
