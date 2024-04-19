@@ -25,7 +25,7 @@ MDAI_EC2_INSTANCE_SIZE=micro
 # Number of cluster EC2 nodes
 MDAI_CLUSTER_CAPACITY=10
 
-# Amazon Resource Name (ARN) of the certificate to be used for the Engine UI endpoint
+# Amazon Resource Name (ARN) of the certificate to be used for the Console endpoint
 MDAI_UI_HOSTNAME=
 
 # The domain name to tie your auth to, e.g., 'example.com' would use 'example' here
