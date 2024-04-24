@@ -55,3 +55,6 @@ Your output for default configuration should be similar to:
 ----
 <span class="left"><a href="./deploy.md">⏪ Back to: Deploy</a></span>
 <span class="right"><a href="./validate.md">Next Step: Validate ⏩</a></span>
+
+
+{{#include ./footer.md}}

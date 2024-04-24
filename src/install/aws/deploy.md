@@ -76,3 +76,6 @@ https://AWS_REGION.console.aws.amazon.com/cloudformation/designer/home?region=AW
 ----
 <span class="left"><a href="./apply-config.md">⏪ Back to: Configure Your Engine</a></span>
 <span class="right"><a href="./verify.md">Next Step: Verify Installation ⏩</a></span>
+
+
+{{#include ./footer.md}}

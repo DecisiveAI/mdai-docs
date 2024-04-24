@@ -28,3 +28,6 @@ aws sso login --profile <AWS_PROFILE>
 <span class="left"><a href="./prerequisites.md"> ⏪ Back to: Prerequisites</a></span>
 <span class="right"><a href="./repo.md">Next Step: Check us out! ⏩ </a></span>
 </div>
+
+
+{{#include ./footer.md}}

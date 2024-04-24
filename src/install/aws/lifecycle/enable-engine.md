@@ -19,16 +19,9 @@ spec:
 `kubectl apply -f values/params-values-otel.yaml`
 
 
-### Automated
-
-Check back soon, we're working on an automated flow for disabling your engine.
-
-<!--
-1. Apply the configuration to enable ingress using `kubectl apply -f enable-ingress.yaml`.
-2. Verify that incoming traffic reaches the cluster again, confirming that data flow has been re-instantiated.  -->
-
-<br />
-
 ----
 <span class="left"><a href="./disable-engine.md">⏪ Back to: Disable Engine </a></span>
 <span class="right"><a href="./destroy-engine.md">Next Step: Destroy Engine  ⏩</a></span>
+
+
+{{#include ../footer.md}}

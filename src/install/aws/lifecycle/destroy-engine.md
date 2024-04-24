@@ -68,3 +68,6 @@ Delete listed dependencies by following steps below or through AWS Console.
 ----
 <span class="left"><a href="./disable-engine.md">⏪ Back to: Disable Engine </a></span>
 <span class="right"><a href="../../congrats.md">Next Step: Congrats  ⏩</a></span>
+
+
+{{#include ../footer.md}}

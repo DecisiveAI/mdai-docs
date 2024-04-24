@@ -26,3 +26,6 @@ make config
 ----
 <span class="left"><a href="./adding-certs.md">⏪ Back to: Adding Certs</a></span>
 <span class="right"><a href="./deploy.md">Next Step: Deploy your MDAI engine! ⏩</a></span>
+
+
+{{#include ./footer.md}}

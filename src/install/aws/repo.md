@@ -22,3 +22,5 @@ cd mdai-inkops
 <span class="left"><a href="./aws-sso.md">⏪ Back to: Configuring AWS SSO</a></span>
 <span class="right"><a href="./aws-env.md">Next Step: AWS Config ⏩</a></span>
 
+
+{{#include ./footer.md}}

@@ -30,3 +30,6 @@ We never desire to exclude anyone from using our solutions. Instead we encourage
 <span class="left"><a href="./start.md">⏪ Back to: Getting Started</a></span>
 <span class="right"><a href="./aws-sso.md">Next Step: Configure AWS SSO ⏩</a></span>
 
+
+
+{{#include ./footer.md}}
