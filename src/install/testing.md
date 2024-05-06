@@ -4,7 +4,7 @@
 ## What kind of user are you?
 
 1. I don't have any existing agents/collectors that I can use to send telemetry right now. **Use Option 1!**
-2. I have existing sources of telemetry I'd love to point to my new engine! **Use Option 2!**
+2. I have existing sources of telemetry I'd love to point to my new nucleus! **Use Option 2!**
 
 ### Option 1 - Use test data
 
@@ -38,7 +38,7 @@ kubectl get cronjob --watch
 kubectl delete cronjob job-name
 ```
 <div class="warning">
-  <em>It is critical that you delete the cronjob once testing is complete, otherwise engine costs will continue to increase as the engine continues to processes all incoming telemetry data.</em>
+  <em>It is critical that you delete the cronjob once testing is complete, otherwise nucleus costs will continue to increase as the nucleus continues to processes all incoming telemetry data.</em>
 </div>
 
 ### Option 2 - Use real data
@@ -47,12 +47,12 @@ kubectl delete cronjob job-name
 
 A general workflow is as follows:
 
-1. Determine which sources of data (collector/agent) you'd like to point at your MDAI Engine instance.
+1. Determine which sources of data (collector/agent) you'd like to point at your MDAI Nucleus instance.
 2. Use your CNAME (from your host provider) or DNS (from AWS LB) as mentioned in our [Ingress documentation](./ingress.md).
 3. Configure your agent/collector to point to the CNAME or DNS as mentioned in our [Ingress documentation](./ingress.md).
 4. SEE RESULTS! [Verify data flow](./verify.md)
 
-🎉 That's it! Your MDAI Engine is now ready to use! 🎉
+🎉 That's it! Your MDAI Nucleus is now ready to use! 🎉
 
 <br />
 

@@ -19,7 +19,7 @@ Here are installation steps:
 make -f ./make/Makefile-local-recipes create-mdai
 ```
 
->_Note: Once the Engine installed your k8s context will be switched automatically to new cluster._
+>_Note: Once the Nucleus installed your k8s context will be switched automatically to new cluster._
 
 <div class="warning">
    <b>Other steps:</b>

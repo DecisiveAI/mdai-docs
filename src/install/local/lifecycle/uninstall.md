@@ -1,6 +1,6 @@
-# Uninstall the engine
+# Uninstall the nucleus
 ----
-Tired of using the MDAI Engine locally? 😭 We're sorry to see you go, but we understand.
+Tired of using the MDAI Nucleus locally? 😭 We're sorry to see you go, but we understand.
 
 If you have feedback for us, please let us know why!
 1. [Support team email](mailto:support@mydecisive.ai)
@@ -9,7 +9,7 @@ If you have feedback for us, please let us know why!
 
 ## Automated uninstall
 
-When decommissioning a cluster or performing a clean-up operation, you need to delete all resources and configurations. Follow the steps below to uninstall your local MDAI Engine.
+When decommissioning a cluster or performing a clean-up operation, you need to delete all resources and configurations. Follow the steps below to uninstall your local MDAI Nucleus.
 
 ### Ensure you have the correct k8s context selected.
 
@@ -55,7 +55,7 @@ If you want to remove all helm artifacts installed (you don't use it your other 
 
 <div class="warning">
   <p>
-    Currently, there is no data persistence for Prometheus. If you destroy your engine, you'll also be destroying your prometheus instance and all associated data. 🪦
+    Currently, there is no data persistence for Prometheus. If you destroy your nucleus, you'll also be destroying your prometheus instance and all associated data. 🪦
   </p>
   <p>
     Until MDAI is able to support a more robust persistence layer or snapshot capability, we recommend using a <a href="https://prometheus.io/docs/prometheus/latest/storage/#remote-storage-integrations" target="_blank">remote storage option</a> for your persistence needs.
@@ -65,5 +65,5 @@ If you want to remove all helm artifacts installed (you don't use it your other 
 <br />
 
 ----
-<span class="left"><a href="./enable-engine.md">⏪ Back to: Enable Engine</a></span>
+<span class="left"><a href="./enable-nucleus.md">⏪ Back to: Enable Nucleus</a></span>
 <span class="right"><a href="../../congrats.md">Next Step: Congrats ⏩</a></span>

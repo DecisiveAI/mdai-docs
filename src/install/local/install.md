@@ -1,10 +1,10 @@
-# Installation
+# Local Installation
 ----
-## There are two options for installation:
+## There are two options for local installation:
 
 - __Semi-automatic Install__ - I want to install all system dependencies myself to be aware of and manage the MDAI requirements alongside my other software requirements.
 
-- __Automated Install__ - I want the fastest method for installation possible, so I can skip ahead to testing out the engine! I'm not worried about how the system dependencies impact my other development environments.
+- __Automated Install__ - I want the fastest method for installation possible, so I can skip ahead to testing out the nucleus! I'm not worried about how the system dependencies impact my other development environments.
 
 ### Choose your adventure:
 

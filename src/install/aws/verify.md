@@ -2,7 +2,7 @@
 
 ----
 
-## Verify the MDAI Engine via kubectl
+## Verify the MDAI Nucleus via kubectl
 Ensure your cluster is up and running.
 
 ### Verify namespaces
@@ -55,3 +55,6 @@ Your output for default configuration should be similar to:
 ----
 <span class="left"><a href="./deploy.md">⏪ Back to: Deploy</a></span>
 <span class="right"><a href="./validate.md">Next Step: Validate ⏩</a></span>
+
+
+{{#include ./footer.md}}

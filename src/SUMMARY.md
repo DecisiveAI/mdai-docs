@@ -5,11 +5,11 @@
 # Introduction
 
   - [Architecture](./intro/architecture/architecture.md)
-  - [The MDAI Engine](./intro/intro.md)
+  - [The MDAI Nucleus](./intro/intro.md)
   - [Pre-Alpha Expectations](./intro/expectations.md)
 
 # Installation
-  - [Supported Methods for Installing an MDAI Engine](./install/installation.md)
+  - [Supported Methods for Installing an MDAI Nucleus](./install/installation.md)
   - [Local Install]()
     - [Quick Start](./install/local/quick-start.md)
     - [Prerequisites](./install/local/prerequisites.md)
@@ -20,10 +20,10 @@
     - [Verify](./install/local/verify.md)
     - [Validate Data Flow](./install/local/validate.md)
     - [Life Cycle Management](./install/local/lifecycle/overview.md)
-      - [Disable the Engine](./install/local/lifecycle/disable-engine.md)
-      - [Enable the Engine](./install/local/lifecycle/enable-engine.md)
-      - [Uninstall the Engine](./install/local/lifecycle/uninstall.md)
-    - [Testing your Engine]()
+      - [Disable the Nucleus](./install/local/lifecycle/disable-nucleus.md)
+      - [Enable the Nucleus](./install/local/lifecycle/enable-nucleus.md)
+      - [Uninstall the Nucleus](./install/local/lifecycle/uninstall.md)
+    - [Testing your Nucleus]()
       - [Generate and Collect Telemetry](./install/testing.md)
     - [Congrats!](./install/congrats.md)
   - [AWS Install]()
@@ -35,20 +35,20 @@
     - [OTel Config](./install/aws/otel-config.md)
     - [Certificates](./install/aws/adding-certs.md)
     - [Apply Configs](./install/aws/apply-config.md)
-    - [Deploy Your Engine](./install/aws/deploy.md)
+    - [Deploy Your Nucleus](./install/aws/deploy.md)
     - [Verify Installation](./install/aws/verify.md)
     - [Validate Installation](./install/aws/validate.md)
     - [UI Auth](./install/aws/ui-auth.md)
     - [Life Cycle Management]()
-      - [Disable the Engine](./install/aws/lifecycle/disable-engine.md)
-      - [Enable the Engine](./install/aws/lifecycle/enable-engine.md)
-      - [Uninstall the Engine](./install/aws/lifecycle/destroy-engine.md)
-    - [Testing your Engine]()
+      - [Disable the Nucleus](./install/aws/lifecycle/disable-nucleus.md)
+      - [Enable the Nucleus](./install/aws/lifecycle/enable-nucleus.md)
+      - [Uninstall the Nucleus](./install/aws/lifecycle/destroy-nucleus.md)
+    - [Testing your Nucleus]()
       - [Generate and Collect Telemetry](./install/testing.md)
     - [Congrats!](./install/congrats.md)
 
 # Usage
-  - [Using the MDAI Engine Console](./console/mdai-console.md)
+  - [Using the MDAI Nucleus Console](./console/mdai-console.md)
 
 <!--
 # Usage Guide

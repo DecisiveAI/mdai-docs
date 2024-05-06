@@ -1,4 +1,4 @@
-## Disable Engine
+## Disable Nucleus
 
 - Set replica count to `0` in `values/params-values-otel.yaml`:
 

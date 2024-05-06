@@ -1,4 +1,4 @@
-# 🔒 Securing your Engine with Certs!
+# 🔒 Securing your Nucleus with Certs!
 ----
 
 *🙆‍♀️ Let's take a quick stretch break..*
@@ -7,7 +7,7 @@ You might be feeling like this right now "🙄 ... more configs?!?"
 
 😬 We know, we know.. so many options.
 
-Trust us, we're truly here to help ease the pain of configuration and security for your MDAI Engine. Hang with us, we're so close to done!
+Trust us, we're truly here to help ease the pain of configuration and security for your MDAI Nucleus. Hang with us, we're so close to done!
 
 *🙆🏽‍♂️ Okay.. one more stretch.. that's better.. back to it!*
 
@@ -40,3 +40,6 @@ Let's add it to the `values/params-values-otel.yaml` file as the values for the 
 ----
 <span class="left"><a href="./otel-config.md">⏪ Back to: OTel Configuration</a></span>
 <span class="right"><a href="./apply-config.md">Next Step: Applying configuration ⏩</a></span>
+
+
+{{#include ./footer.md}}

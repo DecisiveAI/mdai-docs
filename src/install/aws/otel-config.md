@@ -1,6 +1,6 @@
 # ⏲️ Time for OpenTelemetry! 📈
 
-Let's update your Engine's OTel configuration file.
+Let's update your Nucleus's OTel configuration file.
 
 🤔 You've got a couple options...
 
@@ -25,3 +25,6 @@ Simply update the configuration file at `values/otel-config.yaml`.
 ----
 <span class="left"><a href="./aws-env.md">⏪ Back to: AWS Env Config</a></span>
 <span class="right"><a href="./adding-certs.md">Next Step: Adding Certificates ⏩</a></span>
+
+
+{{#include ./footer.md}}

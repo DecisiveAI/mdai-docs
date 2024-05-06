@@ -1,0 +1,27 @@
+# Enable Nucleus Ingress
+
+After completing any tasks related to disabling your MDAI Nucleus instance (i.e., maintenance or nucleus data flow resolution), you likely want to resume ingress and ensure that data flow resumes smoothly.
+
+## How to Enable...
+
+### Manual
+
+- Set replica count to `2` in `values/params-values-otel.yaml`:
+
+```yaml
+spec:
+  # 2 replicas recommended
+  replicas: 2
+```
+- Apply config to cluster
+
+<!-- this doesn't work - must fix -->
+`kubectl apply -f values/params-values-otel.yaml`
+
+
+----
+<span class="left"><a href="./disable-nucleus.md">⏪ Back to: Disable Nucleus </a></span>
+<span class="right"><a href="./destroy-nucleus.md">Next Step: Destroy Nucleus  ⏩</a></span>
+
+
+{{#include ../footer.md}}

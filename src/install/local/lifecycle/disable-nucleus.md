@@ -1,4 +1,4 @@
-# Disable Engine Ingress
+# Disable Nucleus Ingress
 
 You may need to temporarily halt incoming traffic to perform maintenance or troubleshoot issues without impacting data flow.
 
@@ -21,7 +21,7 @@ spec:
 
 ### Automated
 
-Check back soon, we're working on an automated flow for disabling your engine.
+Check back soon, we're working on an automated flow for disabling your nucleus.
 
 <!--
 TODO: make a target for an automated flow
@@ -32,4 +32,4 @@ TODO: make a target for an automated flow
 
 ----
 <span class="left"><a href="./overview.md">⏪ Back to: Lifecycle Management Overview</a></span>
-<span class="right"><a href="./enable-engine.md">Next Step:  Enable Engine ⏩</a></span>
+<span class="right"><a href="./enable-nucleus.md">Next Step:  Enable Nucleus ⏩</a></span>
