@@ -2,7 +2,7 @@
 
 ----
 
-## Verify the MDAI Engine via kubectl
+## Verify the MDAI Nucleus via kubectl
 Ensure your cluster is up and running.
 
 ### Verify namespaces

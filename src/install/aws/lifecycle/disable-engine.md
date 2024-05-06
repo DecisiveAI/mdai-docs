@@ -1,4 +1,4 @@
-# Disable Engine Ingress
+# Disable Nucleus Ingress
 
 You may need to temporarily halt incoming traffic to perform maintenance or troubleshoot issues without impacting data flow.
 
@@ -29,7 +29,7 @@ TODO: make a target for an automated flow
 
 ----
 <span class="left"><a href="../ui-auth.md">⏪ Back to: UI Auth (Cognito)</a></span>
-<span class="right"><a href="./enable-engine.md">Next Step: Enable Engine ⏩</a></span>
+<span class="right"><a href="./enable-nucleus.md">Next Step: Enable Nucleus ⏩</a></span>
 
 
 {{#include ../footer.md}}

@@ -14,7 +14,7 @@ Here's a brief diagram for how we are using our preferred technologies to build 
 
 [![Container Diagram](./arch-c2.png)](./arch-c2.png)
 
-## What super powers the MDAI Engine?
+## What super powers the MDAI Nucleus?
 
 ### Kubernetes (K8s)
 Kubernetes is a powerful container orchestration platform that automates deployment, scaling, and management of containerized applications. It provides a flexible and scalable infrastructure for running modern microservices architectures, enabling rapid development, deployment, and scaling of applications. To learn more about k8s, visit <a href="https://kubernetes.io" target="_blank" rel="noopener">kubernetes.io</a>.
@@ -41,7 +41,7 @@ OpenTelemetry promotes standardization and interoperability by providing consist
 Prometheus and OTel are designed for scalability and extensibility, making them suitable for monitoring large-scale, distributed systems running on Kubernetes. You can scale your monitoring infrastructure horizontally to handle increased workload and integrate additional observability tools and services as needed.
 
 ### Alerting and Troubleshooting
-Prometheus' powerful alerting engine combined with OTel's distributed tracing capabilities enables proactive alerting and troubleshooting of issues in Kubernetes environments. You can set up alerts based on predefined thresholds or anomaly detection algorithms, and use distributed traces to identify bottlenecks, latency issues, and performance optimizations.
+Prometheus' powerful alerting nucleus combined with OTel's distributed tracing capabilities enables proactive alerting and troubleshooting of issues in Kubernetes environments. You can set up alerts based on predefined thresholds or anomaly detection algorithms, and use distributed traces to identify bottlenecks, latency issues, and performance optimizations.
 
 Overall, combining Prometheus, OpenTelemetry, and Kubernetes provides a robust observability stack that empowers organizations to monitor, debug, and optimize cloud-native applications effectively.
 

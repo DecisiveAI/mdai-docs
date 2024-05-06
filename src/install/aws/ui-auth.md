@@ -5,7 +5,7 @@ We knew it wouldn't be acceptable to leave your precious new resources unprotect
 
 *...Enter Cognito...*
 
-We've added the ability to connect [Amazon Cognito](https://aws.amazon.com/cognito/) easily to your new Engine to limit access for undesired users.
+We've added the ability to connect [Amazon Cognito](https://aws.amazon.com/cognito/) easily to your new Nucleus to limit access for undesired users.
 
 <div class="warning">
   Cognito is not supported in all AWS Regions. If you run into issues
@@ -24,7 +24,7 @@ We've added the ability to connect [Amazon Cognito](https://aws.amazon.com/cogni
   </code><br />
 </div>
 
-Our installation includes the following resources upon creating an engine:
+Our installation includes the following resources upon creating an nucleus:
 
 1. [User pool](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html) `mdai-user-pool`
 2. [App client](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html) `mdai-app-client`
@@ -51,7 +51,7 @@ to create users(s) in `mdai-user-pool`.
 
 ----
 <span class="left"><a href="./validate.md">⏪ Back to: Validate Installation</a></span>
-<span class="right"><a href="./lifecycle/disable-engine.md">Next Step: Disable Engine ⏩</a></span>
+<span class="right"><a href="./lifecycle/disable-nucleus.md">Next Step: Disable Nucleus ⏩</a></span>
 
 
 {{#include ./footer.md}}

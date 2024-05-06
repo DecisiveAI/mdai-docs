@@ -3,7 +3,7 @@
 
 ## That's all for now!
 
-We hope you've enjoyed using the MDAI Engine for visibility into your o11y costs and starting taking telemetry pipeline management back into your hands.
+We hope you've enjoyed using the MDAI Nucleus for visibility into your o11y costs and starting taking telemetry pipeline management back into your hands.
 
 
 ## Do you have questions, concerns, feedback?

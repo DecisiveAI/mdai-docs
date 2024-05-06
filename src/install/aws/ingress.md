@@ -1,10 +1,10 @@
-# Managing Ingress for the Engine's OTel Collector 
+# Managing Ingress for the Nucleus's OTel Collector 
 
 <!-- toc -->
 
 ## DNS
 
-To expose the Engine's OpenTelemetry Collector to the public, we've simplified the provisioning of two types of Load Balancers.
+To expose the Nucleus's OpenTelemetry Collector to the public, we've simplified the provisioning of two types of Load Balancers.
 
 1. AWS Application Load Balancer `mdai-grpc-endpoint`
 2. AWS Network Load Balancer `mdai-non-grpc-endpoint`
@@ -17,7 +17,7 @@ The Load Balancers can be referred to by their DNS names, which are assigned by 
 
 ### gRPC
 
-In order to provide routing for multiple gRPC receivers of the same type, each receiver should have its own hostname in your public domain. Additional configuration steps are required to provide a mapping between the receiver name and its proposed hostname. A single gRPC Load Balancer will be able to manage ingest from multiple gRPC sources. The current version of the MDAI Engine only provisions a single gRPC Load Balancer by default.
+In order to provide routing for multiple gRPC receivers of the same type, each receiver should have its own hostname in your public domain. Additional configuration steps are required to provide a mapping between the receiver name and its proposed hostname. A single gRPC Load Balancer will be able to manage ingest from multiple gRPC sources. The current version of the MDAI Nucleus only provisions a single gRPC Load Balancer by default.
 
 #### Example
 
@@ -44,7 +44,7 @@ service:
 
 **Manual updates for OpenTelemetry Collector configuration**
 
-You would then need to update your OTel configuration to reflect these changes before the MDAI Engine can receive telemetry via the Access URL.
+You would then need to update your OTel configuration to reflect these changes before the MDAI Nucleus can receive telemetry via the Access URL.
 
 Navigate to your `values/params-values-otel.yaml` file:
 
@@ -141,7 +141,7 @@ Example:
 ----
 
 <p style="text-align: center;">
-  <a href="./deploy.md">Back to Deploy Your Engine</a>
+  <a href="./deploy.md">Back to Deploy Your Nucleus</a>
 </p>
 <p style="text-align: center;">
   <a href="./verify.md">Next Step: Verify Your Installation >></a>

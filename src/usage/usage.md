@@ -1,6 +1,6 @@
 # Usage Guide
 
-## The MyDecisive.ai Engine
+## The MyDecisive.ai Nucleus
 Write an introduction to the software/tool/library.
 
 ## Core Concepts
@@ -9,7 +9,7 @@ Explanation of core concepts and terminology.
 ## Terminology
 
 <!-- Define:
-- Engine
+- Nucleus
 - Console
 - Telemetery
 - more...

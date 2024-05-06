@@ -1,6 +1,6 @@
 # ⏲️ Time for OpenTelemetry! 📈
 
-Let's update your Engine's OTel configuration file.
+Let's update your Nucleus's OTel configuration file.
 
 🤔 You've got a couple options...
 

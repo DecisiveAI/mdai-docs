@@ -1,6 +1,6 @@
-# Enable Engine Ingress
+# Enable Nucleus Ingress
 
-After completing any tasks related to disabling your MDAI Engine instance (i.e., maintenance or engine data flow resolution), you likely want to resume ingress and ensure that data flow resumes smoothly.
+After completing any tasks related to disabling your MDAI Nucleus instance (i.e., maintenance or nucleus data flow resolution), you likely want to resume ingress and ensure that data flow resumes smoothly.
 
 ## How to Enable...
 
@@ -20,8 +20,8 @@ spec:
 
 
 ----
-<span class="left"><a href="./disable-engine.md">⏪ Back to: Disable Engine </a></span>
-<span class="right"><a href="./destroy-engine.md">Next Step: Destroy Engine  ⏩</a></span>
+<span class="left"><a href="./disable-nucleus.md">⏪ Back to: Disable Nucleus </a></span>
+<span class="right"><a href="./destroy-nucleus.md">Next Step: Destroy Nucleus  ⏩</a></span>
 
 
 {{#include ../footer.md}}

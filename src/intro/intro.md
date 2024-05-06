@@ -1,56 +1,56 @@
-# Introduction to the MDAI Engine
+# Introduction to the MDAI Nucleus
 
 <!-- toc -->
 
-## What the MyDecisive.ai (MDAI) Engine is...
+## What the MyDecisive.ai (MDAI) Nucleus is...
 
 **An Open-Source Observability toolkit**
 
-The MDAI Engine is built as an abstraction layer for complex-to-configure, Open-source and Cloud Provider-managed tools. The MDAI Engine is powered by AWS Elastic Kubernetes Service (EKS), Prometheus, and a custom-built MDAI Console WebApp.
+The MDAI Nucleus is built as an abstraction layer for complex-to-configure, Open-source and Cloud Provider-managed tools. The MDAI Nucleus is powered by AWS Elastic Kubernetes Service (EKS), Prometheus, and a custom-built MDAI Console WebApp.
 
 **An OTLP-Compatible Data Pipeline Configuration and Management Tool**
 
-The MDAI Engine streamlines setup and configuration OTLP-Compatible data pipelines, enabling effortless deployment and management of telemetry data pipelines.
+The MDAI Nucleus streamlines setup and configuration OTLP-Compatible data pipelines, enabling effortless deployment and management of telemetry data pipelines.
 
 **A self-monitoring data pipelines solution**
 
-The MDAI Engine offers a self-monitoring capability to ensure pipeline health, reliability, and performance. The Engine monitors ingestion, processing, and transmission processes for the Engine enabling proactive troubleshooting and optimization.
+The MDAI Nucleus offers a self-monitoring capability to ensure pipeline health, reliability, and performance. The Nucleus monitors ingestion, processing, and transmission processes for the Nucleus enabling proactive troubleshooting and optimization.
 
-The MDAI Engine includes self-monitoring capabilities to maintain pipeline health, reliability, and performance, facilitating proactive troubleshooting and optimization.
+The MDAI Nucleus includes self-monitoring capabilities to maintain pipeline health, reliability, and performance, facilitating proactive troubleshooting and optimization.
 
 **A broker of Telemetry data from source to destination**
 
-The MDAI Engine <TODO FILL OUT>
+The MDAI Nucleus <TODO FILL OUT>
 
-## What the MDAI Engine is not...
+## What the MDAI Nucleus is not...
 
 **A proprietary Observability vendor/platform**
 
-The MDAI Engine will always be fueled by community-driven innovations.
+The MDAI Nucleus will always be fueled by community-driven innovations.
 
 **A standalone monitoring platform**
 
-The MDAI Engine is primarily focused on configuration of data pipelines and light-weight self-monitoring for Engine behaviors. It cannot replace advanced monitoring platform capabilities at this time.
+The MDAI Nucleus is primarily focused on configuration of data pipelines and light-weight self-monitoring for Nucleus behaviors. It cannot replace advanced monitoring platform capabilities at this time.
 
 **A replacement for comprehensive monitoring solutions**
 
-The MDAI Engine is not - at the moment - to be a full replacement for monitoring your data pipelines.
+The MDAI Nucleus is not - at the moment - to be a full replacement for monitoring your data pipelines.
 
 **A Data Analysis tool**
 
-The MDAI Engine will not store or analyze your data, rather, it will broker the signal received to the downstream, configured destination(s) where analysis and data visualization will occur.
+The MDAI Nucleus will not store or analyze your data, rather, it will broker the signal received to the downstream, configured destination(s) where analysis and data visualization will occur.
 
 **A managed service**
 
-The MDAI Engine is a toolkit that is configured and managed in your infrastructure giving you full control of your solution.
+The MDAI Nucleus is a toolkit that is configured and managed in your infrastructure giving you full control of your solution.
 
 **An exclusive solution for a given CSP**
 
-The MDAI Engine will grow beyond AWS in the future.
+The MDAI Nucleus will grow beyond AWS in the future.
 
-## Why use the MDAI Engine...
+## Why use the MDAI Nucleus...
 
-Using the MDAI Engine can provide you the insights you need to take back control and manage costs associated with data transmission from the source of your telemetry to your chosen observability vendor(s).
+Using the MDAI Nucleus can provide you the insights you need to take back control and manage costs associated with data transmission from the source of your telemetry to your chosen observability vendor(s).
 
 ## How to use our docs...
 
@@ -69,4 +69,4 @@ Using the MDAI Engine can provide you the insights you need to take back control
 
 # License
 
-MyDecisive Engine  2024 by DecisiveAI, Inc. is licensed under CC BY-NC-SA 4.0
+MyDecisive Nucleus  2024 by DecisiveAI, Inc. is licensed under CC BY-NC-SA 4.0
