@@ -8,28 +8,35 @@ Navigate to the `values/aws.env` file and start inputting the environment config
 </div>
 
 ```
-# region where the engine going to be installed.
+# region where the engine going to be installed. (e.g., us-east-1)
 AWS_REGION=
 
-# AWS account to be used
+# AWS account to be used (e.g., 123123456)
 AWS_ACCOUNT=
 
-# AWS profile to be used
+# AWS profile to be used (e.g., Admin-123123456)
 AWS_PROFILE=
 
 # Class and size of the EC2 used for EKS k8s cluster
 # this is the minimum required configuration, adjust to your needs
-MDAI_EC2_INSTANCE_CLASS=t2
+# WARNING: We do not recommend changing the following fields MDAI_EC2_INSTANCE_CLASS, MDAI_EC2_INSTANCE_SIZE, MDAI_CLUSTER_CAPACITY as we have not tested beyond this configuration.
+MDAI_EC2_INSTANCE_CLASS=t2 
 MDAI_EC2_INSTANCE_SIZE=micro
 
 # Number of cluster EC2 nodes
 MDAI_CLUSTER_CAPACITY=10
 
-# Amazon Resource Name (ARN) of the certificate to be used for the Console endpoint
+# A friendly name for your cluster (e.g., my-aws-mdai)
+MDAI_CLUSTER_NAME=
+
+# Amazon Resource Name (ARN) of the certificate to be used for the Console endpoint (e.g., eu-west-2.yourdomain.dev)
 MDAI_UI_HOSTNAME=
 
-# The domain name to tie your auth to, e.g., 'example.com' would use 'example' here
+# The domain name to tie your auth to, e.g., 'example.com' would use 'example' here (e.g., yourdomain)
 MDAI_UI_USER_POOL_DOMAIN=
+
+# An opt-in/out feature that enables autoscaling on the EC2 node sizes you have selected, default should be true if you're unsure
+KARPENTER=true
 ```
 
 <div class="warning">

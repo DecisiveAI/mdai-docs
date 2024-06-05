@@ -45,11 +45,12 @@
       - [Uninstall the Engine](./install/aws/lifecycle/destroy-engine.md)
     - [Testing your Engine]()
       - [Generate and Collect Telemetry](./install/testing.md)
-    - [Congrats!](./install/congrats.md)
 
 # Usage
   - [Using the MDAI Engine Console](./console/mdai-console.md)
 
+# Troubleshooting
+  - [Troubleshooting guide](./troubleshooting.md)
 <!--
 # Usage Guide
 

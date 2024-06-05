@@ -16,8 +16,9 @@ Welcome to the docs! This repo is used to build [the decisive engine docs site](
 - This site is built using [mdBook](https://github.com/rust-lang/mdBook). You can install the `mdbook` utility by following [these instructions](https://rust-lang.github.io/mdBook/guide/installation.html).
 
 ```sh
-cargo install mdbook mdbook-toc
+cargo install mdbook mdbook-toc mdbook-catppuccin
 ```
+
 - Additionally, we are using the *catppuccin* theme. If you would like to install the assets from source and modify. Follow [install instructions](https://github.com/catppuccin/mdBook?tab=readme-ov-file).
 ### Local development
 
