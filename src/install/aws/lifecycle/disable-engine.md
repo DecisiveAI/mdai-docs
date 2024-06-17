@@ -30,3 +30,6 @@ TODO: make a target for an automated flow
 ----
 <span class="left"><a href="../ui-auth.md">⏪ Back to: UI Auth (Cognito)</a></span>
 <span class="right"><a href="./enable-engine.md">Next Step: Enable Engine ⏩</a></span>
+
+
+{{#include ../footer.md}}

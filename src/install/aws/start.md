@@ -28,3 +28,5 @@ To begin visualizing your telemetry pipelines using an MDAI Engine, you will nee
   <b>🏃 Let's get started! 🏃‍♀️</b><br /><br />
   <a href="./prerequisites.md">Next Step: Prerequisites ⏩</a>
 </p>
+
+{{#include ./footer.md}}
