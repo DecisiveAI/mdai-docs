@@ -1,20 +1,8 @@
 # Usage Guide
 
-## The MyDecisive.ai Engine
-Write an introduction to the software/tool/library.
+Coming soon...
 
-## Core Concepts
-Explanation of core concepts and terminology.
-
-## Terminology
-
-<!-- Define:
-- Engine
-- Console
-- Telemetery
-- more...
--->
-
+<!-- 
 ## Use Cases
 
 ## Use cases and Boilerplate examples
@@ -41,4 +29,4 @@ Additional Resources
 Links to further documentation, tutorials, and resources for learning more.
 Support and Feedback
 Contact information for support.
-Instructions for providing feedback or reporting issues.
+Instructions for providing feedback or reporting issues. -->

@@ -1,4 +1,4 @@
-# Verify local MDAI Engine
+# Verify local MDAI Cluster
 ----
 
 ## Configure MDAI Console (UI) to use localhost
@@ -25,7 +25,7 @@ You should now be able to view the MDAI Console at your newly configured port, i
 
 🐙🎉 View yours at [http://localhost:<configured_port>](http://localhost:<configured_port>)
 
-![A bright and shiny MDAI Engine Console](../../media/console-new-and-shiny.png)
+![A bright and shiny MDAI Cluster Console](../../media/console-new-and-shiny.png)
 
 
 ----

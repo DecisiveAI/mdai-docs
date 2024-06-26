@@ -1,8 +1,8 @@
-# Uninstall the MDAI Engine
+# Uninstall the MDAI Cluster
 
 ----
 
-Tired of using the MDAI Engine? 😭 We're sorry to see you go, but we understand.
+Tired of using the MDAI Cluster? 😭 We're sorry to see you go, but we understand.
 
 ## Feedback - Where are the rough edges?
 
@@ -13,10 +13,10 @@ We'd love to hear your thoughts! Please let us know how we can improve by:
 
 ## 🧨 Time to destroy
 
-Due to AWS CDK limitations several additional steps required to fully remove all MDAI Engine resources from AWS. Follow the steps below, in order, to destroy your Engine and all associated resources.
+Due to AWS CDK limitations several additional steps required to fully remove all MDAI Cluster resources from AWS. Follow the steps below, in order, to destroy your MDAI Cluster and all associated resources.
 
 
-### Remove all OTel collector instances within your Engine
+### Remove all OTel collector instances within your MDAI Cluster
 ```shell
 kubectl describe otelcol $(kubectl get otelcol -o custom-columns=":.metadata.name")
 ```
@@ -31,7 +31,7 @@ helm uninstall mdai-console
 kubectl delete otelcol/<your_collector_name>
 ```
 
-### Destroy MDAI Engine stack
+### Destroy MDAI Cluster stack
 ```shell
 # List stacks to ensure you choose the correct stack to be deleted
 aws cloudformation list-stack-sets --profile <your_aws_profile> --region <your_aws_region>

@@ -1,13 +1,13 @@
-# MDAI Engine Life Cycle Management
+# MDAI Cluster Life Cycle Management
 
 ## Overview
 
-MDAI Engine lifecycle management involves post-creation operations to control the behavior and state of the components of each engine or the engine as a whole.
+MDAI Cluster lifecycle management involves post-creation operations to control the behavior and state of the components of each MDAI Cluster or the MDAI Cluster as a whole.
 
 The common use cases for lifecycle management are highlighted below...
-1. [Disable Engine Ingress](./disable.md) - Disable ingress to validate that data flow has stopped.
-2. [Enable Engine Ingress](./enable.md) - Enable ingress to validate that data flow has been re-instantiated.
-3. [Uninstall Engine](./destroy.md) - Destroy all artifacts associated with the MDAI Engine.
+1. [Disable MDAI Cluster Ingress](./disable.md) - Disable ingress to validate that data flow has stopped.
+2. [Enable MDAI Cluster Ingress](./enable.md) - Enable ingress to validate that data flow has been re-instantiated.
+3. [Uninstall MDAI Cluster](./destroy.md) - Destroy all artifacts associated with the MDAI Cluster.
 
 
 ## 🚨 Important considerations for Life Cycle Management 🚨
@@ -18,4 +18,4 @@ The common use cases for lifecycle management are highlighted below...
 
 ----
 <span class="left"><a href="/install/local/validate.md">⏪ Back to: Validate</a></span>
-<span class="right"><a href="./disable-engine.md">Next Step: Disable the Engine ⏩</a></span>
+<span class="right"><a href="./disable-MDAI Cluster.md">Next Step: Disable the MDAI Cluster ⏩</a></span>

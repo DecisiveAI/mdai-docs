@@ -1,4 +1,4 @@
-## Enable Engine
+## Enable MDAI Cluster
 
 - Set replica count to `2` in `values/params-values-otel.yaml`:
 

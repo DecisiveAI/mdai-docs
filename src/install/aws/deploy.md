@@ -3,15 +3,15 @@
 
 *🎶 Time for more [theme music](https://www.youtube.com/watch?v=ioE_O7Lm0I4) 🎶*
 
-**💪 Congratulations! You're about to provision an MDAI Engine! 💪**
+**💪 Congratulations! You're about to provision an MDAI Cluster! 💪**
 
 
 <div class="warning">
-  IMPORTANT! After deployment, the engine will be active and running in AWS. The current version of the engine was designed to be as cost-effective as possible, however you should still carefully monitor your spend and manage your engine capacity accordingly. If the engine is not actively being used for testing or managing telemetry pipelines, you may wish to shut it down to minimize your spend.<br /><br />
-  <em>We hope to have benchmarks soon for cost and performance of our engines.</em>
+  IMPORTANT! After deployment, the MDAI Cluster will be active and running in AWS. The current version of the MDAI Cluster was designed to be as cost-effective as possible, however you should still carefully monitor your spend and manage your MDAI Cluster capacity accordingly. If the MDAI Cluster is not actively being used for testing or managing telemetry pipelines, you may wish to shut it down to minimize your spend.<br /><br />
+  <em>We hope to have benchmarks soon for cost and performance of our MDAI Clusters.</em>
 </div>
 
-## Deploy the MDAI Engine
+## Deploy the MDAI Cluster
 
 ```shell
 make install
@@ -19,7 +19,7 @@ make install
 
 <div class="warning">
   <b><em>Don't walk away just yet!</em></b>
-  <p>There's one more manual verification step required before CloudFormation will deploy all necessary infrastructure to get your engine up and running as soon as possible.</p>
+  <p>There's one more manual verification step required before CloudFormation will deploy all necessary infrastructure to get your MDAI Cluster up and running as soon as possible.</p>
 </div>
 
 
@@ -64,7 +64,7 @@ https://AWS_REGION.console.aws.amazon.com/cloudformation/designer/home?region=AW
 ----
 
 <center>
-  <h3>Want to see how the MDAI Engine runs locally?</h3>
+  <h3>Want to see how the MDAI Cluster runs locally?</h3>
   <p>
     🛠️ Build a local version while you're waiting!
     <a href="../local/quick-start.md">
@@ -74,5 +74,5 @@ https://AWS_REGION.console.aws.amazon.com/cloudformation/designer/home?region=AW
 </center>
 
 ----
-<span class="left"><a href="./apply-config.md">⏪ Back to: Configure Your Engine</a></span>
+<span class="left"><a href="./apply-config.md">⏪ Back to: Configure Your MDAI Cluster</a></span>
 <span class="right"><a href="./verify.md">Next Step: Verify Installation ⏩</a></span>
