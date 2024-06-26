@@ -19,6 +19,6 @@ cd mdai-inkops
 
 ----
 
-<span class="left"><a href="./aws-sso.md">⏪ Back to: Configuring AWS SSO</a></span>
-<span class="right"><a href="./aws-env.md">Next Step: AWS Config ⏩</a></span>
+<span class="left"><a href="./aws-cli.md">⏪ Back to: Configure AWS CLI</a></span>
+<span class="right"><a href="./aws-env.md">Next Step: Configure AWS Env ⏩</a></span>
 

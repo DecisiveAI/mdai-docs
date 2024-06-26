@@ -1,6 +1,6 @@
 # ⏲️ Time for OpenTelemetry! 📈
 
-Let's update your Engine's OTel configuration file.
+Let's update your MDAI Cluster's OTel configuration file.
 
 🤔 You've got a couple options...
 
@@ -23,5 +23,12 @@ Want to use a custom or tried-and-true OTel configuration file that already work
 Simply update the configuration file at `values/otel-config.yaml`.
 
 ----
-<span class="left"><a href="./aws-env.md">⏪ Back to: AWS Env Config</a></span>
-<span class="right"><a href="./adding-certs.md">Next Step: Adding Certificates ⏩</a></span>
+<div class="left">
+  <a href="./aws-env.md">⏪ Back to: AWS Env Config</a>
+</div>
+<div class="right">
+  <div>Did you opt-in to using Cognito for auth? (default)<div><br />
+  <a href="./adding-certs.md">Next Step: Adding Certificates ⏩</a><br /><br />
+  <div>Did you opt-out of using Cognito for auth?<div><br />
+  <a href="./apply-config.md">Next Step: Apply Configuration ⏩</a>
+</div>

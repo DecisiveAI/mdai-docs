@@ -2,7 +2,7 @@
 
 ----
 
-## Verify the MDAI Engine via kubectl
+## Verify the MDAI Cluster via kubectl
 Ensure your cluster is up and running.
 
 ### Verify namespaces
@@ -46,6 +46,14 @@ Your output for default configuration should be similar to:
 ### Step 3: Copy DNS Name from `mdai-console` LB
 
 [![LB DNS Name](../../media/load-balancers.png)](../../media/load-balancers.png)
+
+#### OPTIONAL: Use CNAME Record for Console Access
+
+If you'd prefer to use a custom domain to access your MDAI Console (e.g., `your-console.yourdomain.com`), you can copy the Console Load Balancer Endpoint and create a CNAME record for you host provider (e.g., `GoDaddy`). 
+
+Once updated, you'll need to wait for the DNS mapping to resolve. 
+
+You may also need to add an SSL Cert to create a secure connection to your app using this mechanism. 
 
 ### Step 4: Navigate to the URL and view the console
 

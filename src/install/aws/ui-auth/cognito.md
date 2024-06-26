@@ -1,11 +1,11 @@
-# 🔐 UI Authentication
+# 🔒 Cognito
 ----
 
 We knew it wouldn't be acceptable to leave your precious new resources unprotected and open to any user of the internet!
 
 *...Enter Cognito...*
 
-We've added the ability to connect [Amazon Cognito](https://aws.amazon.com/cognito/) easily to your new Engine to limit access for undesired users.
+We've added the ability to connect [Amazon Cognito](https://aws.amazon.com/cognito/) easily to your new MDAI Cluster to limit access for undesired users.
 
 <div class="warning">
   Cognito is not supported in all AWS Regions. If you run into issues
@@ -24,7 +24,7 @@ We've added the ability to connect [Amazon Cognito](https://aws.amazon.com/cogni
   </code><br />
 </div>
 
-Our installation includes the following resources upon creating an engine:
+Our installation includes the following resources upon creating an MDAI Cluster:
 
 1. [User pool](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html) `mdai-user-pool`
 2. [App client](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html) `mdai-app-client`
@@ -45,10 +45,24 @@ This domain name will become a part of the auth redirecting URL.
 ## 🧍User(s) creation
 
 The only manual step required is a user(s) creation.
+
+### Option 1: Via the AWS Console UI
 Please follow the [Amazon Cognito User Pool documentation](https://docs.aws.amazon.com/cognito/latest/developerguide/managing-users.html) steps
 to create users(s) in `mdai-user-pool`.
 
+### Option 1: Via the AWS CLI
+
+If you prefer to use the command line, this quick command will find the user group created as a result of the MDAI stack and perform the user create operations. 
+
+```shell
+for up_id in $(aws cognito-idp list-user-pools --max-results 1  --region <your-region> --profile <your-profile> --query 'UserPools[?Name==`mdai-user-pool`].[Id]' --output text); do
+    echo "Creaded user ${up_id}"
+    aws cognito-idp admin-create-user --user-pool-id $up_id --username user@yourdomain.com --temporary-password P@55w0rd_fun --region <your-region> --profile <your-profile>
+done
+
+```
+
 
 ----
-<span class="left"><a href="./validate.md">⏪ Back to: Validate Installation</a></span>
-<span class="right"><a href="./lifecycle/disable-engine.md">Next Step: Disable Engine ⏩</a></span>
+<span class="left"><a href="../validate.md">⏪ Back to: Validate Installation</a></span>
+<span class="right"><a href="../lifecycle/overview.md">Next Step: Lifecycle Overview ⏩</a></span>

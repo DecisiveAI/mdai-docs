@@ -23,7 +23,7 @@ As mentioned, the only manual step for this install method is to enable you to h
 make -f ./make/Makefile-local-recipes create-mdai-semi-auto
 ```
 
->_Note: Once the Engine installed your k8s context will be switched automatically to new cluster._
+>_Note: Once the MDAI Cluster installed your k8s context will be switched automatically to new cluster._
 
 <div class="warning">
   <b>Troubleshooting</b><br /><br />

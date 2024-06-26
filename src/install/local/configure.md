@@ -1,6 +1,6 @@
 # ⏲️ Time to Configure OpenTelemetry! 📈
 
-Let's update your Engine's OTel configuration file.
+Let's update your MDAI Cluster's OTel configuration file.
 
 🤔 You've got a couple options...
 

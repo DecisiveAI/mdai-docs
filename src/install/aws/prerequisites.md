@@ -12,13 +12,14 @@ Ensure your development environment has access to all of the following software 
 export GOBIN=${GOBIN:-$(go env GOPATH)/bin}
 ```
 - Install [node](https://nodejs.org/en/download).
+- Install [envsubst](https://www.gnu.org/software/gettext/). You can also install using [homebrew](https://formulae.brew.sh/formula/gettext)
 
 >**Note:** We do install Helm automatically, however, it's important to note that we support [Helm v3.13.0](https://github.com/helm/helm/releases/tag/v3.13.0) and later. If you have helm installed, but at an earlier version, we cannot guarantee our install process will work as expected.
 
 ## AWS Requirements
-
+- Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions)
 - Install [AWS CDK Toolkit](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install)
-- Install [AWS SSO](https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html)
+- Install [AWS EKSCTL](https://eksctl.io/getting-started/)
 
 ## User Requirements
 
@@ -28,5 +29,5 @@ We never desire to exclude anyone from using our solutions. Instead we encourage
 
 ----
 <span class="left"><a href="./start.md">⏪ Back to: Getting Started</a></span>
-<span class="right"><a href="./aws-sso.md">Next Step: Configure AWS SSO ⏩</a></span>
+<span class="right"><a href="./aws-cli.md">Next Step: Setup AWS CLI ⏩</a></span>
 

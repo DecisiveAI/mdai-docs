@@ -1,10 +1,10 @@
-# The MyDecisive Engine Console
+# The MyDecisive MDAI Cluster Console
 
 <!-- toc -->
 
 ## Introduction
 
-The MyDecisive Engine console provides an at-a-glance display of all the telemetry data that has flowed through your MDAI Engine in the last hour. It is a web application accessible via HTTPS within the engine.
+The MyDecisive MDAI Cluster console provides an at-a-glance display of all the telemetry data that has flowed through your MDAI Cluster in the last hour. It is a web application accessible via HTTPS within the MDAI Cluster.
 
 ## Data Flow Overview
 
@@ -16,7 +16,7 @@ C.Sidebar: On the right, a sidebar summarizes your data totals and data reductio
 
 ### Sankey Diagram
 <div style="text-align: center">
-<img src="../media/console-data-flow.png" alt="The MDAI Engine Console showing data flows" style="width: 600px" />
+<img src="../../media/console-data-flow.png" alt="The MDAI Cluster Console showing data flows" style="width: 600px" />
 </div>
 
 <br>
@@ -27,7 +27,7 @@ Hovering over any component highlights the specific data path(s), helping you ze
 
 <!--Screenshot of the hover view - make it exactly the same size and ratio as the initial screen-->
 <div style="text-align: center">
-<img src="../media/console-data-flow.png" alt="The MDAI Engine Console showing data flows" style="width: 600px" />
+<img src="../../media/console-data-flow.png" alt="The MDAI Cluster Console showing data flows" style="width: 600px" />
 </div>
 
 <br>
@@ -35,7 +35,7 @@ Hovering over any component highlights the specific data path(s), helping you ze
 ## Pipeline View
 
 <div style="text-align: center">
-<img src="../media/console-pipelines.png" alt="The MDAI Engine Console showing pipeline configuration" style="width: 600px" />
+<img src="../../media/console-pipelines.png" alt="The MDAI Cluster Console showing pipeline configuration" style="width: 600px" />
 </div>
 
 <br>
@@ -45,7 +45,7 @@ Clicking on any component in the Sankey diagram will filter and switch the view 
 <br>
 
 <div style="text-align: center">
-<img src="../media/console-viz-mode.png" alt="The MDAI Engine Console with pipelines mode switch highlighted" style="width: 600px" />
+<img src="../../media/console-viz-mode.png" alt="The MDAI Cluster Console with pipelines mode switch highlighted" style="width: 600px" />
 </div>
 
 <br>
@@ -55,7 +55,7 @@ As you view the console to understand your data flows, you can switch between Pi
 ## Filters
 
 <div style="text-align: center">
-<img src="../media/console-filters.png" alt="The MDAI Engine Console showing content filter options" style="width: 600px" />
+<img src="../../media/console-filters.png" alt="The MDAI Cluster Console showing content filter options" style="width: 600px" />
 </div>
 
 <br>

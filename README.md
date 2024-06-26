@@ -5,9 +5,9 @@ This open-source project is currently under construction and is subject to frequ
 
 ----
 
-# MyDecisive Engine Documentation
+# MyDecisive MDAI Cluster Documentation
 
-Welcome to the docs! This repo is used to build [the decisive engine docs site](https://decisiveai.github.io/mdai-docs/). More to come in our first beta release!
+Welcome to the docs! This repo is used to build [the decisive MDAI Cluster docs site](https://decisiveai.github.io/mdai-docs/). More to come in our first beta release!
 
 ## Editing/Development
 
