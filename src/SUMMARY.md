@@ -54,6 +54,7 @@
   - [MDAI Cluster Optimizations](./advanced/advanced.md)
     - [AutoScaling OTel Collector](./advanced/autoscaling/otel-col.md)
     - [Node AutoScaling](./advanced/autoscaling/node-autoscaling.md)
+  - [Ingress](./advanced/managing-ingress.md)
 
 # Usage
   - [Using the MDAI Console](./usage/console/mdai-console.md)
