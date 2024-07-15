@@ -33,6 +33,7 @@
     - [Check us out!](./install/aws/repo.md)
     - [AWS Config](./install/aws/aws-env.md)
     - [OTel Config](./install/aws/otel-config.md)
+    - [Initialize](./install/aws/initialize.md)
     - [Certificates](./install/aws/adding-certs.md)
     - [Apply Configs](./install/aws/apply-config.md)
     - [Deploy Your MDAI Cluster](./install/aws/deploy.md)
@@ -54,7 +55,9 @@
   - [MDAI Cluster Optimizations](./advanced/advanced.md)
     - [AutoScaling OTel Collector](./advanced/autoscaling/otel-col.md)
     - [Node AutoScaling](./advanced/autoscaling/node-autoscaling.md)
-  - [Ingress](./advanced/managing-ingress.md)
+  - [Ingress](./advanced/ingress.md)
+  - [Modules]()
+    - [Datalyzer](./advanced/modules/datalyzer.md)
 
 # Usage
   - [Using the MDAI Console](./usage/console/mdai-console.md)

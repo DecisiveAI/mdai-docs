@@ -41,6 +41,7 @@ kubectl delete cronjob job-name
   <em>It is critical that you delete the cronjob once testing is complete, otherwise MDAI Cluster costs will continue to increase as the MDAI Cluster continues to processes all incoming telemetry data.</em>
 </div>
 
+
 ### Option 2 - Use real data
 
 >Visit the [OTel Collector Docs site](https://opentelemetry.io/docs/collector/configuration/) to learn more about configuring your collector based on your specific data sources and destinations.
@@ -48,9 +49,30 @@ kubectl delete cronjob job-name
 A general workflow is as follows:
 
 1. Determine which sources of data (collector/agent) you'd like to point at your MDAI Cluster instance.
-2. Use your CNAME (from your host provider) or DNS (from AWS LB) as mentioned in our [Ingress documentation](./ingress.md).
-3. Configure your agent/collector to point to the CNAME or DNS as mentioned in our [Ingress documentation](./ingress.md).
+2. Use your CNAME (from your host provider) or DNS (from AWS LB) as mentioned in our [Ingress documentation](../advanced/ingress.md).
+3. Configure your agent/collector to point to the CNAME or DNS as mentioned in our [Ingress documentation](../advanced/ingress.md).
 4. SEE RESULTS! [Verify data flow](./verify.md)
+
+#### 
+
+Note the External-IP for the test-collector-collector from the following command. You will need this to send telemetry from your agents/collectors of choice.
+
+```bash
+kubectl get svc test-collector-collector -n default
+```
+
+
+### Option 3 - Use our Postman collection
+
+Use our [postman collection](https://github.com/DecisiveAI/postman)
+
+
+### Option 4 - Use `curl` and `grpcurl`
+
+See [our request docs](https://github.com/DecisiveAI/mdai-inkops/tree/task/july-15-updates/examples) for more information
+
+
+
 
 🎉 That's it! Your MDAI Cluster is now ready to use! 🎉
 
