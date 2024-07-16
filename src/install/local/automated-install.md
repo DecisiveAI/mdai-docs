@@ -29,4 +29,4 @@ make -f ./make/Makefile-local-recipes create-mdai
 ----
 
 <span class="left"><a href="./semiautomated-install.md">⏪ Back to Semi-Automated Install</a></span>
-<span class="right"><a href="./configure.md">Next Step: Configure ⏩</a></span>
+<span class="right"><a href="./verify.md">Next Step: Verify ⏩</a></span>
