@@ -35,4 +35,4 @@ make -f ./make/Makefile-local-recipes create-mdai-semi-auto
 ----
 
   <span class="left"><a href="./install.md">⏪ Back to Install</a></span>
-  <span class="right"><a href="../testing.md">Next Step: Automated Install ⏩</a></span>
+  <span class="right"><a href="./verify.md">Next Step: Verify ⏩</a></span>

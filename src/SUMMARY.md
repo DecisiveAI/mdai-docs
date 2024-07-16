@@ -15,7 +15,6 @@
     - [Installation](./install/local/install.md)
       - [Semi-automated Install](./install/local/semiautomated-install.md)
       - [Automated Install](./install/local/automated-install.md)
-    - [Configure](./install/local/configure.md)
     - [Verify](./install/local/verify.md)
     - [Validate Data Flow](./install/local/validate.md)
     - [Life Cycle Management](./install/local/lifecycle/overview.md)

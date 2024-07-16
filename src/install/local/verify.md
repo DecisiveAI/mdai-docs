@@ -29,6 +29,6 @@ You should now be able to view the MDAI Console at your newly configured port, i
 
 
 ----
-<span class="left"><a href="./configure.md">⏪ Back to Configure</a></span>
-<span class="right"><a href="../testing.md">Next Step: Generate & Collect Telemetry ⏩</a></span>
+<span class="left"><a href="./install.md">⏪ Install</a></span>
+<span class="right"><a href="../validate.md">Next Step: Validate ⏩</a></span>
 
