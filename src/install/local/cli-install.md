@@ -3,7 +3,7 @@
 Our CLI will help you install and manage MDAI clusters locally.  
 
 ## Prerequisite
-Since we are using [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) cluster you have to have a [Docker](https://docs.docker.com/engine/install/) installed.
+Since we are using [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) cluster you have to have [Docker](https://docs.docker.com/engine/install/) installed.
 
 ## Download and install MDAI CLI 
 ### Install prebuilt binary via shell script
