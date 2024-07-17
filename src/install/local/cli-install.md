@@ -34,7 +34,7 @@ Which should look like:
 ## Manage MDAI cluster
 
 Our CLI has a sample cluster defined and built in into installation process.  
-It stars two replicas of "gateway" OTEL collectors.  
+It starts two replicas of "gateway" OTEL collectors.  
 Let's check OTEL collectors configuration by running:
 ```Shell
 mdai get --config otel
