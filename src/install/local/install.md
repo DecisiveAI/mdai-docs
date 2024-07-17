@@ -6,6 +6,7 @@
 
 - __Automated Install__ - I want the fastest method for installation possible, so I can skip ahead to testing out the MDAI Cluster! I'm not worried about how the system dependencies impact my other development environments.
 
+- __CLI Install__ - Our brand new recommended method for installing and managing MDAI clusters locally combines the benefits of the first two methods and has fewer dependencies.
 ### Choose your adventure:
 
 Option 1: <a href="./semiautomated-install.md">Semi-Automatic Install ⏩</a>

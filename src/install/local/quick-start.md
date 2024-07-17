@@ -8,12 +8,9 @@ Using our local installation method, we hope to...
 2. Validate, locally, that the MDAI Cluster is a great tool for your telemetry management needs.
 3. Fall in love with us and our solution before you install in the cloud.
 
-__*NOTE: Future MDAI Cluster versions will include a CLI for a streamlined, wizard-like installation process.
-We value your patience as we enhance our backend operations.*__
-
 ## Getting Started
 
-To begin visualizing your telemetry pipelines using an MDAI Cluster, you will need to complete the following steps:
+To begin visualizing and managing your telemetry pipelines using an MDAI Cluster, you will need to complete the following steps:
 
 1. 🛠️ Configure it
 2. 🚀 Deploy it (locally)
