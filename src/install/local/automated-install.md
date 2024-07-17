@@ -1,6 +1,13 @@
 # Automated installation
 ----
+## Check us out!
 
+First things first, you have to check out our [MDAI infrastructure installation repo](https://github.com/DecisiveAI/mdai-inkops).
+
+```shell
+git clone https://github.com/DecisiveAI/mdai-inkops.git
+```
+## Prerequisites
 Our automated installation process is setting up all the required dependencies like
 - Docker
 - Kind cluster

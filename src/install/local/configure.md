@@ -1,5 +1,9 @@
 # ⏲️ Time to Configure OpenTelemetry! 📈
 
+> **Warning:** ⚠️ This configuration method is deprecated ⚠️   
+New documentation how to use mdai operator configuration instead is coming soon.
+   
+   
 Let's update your MDAI Cluster's OTel configuration file.
 
 🤔 You've got a couple options...

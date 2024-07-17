@@ -1,5 +1,12 @@
 # Semi-Automated installation
 ----
+## Check us out!
+
+First things first, you have to check out our [MDAI infrastructure installation repo](https://github.com/DecisiveAI/mdai-inkops).
+
+```shell
+git clone https://github.com/DecisiveAI/mdai-inkops.git
+```
 
 ## Prerequisites
 
@@ -34,5 +41,5 @@ make -f ./make/Makefile-local-recipes create-mdai-semi-auto
 
 ----
 
-  <span class="left"><a href="./install.md">⏪ Back to Install</a></span>
-  <span class="right"><a href="../testing.md">Next Step: Automated Install ⏩</a></span>
+<span class="left"><a href="./install.md">⏪ Back to Install</a></span>
+<span class="right"><a href="./configure.md">Next Step: Configure ⏩</a></span>
