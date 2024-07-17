@@ -5,19 +5,18 @@ Currently, our documentation is tailored for users operating on Linux or Mac com
   - You have <a href="https://brew.sh/" target="_blank">🍺 homebrew</a> installed.
   - You’re using __bash__, but you can modify these configurations and commands as needed for your preferred command line interface.
   - If you're using MacOS, you'll also need <a href="https://mac.install.guide/commandlinetools/" target="_blank">XCode Commandline Tools</a> installed.
-  - You will also need to have <a href="https://kubernetes.io/releases/download/" target="_blank">Kubernetes</a> installed.
 
-</br >
+<br>
 
 ----
 ### Note on user requirements
-We aim to make our solutions accessible to everyone. However, we recommend having an intermediate understanding of OpenTelemetry and Kubernetes, or a strong determination, before proceeding with this installation."
+We aim to make our solutions accessible to everyone. However, we recommend having an intermediate understanding of OpenTelemetry and Kubernetes, or a strong determination, before proceeding with this installation.
 
 Here are a few great resources for ramping up on these subjects:
 * [OpenTelemetry](https://opentelemetry.io/docs/getting-started/)
 * [Kubernetes Training](https://kubernetes.io/training/)
 
-</br >
+<br>
 
 ----
 

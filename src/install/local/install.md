@@ -1,6 +1,6 @@
 # Installation
 ----
-## There are two options for installation:
+## There are three options for installation:
 
 - __Semi-automatic Install__ - I want to install all system dependencies myself to be aware of and manage the MDAI requirements alongside my other software requirements.
 
@@ -12,13 +12,9 @@ Option 1: <a href="./semiautomated-install.md">Semi-Automatic Install ⏩</a>
 
 Option 2: <a href="./automated-install.md">Automated Install ⏭️</a>
 
-### Check us out!
+Option 3: <a href="./cli-install.md">CLI Install ⏭️</a>
 
-First things first, you have to check out our [MDAI infrastructure installation repo](https://github.com/DecisiveAI/mdai-inkops).
 
-```shell
-git clone https://github.com/DecisiveAI/mdai-inkops.git
-```
 
 🎵 *[Here's some mood music](https://youtu.be/6iuGp9gUeNk?feature=shared&t=15)* 🎵
 
