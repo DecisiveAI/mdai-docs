@@ -1,7 +1,6 @@
 # Summary
   [Overview](overview.md)
   [Disclaimer](DISCLAIMER.md)
-  [James's Disclaimer](DISCLAIMER.md)
 
 # Introduction
   - [Architecture](./intro/architecture/architecture.md)
