@@ -63,5 +63,5 @@ Go to your host for your domain (e.g., GoDaddy) and add a CNAME record using you
 
 If this doesn't fix the error, feel free to:
 * Email us at <a href="mailto:support@mydecisive.ai" target="_blank">support@mydecisive.ai</a>
-* File an issue under the <a href="https://github.com/DecisiveAI/mdai-inkops/issues/new" target="_blank">MDAI InkOps Project
+* File an issue under the <a href="https://github.com/DecisiveAI/mdai-inkops/issues/new" target="_blank">MDAI InkOps Project</a>
 

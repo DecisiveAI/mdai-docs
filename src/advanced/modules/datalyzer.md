@@ -4,3 +4,5 @@
 
 Track and analyze the total and actual OpenTelemetry Protocol (OTLP) bytes transferred by each source (service/resource) through a collector.
 
+
+## Architecture
