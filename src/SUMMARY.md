@@ -69,7 +69,14 @@
 
 # Usage
   - [Using the MDAI Console](./usage/console/mdai-console.md)
+  - [Telemetry Muting](./usage/console/use-case/muting/intro.md)
+    - [Mute Rules](./usage/console/use-case/muting/mute-rules.md)
+    - [Mute via CLI](./usage/console/use-case/muting/manual-cli.md)
+    - [Mute via Console](./usage/console/use-case/muting/manual-console.md)
   - [Modifying your OpenTelemetry Config](./usage/otel-updates.md)
+
+# Contributing
+  - [Contributing guide](./contributing.md)
 
 # Troubleshooting
   - [Troubleshooting guide](./troubleshooting.md)

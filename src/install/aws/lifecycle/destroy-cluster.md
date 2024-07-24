@@ -21,7 +21,6 @@ Due to AWS CDK limitations several additional steps required to fully remove all
 helm uninstall mdai-console
 ```
 
-
 ### Scripts for destroying MDAI Cluster stack
 
 #### Step 1: Allow scripts to be executed
