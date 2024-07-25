@@ -9,13 +9,59 @@
 3. Configure your agent/collector to point to the CNAME or DNS as mentioned in our [Ingress documentation](../../advanced/ingress.md).
 4. SEE RESULTS! [Verify data flow](./verify.md)
 
-### Where can I find my ingress endpoint?
+### Where can I find my ingress endpoints?
 
-The `External-IP` for the `gateway-collector` from the following command. You will need this to send telemetry from your agents/collectors of choice. Run the following command from your terminal to access the External-IP for configuring your agents to use.
+## Finding and setting `HTTP_HOST` and `GRPC_HOST` 
 
-```bash
+Not sure where to get the variables for `GRPC_HOST` and `HTTP_HOST`?
+* I need my Cloud env. variables [Get them now!](./README.md#cloud)
+* I need my Local env. variables [Get them now!](./README.md#cloud)
+
+### Cloud
+
+#### GRPC_HOST & GRPC PORT
+
+You can find your `GRPC_HOST` value by running: 
+
+```shell
+kubectl get ingress -n default
+```
+
+Your output should look something like this...
+
+<a href="./media/ingress-output.png" target="_blank">
+  <img alt="example ingress output" src="./media/ingress-output.png" />
+</a>
+
+For `gateway_ingress`, note the `HOSTS` value. This will be used for your `host`
+
+Your `port` will always be `:443`, as this is the secure listener for your gRPC endpoint.
+
+*You can also make note of the `mdai-console-ingress`, `ADDRESS` value to validate requests sent from postman later.*
+
+> Note: Your ingress endpoint for gRPC connections will be in the following format...
+> `${host}:${port}`
+
+#### HTTP_HOST & HTTP_PORT
+
+You can find your http ingress endpoint value by running: 
+
+```shell
 kubectl get svc gateway-collector -n default
 ```
+
+Your output should look something like this...
+
+<a href="./media/service-output.png" target="_blank">
+  <img alt="example ingress output" src="./media/service-output.png" />
+</a>
+
+For the `gateway_collector` service, note the `EXTERNAL-IP` value. This will be used for your `host`
+
+Your `port` will always be `:4318`, as this is the secure listener for your http endpoint.
+
+> Note: Your ingress endpoint for http connections will be in the following format...
+> `https://${host}:${port}`
 
 ### Examples coming soon
 

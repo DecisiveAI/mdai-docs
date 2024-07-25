@@ -61,3 +61,14 @@ Want to help build the future of Telemetry Pipelines? Checkout our [Contribution
 # License
 
 MyDecisive.ai MDAI Cluster 2024 by DecisiveAI, Inc. is licensed under [Apache 2](https://github.com/DecisiveAI/mdai-docs/blob/main/LICENSE). 
+
+
+<br />
+<br />
+
+----
+
+<p style="text-align: center;">
+  <em>Want to jump ahead to install? Wait no more!</em><br />
+  <a href="./install/installation.md">Installation guide ⏭️</a>
+</p>

@@ -12,17 +12,41 @@ The MDAI Cluster provides a self-service control plane for OpenTelemetry, making
 </a>
 
 
-## [What is an MDAI Cluster?](./intro/intro.md)
+## 📚 What is an MDAI Cluster?
+
+Curious about what our cluster offers? 
+
+[Let us inform you!](./intro/intro.md)
 
 
-## [We're Open-Source](./intro/open-source.md)
+## 🌐 We're Open-Source
+
+We will always be committed to improving open source, whether it's in-house or back to the community. 
+
+[Learn more](./intro/open-source.md)
 
 
-## [Our Architecture](./intro/architecture/architecture.md)
+## 🏛️ Our Architecture
+
+Curious about what super-powers our infrastructure? 
+
+[We're happy to share!](./intro/architecture/architecture.md)
 
 
-## [Installation](./install/installation.md)
+## 🚀 Installation
 
+Ready to install? We have a few options for both learning and production use! 
+
+[Let's learn!](./install/installation.md)
+
+
+## 📈 Usage Guide
+
+Already installed a cluster, but want to learn more about usage? 
+
+[We will show you the way!](./usage/usage.md)
+
+<br />
 <br />
 
 ----

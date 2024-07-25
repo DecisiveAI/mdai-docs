@@ -40,8 +40,12 @@ OpenTelemetry promotes standardization and interoperability by providing consist
 ### Scalability and Extensibility
 Prometheus and OTel are designed for scalability and extensibility, making them suitable for monitoring large-scale, distributed systems running on Kubernetes. You can scale your monitoring infrastructure horizontally to handle increased workload and integrate additional observability tools and services as needed.
 
-### Alerting and Troubleshooting
-Prometheus' powerful alerting MDAI Cluster combined with OTel's distributed tracing capabilities enables proactive alerting and troubleshooting of issues in Kubernetes environments. You can set up alerts based on predefined thresholds or anomaly detection algorithms, and use distributed traces to identify bottlenecks, latency issues, and performance optimizations.
+<br />
+<br />
 
-Overall, combining Prometheus, OpenTelemetry, and Kubernetes provides a robust observability stack that empowers organizations to monitor, debug, and optimize cloud-native applications effectively.
+----
 
+<p style="text-align: center;">
+  <em>Want to jump ahead to install? Wait no more!</em><br />
+  <a href="./install/installation.md">Installation guide ⏭️</a>
+</p>
