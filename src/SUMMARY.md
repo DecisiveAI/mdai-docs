@@ -32,7 +32,6 @@
   - [Check us out!](./install/aws/repo.md)
   - [AWS Config](./install/aws/aws-env.md)
   - [OTel Config](./install/aws/otel-config.md)
-  - [Initialize](./install/aws/initialize.md)
   - [Certificates](./install/aws/adding-certs.md)
   - [Apply Configs](./install/aws/apply-config.md)
   - [Deploy Your MDAI Cluster](./install/aws/deploy.md)

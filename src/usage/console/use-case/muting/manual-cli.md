@@ -1,6 +1,8 @@
 # Manual Muting via the MDAI CLI
 
-Let's see muting in action with the MDAI CLI!
+Let's see muting in action with the MDAI CLI! 
+
+>**Note**: You can find more helpful information for CLI usage in our [CLI repo](https://github.com/DecisiveAI/mdai-cli/blob/docs/docs/mdai.md).
 
 ### Add a mute rule
 

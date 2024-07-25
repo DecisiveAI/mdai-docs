@@ -11,7 +11,7 @@ Trust us, we're truly here to help ease the pain of configuration and security f
 
 *🙆🏽‍♂️ Okay.. one more stretch.. that's better.. back to it!*
 
-## Step 1: Assigning SSL Certificates to your ingress endpoints
+## Assigning SSL Certificates to your ingress endpoints
 
 ### Option 1: 🚜 AutoGen a Cert
 
@@ -28,6 +28,8 @@ make cert
 
 <span class="right"><a href="./apply-config.md">Next Step: Applying configuration ⏩</a></span>
 <br /><br />
+
+### Option 2: 🧳 BYO Cert
 
 Once you have access to your certificate in AWS ACM, it will be accessible via Amazon Resource Name (ARN). These ARNs need to be provided as a configuration parameter during the configuration phase, so make note of these ARNs. [![ACM ARN](../../media/acm-certificates.png)](../../media/acm-certificates.png)
 
