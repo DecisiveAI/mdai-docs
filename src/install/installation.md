@@ -1,5 +1,5 @@
-# ⚠️ **Pre-Alpha Disclaimer**
-This open-source project is currently under construction and is subject to frequent changes and updates. For more information about our pre-alpha release, see our [Pre-Alpha Disclaimer](./DISCLAIMER.md)
+# ⚠️ **Alpha Disclaimer**
+This open-source project is currently under construction and is subject to frequent changes and updates. For more information about our alpha release, see our [Alpha Disclaimer](./DISCLAIMER.md)
 
 ----
 

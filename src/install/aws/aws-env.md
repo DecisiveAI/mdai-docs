@@ -40,10 +40,10 @@ Post-configuration, you will be presented with an option to configure more advan
 
 If you choose to remain opt'd-out ignore fields `MDAI_UI_HOSTNAME` and `MDAI_UI_USER_POOL_DOMAIN`. 
 
-| Key          | Example Value    | Description |
-| :----------  | :--------------- | :---------- |
-| `COGNITO`                  | `false` (default)            | Opt-in to include Cognito in your cluster infrastructure |
-| `MDAI_UI_HOSTNAME`         | `mdai.yourdomain.dev`        | An optional field to map your MDAI Console UI URL to your custom domain via a CNAME record. This hostname will also be used during the SSL Cert creation for this flow. |
+| Key          | Example Value    | Description                                                                                                                                                                                                                                                                               |
+| :----------  | :--------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `COGNITO`                  | `false` (default)            | Opt-in to include Cognito in your cluster infrastructure                                                                                                                                                                                                                                  |
+| `MDAI_UI_HOSTNAME`         | `mdai.yourdomain.dev`        | A required field to map your MDAI Console UI URL to your custom domain via a CNAME record. This hostname will also be used during the SSL Cert creation for this flow.                                                                                                                    |
 | `MDAI_UI_USER_POOL_DOMAIN` | `yourdomain`                 | The domain name Cognito uses to bind your domain to, e.g., `yourdomain.com` would use `yourdomain` here. (https://yourdomain.auth.AWS_REGION.amazoncognito.com). This setting guarantees your domain will have a TLS (SSL) certificate auto-generated and auto-discovered during install. |
 
 

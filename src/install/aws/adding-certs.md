@@ -11,7 +11,7 @@ Trust us, we're truly here to help ease the pain of configuration and security f
 
 *🙆🏽‍♂️ Okay.. one more stretch.. that's better.. back to it!*
 
-## Step 1: Assigning SSL Certificates for your custom domain
+## Step 1: Assigning SSL Certificates to your ingress endpoints
 
 ### Option 1: 🚜 AutoGen a Cert
 
@@ -37,9 +37,14 @@ Once you have access to your certificate in AWS ACM, it will be accessible via A
 
 *🪰 Remember that ARN we just pestered you about above? 🪰*
 
-Let's add it to the `values/params-values-otel.yaml` file as the values for the following keys:
+Let's add it to the `templates/mdai-operator.yaml` file as the values for the following keys
 * `service.beta.kubernetes.io/aws-load-balancer-ssl-cert`
+
+![K8 ssl certificate](../../media/k8-ssl-cert.png)
+
 * `alb.ingress.kubernetes.io/certificate-arn`
+
+![K8 ssl certificate](../../media/alb-cert-arn.png)
 
 ----
 <span class="left"><a href="./otel-config.md">⏪ Back to: OTel Configuration</a></span>

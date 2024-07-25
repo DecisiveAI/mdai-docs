@@ -1,6 +1,17 @@
 # Usage Guide
 
-Coming soon...
+## [Using the MDAI Console](./usage/console/mdai-console.md)
+
+
+## OTel Management
+* [Modifying your OpenTelemetry Config](./usage/otel-updates.md)
+
+
+## Use Cases
+  
+### [Telemetry Muting](./usage/console/use-case/muting/intro.md)
+
+
 
 <!-- 
 ## Use Cases

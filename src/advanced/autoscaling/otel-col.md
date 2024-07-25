@@ -2,7 +2,7 @@
 
 ## OpenTelemetry Collector
 
-We have built an HPA config for one of our cluster's core components, the OTel collector app (`lib/otelcol.yaml`) with the following settings:
+We have built an HPA config for one of our cluster's core components, the OTel collector app (`lib/mdai-operator.yaml`) with the following settings:
 
 ```yaml
 # 2 replicas recommnded
