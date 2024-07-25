@@ -27,5 +27,5 @@ Simply update the configuration file at `templates/mdai-operator.yaml`.
   <a href="./aws-env.md">⏪ Back to: AWS Env Config</a>
 </div>
 <div class="right">
-  <a href="./initialize.md.md">Next Step: Initialize build ⏩</a><br /><br />
+  <a href="./initialize.md">Next Step: Initialize build ⏩</a><br /><br />
 </div>
