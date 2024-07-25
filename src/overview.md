@@ -39,6 +39,12 @@ Ready to install? We have a few options for both learning and production use!
 
 [Let's learn!](./install/installation.md)
 
+## 🚢 Start Sending Data
+
+Ready to send your MDAI Cluster data? We have a few methods.
+
+[Start sending now!](./install/testing/intro.md)
+
 
 ## 📈 Usage Guide
 
