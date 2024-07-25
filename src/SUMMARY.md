@@ -3,9 +3,9 @@
   [Disclaimer](DISCLAIMER.md)
 
 # Introduction
+  - [Open-Source](./intro/open-source.md)
   - [Architecture](./intro/architecture/architecture.md)
   - [The MDAI Cluster](./intro/intro.md)
-  - [Pre-Alpha Expectations](./intro/expectations.md)
 
 # Installation
   - [Supported Methods for Installing an MDAI Cluster](./install/installation.md)
@@ -80,6 +80,11 @@
 
 # Troubleshooting
   - [Troubleshooting guide](./troubleshooting.md)
+
+# Miscellaneous
+  - [Alpha Expectations](./intro/expectations.md)
+
+
 <!--
 # Usage Guide
 
@@ -120,18 +125,18 @@
 - Opportunities for community involvement
 
 ## Risk and Disclaimers
-- Potential risks associated with using pre-alpha software
+- Potential risks associated with using alpha software
 - Disclaimer about stability, data loss, and other issues
 - Recommended backup and recovery procedures
 
 ## Legal and Licensing
-- License information for the pre-alpha release
+- License information for the alpha release
 - Copyright notices and third-party dependencies
 - Terms of use for early adopters
 
 ## Future Development
 - Planned features and improvements for upcoming releases
-- Roadmap for transitioning from pre-alpha to alpha/beta stages
+- Roadmap for transitioning from alpha to alpha/beta stages
 - Community feedback integration process
 
 ## Glossary
@@ -139,6 +144,6 @@
 
 ## Appendices
 - Additional resources for testers and contributors
-- Release notes for the pre-alpha version
-- Frequently Asked Questions (FAQs) specific to the pre-alpha release
+- Release notes for the alpha version
+- Frequently Asked Questions (FAQs) specific to the alpha release
 -->
