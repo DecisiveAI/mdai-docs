@@ -1,25 +1,41 @@
-# Datalyzer Module
+# Source Attribution
 
-## Primary objective
+## What is it?
 
-Track and analyze the total and actual OpenTelemetry Protocol (OTLP) bytes transferred by each source (service/resource) through a collector.
+Different services, applications, hosts and other parts of your software estate emit telemetry differently, and the Source Attribution Module in the MDAI Cluster can help you see which services are sending the most telemetry data, and potentially costing the most to store that telemetry data.
 
+<div  style="text-align: center;">
+<a href="../../media/service-attribution.png" style="cursor: zoom-in;">
+<img style="width: 400px;" src="../../media/service-attribution.png" alt="Source attribution module diagram" />
+</a>
+</div>
+<p style="text-align: center;">
+  <em>The Datalyzer Service measures telemetry data per-source</em>
+</p>
 
-## How it works
+### Components of the Source Attribution Module:
 
-We built in a special OTLP Service that we export data to that allows us to understand the sender (by `service.name`) of a pLog, pMetric, and/or pTrace records, as well as measuring the payload size for each record that flow through your pipelines. 
+- The Datalyzer, a lightweight OTLP service that measures Telemetry data on a per-service basis, completely within your cluster
+- The MDAI Operator, which directs data from your Telemetry pipelines to the Datalyzer for measurement
+- The MDAI Console Analysis View, which displays per-service telemetry measurements and the ratio of outgoing to incoming data.
 
-This helps us answer your questions:
-1. Who's sending the most data in and out of my cluster
-2. How much are they sending in and planning to send out of my cluster?
+<div  style="text-align: center;">
+<a href="../../media/service-attribution-screenshot.png" style="cursor: zoom-in;">
+<img style="width: 400px;" src="../../media/service-attribution-screenshot.png" alt="Source attribution module diagram" />
+</a>
+</div>
+<p style="text-align: center;">
+  <em>The MDAI Console displaying per-service Telemetry measures for the OpenTelemetry Demo</em>
+</p>
 
+## How to enable
 
-## See it in action
+### MDAI CLI
 
-1. Visit the Analysis tab in your console.
-2. Send some payloads (real or fake).
-3. See the sender and size of message in and out of your cluster!
-4. Save money, eat cake instead! 🍰
+### k8s
 
+## How to disable
 
+### MDAI CLI
 
+### k8s

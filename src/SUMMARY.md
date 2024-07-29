@@ -60,7 +60,7 @@
     - [Node AutoScaling](./advanced/autoscaling/node-autoscaling.md)
   - [Ingress](./advanced/ingress.md)
   - [Modules]()
-    - [Datalyzer](./advanced/modules/datalyzer.md)
+    - [Source Attribution](./advanced/modules/datalyzer.md)
 
 # Usage
   - [Usage Guide](./usage/usage.md)
