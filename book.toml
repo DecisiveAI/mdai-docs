@@ -8,6 +8,9 @@ title = "MyDecisive MDAI Cluster Documentation"
 [output.html]
 additional-css = ["./theme/catppuccin.css", "./theme/catppuccin-admonish.css"]
 
+[output.html.redirect]
+"/advanced/modules/datalyzer.html" = "/use-cases/source-attribution.html"
+
 [output.html.fold]
 enable = true
 level = 2
