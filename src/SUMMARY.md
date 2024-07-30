@@ -54,13 +54,14 @@
     - [Postman](./install/testing/postman.md)
     - [Real collectors, real pipelines](./install/testing/real_collector_agent.md)
 
+# Use Cases
+  - [Source Attribution](./use-cases/source-attribution.md)
+
 # Advanced Configuration
   - [MDAI Cluster Optimizations](./advanced/advanced.md)
     - [AutoScaling OTel Collector](./advanced/autoscaling/otel-col.md)
     - [Node AutoScaling](./advanced/autoscaling/node-autoscaling.md)
   - [Ingress](./advanced/ingress.md)
-  - [Modules]()
-    - [Datalyzer](./advanced/modules/datalyzer.md)
 
 # Usage
   - [Usage Guide](./usage/usage.md)
