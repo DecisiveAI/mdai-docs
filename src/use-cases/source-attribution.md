@@ -35,15 +35,17 @@ mdai enable --module datalyzer
 mdai disable --module datalyzer
 ```
 
-### Manually update k8s Collector Resource
+### Manually update k8s MDAI Cluster Resource
 
 Get the custom resource for your collector:
 
 ```sh
-kubectl get mydecisiveengine  mydecisiveengine-sample --namespace mdai-otel-nucleus -o yaml > cr.yml
+kubectl edit mydecisiveengine mydecisiveengine-sample --namespace mdai-otel-nucleus
 ```
 
-Edit the `cr.yml` to change the `spec.telemetryModule.collectors[0].measureVolumes` to `true` or `false` depending on whether you want the Source Attribution feature enabled or not.
+This will open the manifest in your default editor. Edit the manifest to change the `spec.telemetryModule.collectors[0].measureVolumes` to `true` or `false` depending on whether you want the Source Attribution feature enabled or not. 
+
+> More info on how `kubectl edit` works available in the [k8s docs](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_edit/).
 
 ## How does it work?
 
