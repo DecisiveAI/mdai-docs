@@ -20,6 +20,13 @@ cargo install mdbook mdbook-toc mdbook-catppuccin
 ```
 
 - Additionally, we are using the *catppuccin* theme. If you would like to install the assets from source and modify. Follow [install instructions](https://github.com/catppuccin/mdBook?tab=readme-ov-file).
+
+- If on a Mac, you can install mdBook using [Homebrew](https://brew.sh):
+
+```sh
+brew install mdbook
+```
+
 ### Local development
 
 Use `mdbook serve` to spin up a local development server, at [http://localhost:3000](http://localhost:3000) by default. Make edits and reload the page to see updated content.
